@@ -1,0 +1,13 @@
+--create .\Objects\GPIO_LED_HAL.lib
+.\objects\main.o
+.\objects\delay.o
+.\objects\led_drv.o
+.\objects\key_drv.o
+.\objects\gd32f30x_it.o
+.\objects\systick.o
+.\objects\gd32f30x_gpio.o
+.\objects\gd32f30x_rcu.o
+.\objects\gd32f30x_exti.o
+.\objects\gd32f30x_misc.o
+.\objects\startup_gd32f30x_hd.o
+.\objects\system_gd32f30x.o

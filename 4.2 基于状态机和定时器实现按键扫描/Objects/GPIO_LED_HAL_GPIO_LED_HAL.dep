@@ -142,7 +142,7 @@ I (Driver\led_drv.h)(0x659FDE35)
 I (Driver\systick.h)(0x659FDE35)
 F (.\Driver\key_drv.h)(0x659FDE35)()
 F (.\Driver\gd32f30x_it.c)(0x659FDE35)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Driver -I .\Arm -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\gd32f30x_it.o --omf_browse .\objects\gd32f30x_it.crf --depend .\objects\gd32f30x_it.d)
-F (.\Driver\systick.c)(0x659FDE35)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Driver -I .\Arm -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
+F (.\Driver\systick.c)(0x659FEFF8)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Driver -I .\Arm -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
 I (.\Arm\gd32f30x.h)(0x659FDE35)
 I (.\Arm\core_cm4.h)(0x659FDE35)

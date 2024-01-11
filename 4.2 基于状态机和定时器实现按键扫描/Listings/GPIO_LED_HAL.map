@@ -371,7 +371,7 @@ Image Symbol Table
     BusFault_Handler                         0x0800018d   Thumb Code     4  gd32f30x_it.o(i.BusFault_Handler)
     DebugMon_Handler                         0x08000191   Thumb Code     2  gd32f30x_it.o(i.DebugMon_Handler)
     GetKeyVal                                0x08000193   Thumb Code    34  key_drv.o(i.GetKeyVal)
-    GetSysRunTime                            0x080001b5   Thumb Code     6  systick.o(i.GetSysRunTime)
+    GetSysRunTime                            0x080001b5   Thumb Code     8  systick.o(i.GetSysRunTime)
     HardFault_Handler                        0x080001c1   Thumb Code     4  gd32f30x_it.o(i.HardFault_Handler)
     KeyDrvInit                               0x080001c5   Thumb Code    60  key_drv.o(i.KeyDrvInit)
     LedDrvInit                               0x08000311   Thumb Code    86  led_drv.o(i.LedDrvInit)
@@ -487,10 +487,10 @@ Image component sizes
        152          0          0          0          0      26427   main.o
         36          8        304          0       1024        844   startup_gd32f30x_hd.o
        452         30          0          0          0       2477   system_gd32f30x.o
-       136         18          0          8          0      28455   systick.o
+       136         16          0          8          0      28823   systick.o
 
     ----------------------------------------------------------------------
-      1938        122        336         96       1088      89410   Object Totals
+      1938        120        336         96       1088      89778   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          4          0          0          4          0          0   (incl. Padding)
 
@@ -529,9 +529,9 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      2024        138        336         96       1088      87482   Grand Totals
-      2024        138        336         96       1088      87482   ELF Image Totals
-      2024        138        336         96          0          0   ROM Totals
+      2024        136        336         96       1088      87850   Grand Totals
+      2024        136        336         96       1088      87850   ELF Image Totals
+      2024        136        336         96          0          0   ROM Totals
 
 ==============================================================================
 

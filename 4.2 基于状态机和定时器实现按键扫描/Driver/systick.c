@@ -10,7 +10,7 @@
 #include <stdint.h>
 #include "gd32f30x.h"
 
-static uint64_t g_sysRunTime = 0;
+static volatile uint64_t g_sysRunTime = 0;
 
 /**
 ***************************************
