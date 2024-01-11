@@ -1,0 +1,9 @@
+Load "d:\\Study\\ARM32单片机实战课程\\06自己动手\\4.2 基于状态机和定时器实现按键扫描\\Objects\\GPIO_LED_HAL.axf" 
+**JLink Warning: Out of sync , resynchronizing...
+**JLink Warning: Out of sync , resynchronizing...
+**JLink Warning: Out of sync , resynchronizing...
+Cannot connect to J-LinkError: Flash Download failed  -  Target DLL has been cancelled
+Flash Load finished at 19:32:10
+Project File 'd:\Study\ARM32单片机实战课程\06自己动手\4.2 基于状态机和定时器实现按键扫描\GPIO_LED_HAL.uvprojx'
+
+has been modified externally, Reload ?
