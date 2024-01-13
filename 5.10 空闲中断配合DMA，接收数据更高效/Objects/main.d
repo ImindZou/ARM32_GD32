@@ -1,6 +1,6 @@
 .\objects\main.o: App\main.c
-.\objects\main.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: .\Arm\gd32f30x.h
 .\objects\main.o: .\Arm\core_cm4.h
 .\objects\main.o: .\Arm\core_cmInstr.h
@@ -35,4 +35,5 @@
 .\objects\main.o: .\GD32_Hal\Include\gd32f30x_exmc.h
 .\objects\main.o: .\Driver\led_drv.h
 .\objects\main.o: .\Driver\key_drv.h
-.\objects\main.o: .\Driver\usb2Com_drv.h
+.\objects\main.o: .\Driver\systick.h
+.\objects\main.o: .\Driver\usb2com_drv.h

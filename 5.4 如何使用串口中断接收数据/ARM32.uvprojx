@@ -388,16 +388,6 @@
               <FileType>1</FileType>
               <FilePath>.\App\main.c</FilePath>
             </File>
-            <File>
-              <FileName>usb2com_app.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\App\usb2com_app.c</FilePath>
-            </File>
-            <File>
-              <FileName>usb2com_app.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\App\usb2com_app.h</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
