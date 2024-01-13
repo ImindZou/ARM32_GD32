@@ -512,33 +512,33 @@ Image Symbol Table
 
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
     ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
     ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
@@ -548,6 +548,7 @@ Image Symbol Table
     ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
     App\\main.c                              0x00000000   Number         0  main.o ABSOLUTE
     App\main.c                               0x00000000   Number         0  main.o ABSOLUTE
+    App\usb2com_app.c                        0x00000000   Number         0  usb2com_app.o ABSOLUTE
     Arm\\system_gd32f30x.c                   0x00000000   Number         0  system_gd32f30x.o ABSOLUTE
     Arm\startup_gd32f30x_hd.s                0x00000000   Number         0  startup_gd32f30x_hd.o ABSOLUTE
     Arm\system_gd32f30x.c                    0x00000000   Number         0  system_gd32f30x.o ABSOLUTE
@@ -829,100 +830,100 @@ Memory Map of the image
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x08000000   0x08000000   0x00000130   Data   RO         1395    RESET               startup_gd32f30x_hd.o
-    0x08000130   0x08000130   0x00000000   Code   RO         1455  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x08000130   0x08000130   0x00000004   Code   RO         1718    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x08000134   0x08000134   0x00000004   Code   RO         1721    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x08000138   0x08000138   0x00000000   Code   RO         1723    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x08000138   0x08000138   0x00000000   Code   RO         1725    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x08000138   0x08000138   0x00000008   Code   RO         1726    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x08000140   0x08000140   0x00000000   Code   RO         1728    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x08000140   0x08000140   0x00000000   Code   RO         1730    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x08000140   0x08000140   0x00000004   Code   RO         1719    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
-    0x08000144   0x08000144   0x00000024   Code   RO         1396    .text               startup_gd32f30x_hd.o
-    0x08000168   0x08000168   0x00000024   Code   RO         1748    .text               mc_w.l(init.o)
-    0x0800018c   0x0800018c   0x00000004   Code   RO          275    i.BusFault_Handler  gd32f30x_it.o
-    0x08000190   0x08000190   0x00000018   Code   RO          406    i.CalXorSum         usb2com_drv.o
-    0x080001a8   0x080001a8   0x00000018   Code   RO          407    i.CtrlLed           usb2com_drv.o
-    0x080001c0   0x080001c0   0x00000002   Code   RO          276    i.DebugMon_Handler  gd32f30x_it.o
-    0x080001c2   0x080001c2   0x0000001c   Code   RO          137    i.EXTI0_IRQHandler  key_drv.o
-    0x080001de   0x080001de   0x00000034   Code   RO          138    i.EXTI10_15_IRQHandler  key_drv.o
-    0x08000212   0x08000212   0x00000004   Code   RO          277    i.HardFault_Handler  gd32f30x_it.o
-    0x08000216   0x08000216   0x0000000c   Code   RO          139    i.KeyDrvInit        key_drv.o
-    0x08000222   0x08000222   0x0000006c   Code   RO          140    i.KeyExtiInit       key_drv.o
+    0x08000000   0x08000000   0x00000130   Data   RO         1398    RESET               startup_gd32f30x_hd.o
+    0x08000130   0x08000130   0x00000000   Code   RO         1458  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000130   0x08000130   0x00000004   Code   RO         1721    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x08000134   0x08000134   0x00000004   Code   RO         1724    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x08000138   0x08000138   0x00000000   Code   RO         1726    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x08000138   0x08000138   0x00000000   Code   RO         1728    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x08000138   0x08000138   0x00000008   Code   RO         1729    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08000140   0x08000140   0x00000000   Code   RO         1731    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x08000140   0x08000140   0x00000000   Code   RO         1733    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x08000140   0x08000140   0x00000004   Code   RO         1722    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000144   0x08000144   0x00000024   Code   RO         1399    .text               startup_gd32f30x_hd.o
+    0x08000168   0x08000168   0x00000024   Code   RO         1751    .text               mc_w.l(init.o)
+    0x0800018c   0x0800018c   0x00000004   Code   RO          278    i.BusFault_Handler  gd32f30x_it.o
+    0x08000190   0x08000190   0x00000018   Code   RO          409    i.CalXorSum         usb2com_drv.o
+    0x080001a8   0x080001a8   0x00000018   Code   RO          410    i.CtrlLed           usb2com_drv.o
+    0x080001c0   0x080001c0   0x00000002   Code   RO          279    i.DebugMon_Handler  gd32f30x_it.o
+    0x080001c2   0x080001c2   0x0000001c   Code   RO          140    i.EXTI0_IRQHandler  key_drv.o
+    0x080001de   0x080001de   0x00000034   Code   RO          141    i.EXTI10_15_IRQHandler  key_drv.o
+    0x08000212   0x08000212   0x00000004   Code   RO          280    i.HardFault_Handler  gd32f30x_it.o
+    0x08000216   0x08000216   0x0000000c   Code   RO          142    i.KeyDrvInit        key_drv.o
+    0x08000222   0x08000222   0x0000006c   Code   RO          143    i.KeyExtiInit       key_drv.o
     0x0800028e   0x0800028e   0x00000002   PAD
-    0x08000290   0x08000290   0x00000044   Code   RO          141    i.KeyGpioInit       key_drv.o
-    0x080002d4   0x080002d4   0x0000005c   Code   RO          328    i.LedDrvInit        led_drv.o
-    0x08000330   0x08000330   0x00000004   Code   RO          278    i.MemManage_Handler  gd32f30x_it.o
-    0x08000334   0x08000334   0x00000002   Code   RO          279    i.NMI_Handler       gd32f30x_it.o
-    0x08000336   0x08000336   0x00000002   Code   RO          280    i.PendSV_Handler    gd32f30x_it.o
-    0x08000338   0x08000338   0x00000064   Code   RO          408    i.ProcUartData      usb2com_drv.o
-    0x0800039c   0x0800039c   0x00000002   Code   RO          281    i.SVC_Handler       gd32f30x_it.o
+    0x08000290   0x08000290   0x00000044   Code   RO          144    i.KeyGpioInit       key_drv.o
+    0x080002d4   0x080002d4   0x0000005c   Code   RO          331    i.LedDrvInit        led_drv.o
+    0x08000330   0x08000330   0x00000004   Code   RO          281    i.MemManage_Handler  gd32f30x_it.o
+    0x08000334   0x08000334   0x00000002   Code   RO          282    i.NMI_Handler       gd32f30x_it.o
+    0x08000336   0x08000336   0x00000002   Code   RO          283    i.PendSV_Handler    gd32f30x_it.o
+    0x08000338   0x08000338   0x00000064   Code   RO          411    i.ProcUartData      usb2com_drv.o
+    0x0800039c   0x0800039c   0x00000002   Code   RO          284    i.SVC_Handler       gd32f30x_it.o
     0x0800039e   0x0800039e   0x00000002   PAD
-    0x080003a0   0x080003a0   0x00000018   Code   RO          369    i.SysTick_Handler   systick.o
-    0x080003b8   0x080003b8   0x000000a8   Code   RO         1403    i.SystemInit        system_gd32f30x.o
-    0x08000460   0x08000460   0x00000050   Code   RO          329    i.ToggleLed         led_drv.o
-    0x080004b0   0x080004b0   0x0000002c   Code   RO          330    i.TurnOffLed        led_drv.o
-    0x080004dc   0x080004dc   0x0000002c   Code   RO          331    i.TurnOnLed         led_drv.o
-    0x08000508   0x08000508   0x00000034   Code   RO          409    i.USART0_IRQHandler  usb2com_drv.o
-    0x0800053c   0x0800053c   0x00000004   Code   RO          282    i.UsageFault_Handler  gd32f30x_it.o
-    0x08000540   0x08000540   0x00000010   Code   RO          410    i.Usb2ComDrvInit    usb2com_drv.o
-    0x08000550   0x08000550   0x0000002c   Code   RO          411    i.Usb2ComGpioInit   usb2com_drv.o
-    0x0800057c   0x0800057c   0x00000040   Code   RO          412    i.Usb2ComTask       usb2com_drv.o
-    0x080005bc   0x080005bc   0x00000058   Code   RO          413    i.UsbComUartInit    usb2com_drv.o
-    0x08000614   0x08000614   0x00000010   Code   RO         1459    i.__0printf$bare    mc_w.l(printfb.o)
-    0x08000624   0x08000624   0x0000000e   Code   RO         1760    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x08000632   0x08000632   0x00000002   Code   RO         1761    i.__scatterload_null  mc_w.l(handlers.o)
-    0x08000634   0x08000634   0x0000000e   Code   RO         1762    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x08000642   0x08000642   0x00000022   Code   RO         1466    i._printf_core      mc_w.l(printfb.o)
-    0x08000664   0x08000664   0x000000bc   Code   RO          938    i.exti_init         gd32f30x_exti.o
-    0x08000720   0x08000720   0x0000000c   Code   RO          941    i.exti_interrupt_flag_clear  gd32f30x_exti.o
-    0x0800072c   0x0800072c   0x00000018   Code   RO          942    i.exti_interrupt_flag_get  gd32f30x_exti.o
-    0x08000744   0x08000744   0x00000028   Code   RO          414    i.fputc             usb2com_drv.o
-    0x0800076c   0x0800076c   0x00000004   Code   RO          480    i.gpio_bit_reset    gd32f30x_gpio.o
-    0x08000770   0x08000770   0x00000004   Code   RO          481    i.gpio_bit_set      gd32f30x_gpio.o
-    0x08000774   0x08000774   0x0000000a   Code   RO          482    i.gpio_bit_write    gd32f30x_gpio.o
+    0x080003a0   0x080003a0   0x00000018   Code   RO          372    i.SysTick_Handler   systick.o
+    0x080003b8   0x080003b8   0x000000a8   Code   RO         1406    i.SystemInit        system_gd32f30x.o
+    0x08000460   0x08000460   0x00000050   Code   RO          332    i.ToggleLed         led_drv.o
+    0x080004b0   0x080004b0   0x0000002c   Code   RO          333    i.TurnOffLed        led_drv.o
+    0x080004dc   0x080004dc   0x0000002c   Code   RO          334    i.TurnOnLed         led_drv.o
+    0x08000508   0x08000508   0x00000034   Code   RO          412    i.USART0_IRQHandler  usb2com_drv.o
+    0x0800053c   0x0800053c   0x00000004   Code   RO          285    i.UsageFault_Handler  gd32f30x_it.o
+    0x08000540   0x08000540   0x00000010   Code   RO          413    i.Usb2ComDrvInit    usb2com_drv.o
+    0x08000550   0x08000550   0x0000002c   Code   RO          414    i.Usb2ComGpioInit   usb2com_drv.o
+    0x0800057c   0x0800057c   0x00000040   Code   RO          415    i.Usb2ComTask       usb2com_drv.o
+    0x080005bc   0x080005bc   0x00000058   Code   RO          416    i.UsbComUartInit    usb2com_drv.o
+    0x08000614   0x08000614   0x00000010   Code   RO         1462    i.__0printf$bare    mc_w.l(printfb.o)
+    0x08000624   0x08000624   0x0000000e   Code   RO         1763    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08000632   0x08000632   0x00000002   Code   RO         1764    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08000634   0x08000634   0x0000000e   Code   RO         1765    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08000642   0x08000642   0x00000022   Code   RO         1469    i._printf_core      mc_w.l(printfb.o)
+    0x08000664   0x08000664   0x000000bc   Code   RO          941    i.exti_init         gd32f30x_exti.o
+    0x08000720   0x08000720   0x0000000c   Code   RO          944    i.exti_interrupt_flag_clear  gd32f30x_exti.o
+    0x0800072c   0x0800072c   0x00000018   Code   RO          945    i.exti_interrupt_flag_get  gd32f30x_exti.o
+    0x08000744   0x08000744   0x00000028   Code   RO          417    i.fputc             usb2com_drv.o
+    0x0800076c   0x0800076c   0x00000004   Code   RO          483    i.gpio_bit_reset    gd32f30x_gpio.o
+    0x08000770   0x08000770   0x00000004   Code   RO          484    i.gpio_bit_set      gd32f30x_gpio.o
+    0x08000774   0x08000774   0x0000000a   Code   RO          485    i.gpio_bit_write    gd32f30x_gpio.o
     0x0800077e   0x0800077e   0x00000002   PAD
-    0x08000780   0x08000780   0x00000098   Code   RO          489    i.gpio_exti_source_select  gd32f30x_gpio.o
-    0x08000818   0x08000818   0x000000bc   Code   RO          490    i.gpio_init         gd32f30x_gpio.o
-    0x080008d4   0x080008d4   0x00000010   Code   RO          491    i.gpio_input_bit_get  gd32f30x_gpio.o
+    0x08000780   0x08000780   0x00000098   Code   RO          492    i.gpio_exti_source_select  gd32f30x_gpio.o
+    0x08000818   0x08000818   0x000000bc   Code   RO          493    i.gpio_init         gd32f30x_gpio.o
+    0x080008d4   0x080008d4   0x00000010   Code   RO          494    i.gpio_input_bit_get  gd32f30x_gpio.o
     0x080008e4   0x080008e4   0x00000038   Code   RO            3    i.main              main.o
-    0x0800091c   0x0800091c   0x000000c4   Code   RO         1023    i.nvic_irq_enable   gd32f30x_misc.o
-    0x080009e0   0x080009e0   0x00000014   Code   RO         1024    i.nvic_priority_group_set  gd32f30x_misc.o
-    0x080009f4   0x080009f4   0x00000158   Code   RO          688    i.rcu_clock_freq_get  gd32f30x_rcu.o
-    0x08000b4c   0x08000b4c   0x00000020   Code   RO          706    i.rcu_periph_clock_enable  gd32f30x_rcu.o
-    0x08000b6c   0x08000b6c   0x00000020   Code   RO          709    i.rcu_periph_reset_disable  gd32f30x_rcu.o
-    0x08000b8c   0x08000b8c   0x00000020   Code   RO          710    i.rcu_periph_reset_enable  gd32f30x_rcu.o
-    0x08000bac   0x08000bac   0x00000114   Code   RO         1404    i.system_clock_120m_hxtal  system_gd32f30x.o
-    0x08000cc0   0x08000cc0   0x00000008   Code   RO         1405    i.system_clock_config  system_gd32f30x.o
-    0x08000cc8   0x08000cc8   0x00000090   Code   RO         1079    i.usart_baudrate_set  gd32f30x_usart.o
-    0x08000d58   0x08000d58   0x0000000a   Code   RO         1082    i.usart_data_receive  gd32f30x_usart.o
-    0x08000d62   0x08000d62   0x00000008   Code   RO         1083    i.usart_data_transmit  gd32f30x_usart.o
+    0x0800091c   0x0800091c   0x000000c4   Code   RO         1026    i.nvic_irq_enable   gd32f30x_misc.o
+    0x080009e0   0x080009e0   0x00000014   Code   RO         1027    i.nvic_priority_group_set  gd32f30x_misc.o
+    0x080009f4   0x080009f4   0x00000158   Code   RO          691    i.rcu_clock_freq_get  gd32f30x_rcu.o
+    0x08000b4c   0x08000b4c   0x00000020   Code   RO          709    i.rcu_periph_clock_enable  gd32f30x_rcu.o
+    0x08000b6c   0x08000b6c   0x00000020   Code   RO          712    i.rcu_periph_reset_disable  gd32f30x_rcu.o
+    0x08000b8c   0x08000b8c   0x00000020   Code   RO          713    i.rcu_periph_reset_enable  gd32f30x_rcu.o
+    0x08000bac   0x08000bac   0x00000114   Code   RO         1407    i.system_clock_120m_hxtal  system_gd32f30x.o
+    0x08000cc0   0x08000cc0   0x00000008   Code   RO         1408    i.system_clock_config  system_gd32f30x.o
+    0x08000cc8   0x08000cc8   0x00000090   Code   RO         1082    i.usart_baudrate_set  gd32f30x_usart.o
+    0x08000d58   0x08000d58   0x0000000a   Code   RO         1085    i.usart_data_receive  gd32f30x_usart.o
+    0x08000d62   0x08000d62   0x00000008   Code   RO         1086    i.usart_data_transmit  gd32f30x_usart.o
     0x08000d6a   0x08000d6a   0x00000002   PAD
-    0x08000d6c   0x08000d6c   0x00000090   Code   RO         1084    i.usart_deinit      gd32f30x_usart.o
-    0x08000dfc   0x08000dfc   0x0000000a   Code   RO         1088    i.usart_enable      gd32f30x_usart.o
-    0x08000e06   0x08000e06   0x0000001e   Code   RO         1090    i.usart_flag_get    gd32f30x_usart.o
-    0x08000e24   0x08000e24   0x0000001a   Code   RO         1097    i.usart_interrupt_enable  gd32f30x_usart.o
-    0x08000e3e   0x08000e3e   0x00000012   Code   RO         1098    i.usart_interrupt_flag_clear  gd32f30x_usart.o
-    0x08000e50   0x08000e50   0x00000038   Code   RO         1099    i.usart_interrupt_flag_get  gd32f30x_usart.o
-    0x08000e88   0x08000e88   0x00000014   Code   RO         1112    i.usart_receive_config  gd32f30x_usart.o
-    0x08000e9c   0x08000e9c   0x00000014   Code   RO         1126    i.usart_transmit_config  gd32f30x_usart.o
-    0x08000eb0   0x08000eb0   0x00000020   Data   RO         1758    Region$$Table       anon$$obj.o
+    0x08000d6c   0x08000d6c   0x00000090   Code   RO         1087    i.usart_deinit      gd32f30x_usart.o
+    0x08000dfc   0x08000dfc   0x0000000a   Code   RO         1091    i.usart_enable      gd32f30x_usart.o
+    0x08000e06   0x08000e06   0x0000001e   Code   RO         1093    i.usart_flag_get    gd32f30x_usart.o
+    0x08000e24   0x08000e24   0x0000001a   Code   RO         1100    i.usart_interrupt_enable  gd32f30x_usart.o
+    0x08000e3e   0x08000e3e   0x00000012   Code   RO         1101    i.usart_interrupt_flag_clear  gd32f30x_usart.o
+    0x08000e50   0x08000e50   0x00000038   Code   RO         1102    i.usart_interrupt_flag_get  gd32f30x_usart.o
+    0x08000e88   0x08000e88   0x00000014   Code   RO         1115    i.usart_receive_config  gd32f30x_usart.o
+    0x08000e9c   0x08000e9c   0x00000014   Code   RO         1129    i.usart_transmit_config  gd32f30x_usart.o
+    0x08000eb0   0x08000eb0   0x00000020   Data   RO         1761    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08000ed0, Size: 0x00000468, Max: 0x00010000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08000ed0   0x00000024   Data   RW          332    .data               led_drv.o
+    0x20000000   0x08000ed0   0x00000024   Data   RW          335    .data               led_drv.o
     0x20000024   0x08000ef4   0x00000004   PAD
-    0x20000028   0x08000ef8   0x00000008   Data   RW          371    .data               systick.o
-    0x20000030   0x08000f00   0x0000001a   Data   RW          416    .data               usb2com_drv.o
+    0x20000028   0x08000ef8   0x00000008   Data   RW          374    .data               systick.o
+    0x20000030   0x08000f00   0x0000001a   Data   RW          419    .data               usb2com_drv.o
     0x2000004a   0x08000f1a   0x00000002   PAD
-    0x2000004c   0x08000f1c   0x00000004   Data   RW         1732    .data               mc_w.l(stdout.o)
-    0x20000050        -       0x00000014   Zero   RW          415    .bss                usb2com_drv.o
+    0x2000004c   0x08000f1c   0x00000004   Data   RW         1735    .data               mc_w.l(stdout.o)
+    0x20000050        -       0x00000014   Zero   RW          418    .bss                usb2com_drv.o
     0x20000064   0x08000f20   0x00000004   PAD
-    0x20000068        -       0x00000400   Zero   RW         1393    STACK               startup_gd32f30x_hd.o
+    0x20000068        -       0x00000400   Zero   RW         1396    STACK               startup_gd32f30x_hd.o
 
 
 ==============================================================================

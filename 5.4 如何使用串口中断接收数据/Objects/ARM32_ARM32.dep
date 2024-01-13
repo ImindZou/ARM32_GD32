@@ -37,6 +37,8 @@ I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
 I (.\Driver\led_drv.h)(0x64B8C2AA)
 I (.\Driver\key_drv.h)(0x64B8BA2D)
 I (.\Driver\usb2Com_drv.h)(0x65A03396)
+F (.\App\usb2com_app.c)(0x65A24EDF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\usb2com_app.o --omf_browse .\objects\usb2com_app.crf --depend .\objects\usb2com_app.d)
+F (.\App\usb2com_app.h)(0x65A24F06)()
 F (.\Driver\key_drv.c)(0x64B906F0)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\key_drv.o --omf_browse .\objects\key_drv.crf --depend .\objects\key_drv.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
 I (.\Arm\gd32f30x.h)(0x61CC215C)
@@ -138,7 +140,7 @@ I (.\GD32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
 I (.\GD32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
 I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
 I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
-F (.\Driver\usb2Com_drv.c)(0x65A035E6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\usb2com_drv.o --omf_browse .\objects\usb2com_drv.crf --depend .\objects\usb2com_drv.d)
+F (.\Driver\usb2Com_drv.c)(0x65A24F23)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\usb2com_drv.o --omf_browse .\objects\usb2com_drv.crf --depend .\objects\usb2com_drv.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
 I (.\Arm\gd32f30x.h)(0x61CC215C)
 I (.\Arm\core_cm4.h)(0x61CC215C)
