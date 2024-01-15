@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "systick.h": "c",
+        "gd32f30x.h": "c",
+        "pwm_drv.h": "c"
+    }
+}

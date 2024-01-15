@@ -1,0 +1,9 @@
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Study\keil\UV4\ARM\ARMCC\Bin'
+Build target 'ARM32'
+compiling main.c...
+App\main.c(18): error:  #5: cannot open source input file "timing_dev.h": No such file or directory
+  #include "timing_dev.h"
+App\main.c: 0 warnings, 1 error
+".\Objects\ARM32.axf" - 1 Error(s), 0 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:01

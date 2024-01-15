@@ -1,0 +1,525 @@
+Dependencies for Project 'ARM32', Target 'ARM32': (DO NOT MODIFY !)
+CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
+F (.\App\main.c)(0x65A3E639)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
+I (.\Driver\led_drv.h)(0x64B8C2AA)
+I (.\Driver\key_drv.h)(0x65A2CEC2)
+I (.\Driver\systick.h)(0x65A2C34F)
+I (.\Driver\usb2com_drv.h)(0x65A251A8)
+I (.\Driver\delay.h)(0x64B35649)
+I (App\usb2com_app.h)(0x65A254B2)
+I (App\hmi_app.h)(0x65A2CC81)
+I (.\Driver\timing_drv.h)(0x65A3E603)
+F (.\App\usb2com_app.c)(0x65A298E4)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\usb2com_app.o --omf_browse .\objects\usb2com_app.crf --depend .\objects\usb2com_app.d)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (.\Arm\gd32f30x.h)(0x61CC215C)
+I (.\Arm\core_cm4.h)(0x61CC215C)
+I (.\Arm\core_cmInstr.h)(0x61CC215C)
+I (.\Arm\core_cmFunc.h)(0x61CC215C)
+I (.\Arm\core_cm4_simd.h)(0x61CC215C)
+I (.\Arm\system_gd32f30x.h)(0x61CC215C)
+I (.\GD32_Hal\gd32f30x_libopt.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_rcu.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_adc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_can.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_crc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_ctc.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_dac.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_dbg.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_dma.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_exti.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_fmc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_fwdgt.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_gpio.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_i2c.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_pmu.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_bkp.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_rtc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_sdio.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_spi.h)(0x62F9F4F9)
+I (.\GD32_Hal\Include\gd32f30x_timer.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_usart.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
+I (.\Driver\usb2Com_drv.h)(0x65A251A8)
+I (.\Driver\led_drv.h)(0x64B8C2AA)
+I (.\Driver\queue.h)(0x65A26BAD)
+F (.\App\hmi_app.c)(0x65A2CC81)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\hmi_app.o --omf_browse .\objects\hmi_app.crf --depend .\objects\hmi_app.d)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (.\Driver\led_drv.h)(0x64B8C2AA)
+I (.\Driver\key_drv.h)(0x65A2CEC2)
+F (.\Driver\key_drv.c)(0x65A2C969)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\key_drv.o --omf_browse .\objects\key_drv.crf --depend .\objects\key_drv.d)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (.\Arm\gd32f30x.h)(0x61CC215C)
+I (.\Arm\core_cm4.h)(0x61CC215C)
+I (.\Arm\core_cmInstr.h)(0x61CC215C)
+I (.\Arm\core_cmFunc.h)(0x61CC215C)
+I (.\Arm\core_cm4_simd.h)(0x61CC215C)
+I (.\Arm\system_gd32f30x.h)(0x61CC215C)
+I (.\GD32_Hal\gd32f30x_libopt.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_rcu.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_adc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_can.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_crc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_ctc.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_dac.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_dbg.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_dma.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_exti.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_fmc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_fwdgt.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_gpio.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_i2c.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_pmu.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_bkp.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_rtc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_sdio.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_spi.h)(0x62F9F4F9)
+I (.\GD32_Hal\Include\gd32f30x_timer.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_usart.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
+I (Driver\systick.h)(0x65A2C34F)
+F (.\Driver\gd32f30x_it.c)(0x64B8BCFC)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\gd32f30x_it.o --omf_browse .\objects\gd32f30x_it.crf --depend .\objects\gd32f30x_it.d)
+F (.\Driver\led_drv.c)(0x64B906DB)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\led_drv.o --omf_browse .\objects\led_drv.crf --depend .\objects\led_drv.d)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (.\Arm\gd32f30x.h)(0x61CC215C)
+I (.\Arm\core_cm4.h)(0x61CC215C)
+I (.\Arm\core_cmInstr.h)(0x61CC215C)
+I (.\Arm\core_cmFunc.h)(0x61CC215C)
+I (.\Arm\core_cm4_simd.h)(0x61CC215C)
+I (.\Arm\system_gd32f30x.h)(0x61CC215C)
+I (.\GD32_Hal\gd32f30x_libopt.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_rcu.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_adc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_can.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_crc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_ctc.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_dac.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_dbg.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_dma.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_exti.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_fmc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_fwdgt.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_gpio.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_i2c.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_pmu.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_bkp.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_rtc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_sdio.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_spi.h)(0x62F9F4F9)
+I (.\GD32_Hal\Include\gd32f30x_timer.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_usart.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
+F (.\Driver\systick.c)(0x65A2C174)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (.\Arm\gd32f30x.h)(0x61CC215C)
+I (.\Arm\core_cm4.h)(0x61CC215C)
+I (.\Arm\core_cmInstr.h)(0x61CC215C)
+I (.\Arm\core_cmFunc.h)(0x61CC215C)
+I (.\Arm\core_cm4_simd.h)(0x61CC215C)
+I (.\Arm\system_gd32f30x.h)(0x61CC215C)
+I (.\GD32_Hal\gd32f30x_libopt.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_rcu.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_adc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_can.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_crc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_ctc.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_dac.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_dbg.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_dma.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_exti.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_fmc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_fwdgt.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_gpio.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_i2c.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_pmu.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_bkp.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_rtc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_sdio.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_spi.h)(0x62F9F4F9)
+I (.\GD32_Hal\Include\gd32f30x_timer.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_usart.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
+F (.\Driver\usb2Com_drv.c)(0x65A251AB)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\usb2com_drv.o --omf_browse .\objects\usb2com_drv.crf --depend .\objects\usb2com_drv.d)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (.\Arm\gd32f30x.h)(0x61CC215C)
+I (.\Arm\core_cm4.h)(0x61CC215C)
+I (.\Arm\core_cmInstr.h)(0x61CC215C)
+I (.\Arm\core_cmFunc.h)(0x61CC215C)
+I (.\Arm\core_cm4_simd.h)(0x61CC215C)
+I (.\Arm\system_gd32f30x.h)(0x61CC215C)
+I (.\GD32_Hal\gd32f30x_libopt.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_rcu.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_adc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_can.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_crc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_ctc.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_dac.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_dbg.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_dma.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_exti.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_fmc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_fwdgt.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_gpio.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_i2c.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_pmu.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_bkp.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_rtc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_sdio.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_spi.h)(0x62F9F4F9)
+I (.\GD32_Hal\Include\gd32f30x_timer.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_usart.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdbool.h)(0x5EC775F6)
+I (Driver\led_drv.h)(0x64B8C2AA)
+F (..\5.3 实现printf打印通过串口输出\Driver\delay.c)(0x64B355D8)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (.\Arm\gd32f30x.h)(0x61CC215C)
+I (.\Arm\core_cm4.h)(0x61CC215C)
+I (.\Arm\core_cmInstr.h)(0x61CC215C)
+I (.\Arm\core_cmFunc.h)(0x61CC215C)
+I (.\Arm\core_cm4_simd.h)(0x61CC215C)
+I (.\Arm\system_gd32f30x.h)(0x61CC215C)
+I (.\GD32_Hal\gd32f30x_libopt.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_rcu.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_adc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_can.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_crc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_ctc.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_dac.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_dbg.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_dma.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_exti.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_fmc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_fwdgt.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_gpio.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_i2c.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_pmu.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_bkp.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_rtc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_sdio.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_spi.h)(0x62F9F4F9)
+I (.\GD32_Hal\Include\gd32f30x_timer.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_usart.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
+F (.\Driver\queue.c)(0x65A26BAE)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\queue.o --omf_browse .\objects\queue.crf --depend .\objects\queue.d)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (.\Arm\gd32f30x.h)(0x61CC215C)
+I (.\Arm\core_cm4.h)(0x61CC215C)
+I (.\Arm\core_cmInstr.h)(0x61CC215C)
+I (.\Arm\core_cmFunc.h)(0x61CC215C)
+I (.\Arm\core_cm4_simd.h)(0x61CC215C)
+I (.\Arm\system_gd32f30x.h)(0x61CC215C)
+I (.\GD32_Hal\gd32f30x_libopt.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_rcu.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_adc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_can.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_crc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_ctc.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_dac.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_dbg.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_dma.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_exti.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_fmc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_fwdgt.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_gpio.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_i2c.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_pmu.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_bkp.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_rtc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_sdio.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_spi.h)(0x62F9F4F9)
+I (.\GD32_Hal\Include\gd32f30x_timer.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_usart.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
+I (Driver\queue.h)(0x65A26BAD)
+F (.\Driver\timing_drv.c)(0x65A3E8B2)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\timing_drv.o --omf_browse .\objects\timing_drv.crf --depend .\objects\timing_drv.d)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (.\Arm\gd32f30x.h)(0x61CC215C)
+I (.\Arm\core_cm4.h)(0x61CC215C)
+I (.\Arm\core_cmInstr.h)(0x61CC215C)
+I (.\Arm\core_cmFunc.h)(0x61CC215C)
+I (.\Arm\core_cm4_simd.h)(0x61CC215C)
+I (.\Arm\system_gd32f30x.h)(0x61CC215C)
+I (.\GD32_Hal\gd32f30x_libopt.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_rcu.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_adc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_can.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_crc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_ctc.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_dac.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_dbg.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_dma.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_exti.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_fmc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_fwdgt.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_gpio.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_i2c.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_pmu.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_bkp.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_rtc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_sdio.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_spi.h)(0x62F9F4F9)
+I (.\GD32_Hal\Include\gd32f30x_timer.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_usart.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
+I (Driver\led_drv.h)(0x64B8C2AA)
+F (.\GD32_Hal\Source\gd32f30x_gpio.c)(0x61CC215B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\gd32f30x_gpio.o --omf_browse .\objects\gd32f30x_gpio.crf --depend .\objects\gd32f30x_gpio.d)
+I (.\GD32_Hal\Include\gd32f30x_gpio.h)(0x6392DB4B)
+I (.\Arm\gd32f30x.h)(0x61CC215C)
+I (.\Arm\core_cm4.h)(0x61CC215C)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (.\Arm\core_cmInstr.h)(0x61CC215C)
+I (.\Arm\core_cmFunc.h)(0x61CC215C)
+I (.\Arm\core_cm4_simd.h)(0x61CC215C)
+I (.\Arm\system_gd32f30x.h)(0x61CC215C)
+I (.\GD32_Hal\gd32f30x_libopt.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_rcu.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_adc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_can.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_crc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_ctc.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_dac.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_dbg.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_dma.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_exti.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_fmc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_fwdgt.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_i2c.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_pmu.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_bkp.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_rtc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_sdio.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_spi.h)(0x62F9F4F9)
+I (.\GD32_Hal\Include\gd32f30x_timer.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_usart.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
+F (.\GD32_Hal\Source\gd32f30x_rcu.c)(0x62A6E3C7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\gd32f30x_rcu.o --omf_browse .\objects\gd32f30x_rcu.crf --depend .\objects\gd32f30x_rcu.d)
+I (.\GD32_Hal\Include\gd32f30x_rcu.h)(0x62A6E3C7)
+I (.\Arm\gd32f30x.h)(0x61CC215C)
+I (.\Arm\core_cm4.h)(0x61CC215C)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (.\Arm\core_cmInstr.h)(0x61CC215C)
+I (.\Arm\core_cmFunc.h)(0x61CC215C)
+I (.\Arm\core_cm4_simd.h)(0x61CC215C)
+I (.\Arm\system_gd32f30x.h)(0x61CC215C)
+I (.\GD32_Hal\gd32f30x_libopt.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_adc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_can.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_crc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_ctc.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_dac.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_dbg.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_dma.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_exti.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_fmc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_fwdgt.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_gpio.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_i2c.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_pmu.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_bkp.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_rtc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_sdio.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_spi.h)(0x62F9F4F9)
+I (.\GD32_Hal\Include\gd32f30x_timer.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_usart.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
+F (.\GD32_Hal\Source\gd32f30x_exti.c)(0x63ABB35A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\gd32f30x_exti.o --omf_browse .\objects\gd32f30x_exti.crf --depend .\objects\gd32f30x_exti.d)
+I (.\GD32_Hal\Include\gd32f30x_exti.h)(0x63ABB35A)
+I (.\Arm\gd32f30x.h)(0x61CC215C)
+I (.\Arm\core_cm4.h)(0x61CC215C)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (.\Arm\core_cmInstr.h)(0x61CC215C)
+I (.\Arm\core_cmFunc.h)(0x61CC215C)
+I (.\Arm\core_cm4_simd.h)(0x61CC215C)
+I (.\Arm\system_gd32f30x.h)(0x61CC215C)
+I (.\GD32_Hal\gd32f30x_libopt.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_rcu.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_adc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_can.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_crc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_ctc.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_dac.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_dbg.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_dma.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_fmc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_fwdgt.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_gpio.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_i2c.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_pmu.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_bkp.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_rtc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_sdio.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_spi.h)(0x62F9F4F9)
+I (.\GD32_Hal\Include\gd32f30x_timer.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_usart.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
+F (.\GD32_Hal\Source\gd32f30x_misc.c)(0x64B8B969)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\gd32f30x_misc.o --omf_browse .\objects\gd32f30x_misc.crf --depend .\objects\gd32f30x_misc.d)
+I (.\GD32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
+I (.\Arm\gd32f30x.h)(0x61CC215C)
+I (.\Arm\core_cm4.h)(0x61CC215C)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (.\Arm\core_cmInstr.h)(0x61CC215C)
+I (.\Arm\core_cmFunc.h)(0x61CC215C)
+I (.\Arm\core_cm4_simd.h)(0x61CC215C)
+I (.\Arm\system_gd32f30x.h)(0x61CC215C)
+I (.\GD32_Hal\gd32f30x_libopt.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_rcu.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_adc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_can.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_crc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_ctc.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_dac.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_dbg.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_dma.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_exti.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_fmc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_fwdgt.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_gpio.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_i2c.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_pmu.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_bkp.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_rtc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_sdio.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_spi.h)(0x62F9F4F9)
+I (.\GD32_Hal\Include\gd32f30x_timer.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_usart.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
+F (.\GD32_Hal\Source\gd32f30x_usart.c)(0x63ABB35A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\gd32f30x_usart.o --omf_browse .\objects\gd32f30x_usart.crf --depend .\objects\gd32f30x_usart.d)
+I (.\GD32_Hal\Include\gd32f30x_usart.h)(0x63ABB35A)
+I (.\Arm\gd32f30x.h)(0x61CC215C)
+I (.\Arm\core_cm4.h)(0x61CC215C)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (.\Arm\core_cmInstr.h)(0x61CC215C)
+I (.\Arm\core_cmFunc.h)(0x61CC215C)
+I (.\Arm\core_cm4_simd.h)(0x61CC215C)
+I (.\Arm\system_gd32f30x.h)(0x61CC215C)
+I (.\GD32_Hal\gd32f30x_libopt.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_rcu.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_adc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_can.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_crc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_ctc.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_dac.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_dbg.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_dma.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_exti.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_fmc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_fwdgt.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_gpio.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_i2c.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_pmu.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_bkp.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_rtc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_sdio.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_spi.h)(0x62F9F4F9)
+I (.\GD32_Hal\Include\gd32f30x_timer.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
+F (.\GD32_Hal\Source\gd32f30x_timer.c)(0x61CC215B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\gd32f30x_timer.o --omf_browse .\objects\gd32f30x_timer.crf --depend .\objects\gd32f30x_timer.d)
+I (.\GD32_Hal\Include\gd32f30x_timer.h)(0x61CC215C)
+I (.\Arm\gd32f30x.h)(0x61CC215C)
+I (.\Arm\core_cm4.h)(0x61CC215C)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (.\Arm\core_cmInstr.h)(0x61CC215C)
+I (.\Arm\core_cmFunc.h)(0x61CC215C)
+I (.\Arm\core_cm4_simd.h)(0x61CC215C)
+I (.\Arm\system_gd32f30x.h)(0x61CC215C)
+I (.\GD32_Hal\gd32f30x_libopt.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_rcu.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_adc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_can.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_crc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_ctc.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_dac.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_dbg.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_dma.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_exti.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_fmc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_fwdgt.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_gpio.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_i2c.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_pmu.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_bkp.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_rtc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_sdio.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_spi.h)(0x62F9F4F9)
+I (.\GD32_Hal\Include\gd32f30x_usart.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
+F (.\Arm\startup_gd32f30x_hd.s)(0x64B35101)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1"-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 531" --pd "GD32F30X_HD SETA 1"--list .\listings\startup_gd32f30x_hd.lst --xref -o .\objects\startup_gd32f30x_hd.o --depend .\objects\startup_gd32f30x_hd.d)
+F (.\Arm\system_gd32f30x.c)(0x62A6E3C7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\system_gd32f30x.o --omf_browse .\objects\system_gd32f30x.crf --depend .\objects\system_gd32f30x.d)
+I (Arm\gd32f30x.h)(0x61CC215C)
+I (Arm\core_cm4.h)(0x61CC215C)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
+I (.\Arm\core_cmInstr.h)(0x61CC215C)
+I (.\Arm\core_cmFunc.h)(0x61CC215C)
+I (.\Arm\core_cm4_simd.h)(0x61CC215C)
+I (Arm\system_gd32f30x.h)(0x61CC215C)
+I (.\GD32_Hal\gd32f30x_libopt.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_rcu.h)(0x62A6E3C7)
+I (.\Arm\gd32f30x.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_adc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_can.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_crc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_ctc.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_dac.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_dbg.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_dma.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_exti.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_fmc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_fwdgt.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_gpio.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_i2c.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_pmu.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_bkp.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_rtc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_sdio.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_spi.h)(0x62F9F4F9)
+I (.\GD32_Hal\Include\gd32f30x_timer.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_usart.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
