@@ -1,6 +1,6 @@
 Dependencies for Project 'ARM32', Target 'ARM32': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::ARMCC
-F (.\App\main.c)(0x65A2CD87)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\App\main.c)(0x65A2D02D)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdio.h)(0x5EC775FC)
 I (.\Driver\led_drv.h)(0x64B8C2AA)

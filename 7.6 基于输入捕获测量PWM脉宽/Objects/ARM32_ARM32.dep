@@ -327,7 +327,7 @@ I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
 I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
 I (Driver\led_drv.h)(0x64B8C2AA)
 I (Driver\delay.h)(0x64B35649)
-F (.\Driver\capture_drv.c)(0x65A51614)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\capture_drv.o --omf_browse .\objects\capture_drv.crf --depend .\objects\capture_drv.d)
+F (.\Driver\capture_drv.c)(0x65A51658)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="531" -DGD32F30X_HD-o .\objects\capture_drv.o --omf_browse .\objects\capture_drv.crf --depend .\objects\capture_drv.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5EC775FC)
 I (.\Arm\gd32f30x.h)(0x61CC215C)
 I (.\Arm\core_cm4.h)(0x61CC215C)
