@@ -1,0 +1,107 @@
+[33mcommit 2e5d5a2d0c81670b550752e3e1dd38ea395485f0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: zdh <2579941211@qq.com>
+Date:   Thu Jan 18 20:03:58 2024 +0800
+
+    编码乱了
+
+[33mcommit 61390a1f86be77cb1dad0b51c5b39c72ebe92421[m[33m ([m[1;31mARM32/master[m[33m)[m
+Author: zdh <2579941211@qq.com>
+Date:   Thu Jan 18 19:56:01 2024 +0800
+
+    ADC单次转换模式
+
+[33mcommit 74457ba288df275729d83efda0b36c4f69b12456[m
+Author: zdh <2579941211@qq.com>
+Date:   Thu Jan 18 15:22:48 2024 +0800
+
+    add *
+
+[33mcommit 66ccb26ada05dc28c75ce9c1eb6cab5d11a8abf6[m
+Author: zdh <2579941211@qq.com>
+Date:   Thu Jan 18 15:22:22 2024 +0800
+
+    独立看门狗
+
+[33mcommit 8ef9d6bb19db75b6899d625ca26b3c31302cfbc4[m
+Author: zdh <2579941211@qq.com>
+Date:   Thu Jan 18 14:37:45 2024 +0800
+
+    函数指针的注意事项跟RTC时钟驱动
+
+[33mcommit e40b343b9113d0fccc6539600fef034b29c6b3fa[m
+Author: zdh <2579941211@qq.com>
+Date:   Tue Jan 16 18:58:27 2024 +0800
+
+    test
+
+[33mcommit 3a43659baffb91837a539bc92d69038150108b12[m
+Author: zdh <2579941211@qq.com>
+Date:   Mon Jan 15 23:15:48 2024 +0800
+
+    不知道改了什么，可能会有版本问题
+
+[33mcommit e9678bb7caf77a4a8ad06c54cf7b0807171a78bf[m
+Author: zdh <2579941211@qq.com>
+Date:   Mon Jan 15 19:27:43 2024 +0800
+
+    定时器完结,需要进阶的话可以先把外设学完后再去结合开发手册，进行开发进阶
+
+[33mcommit 54cc5e207b6a304143e8d2cbb45073d2c3fe8e20[m
+Author: zdh <2579941211@qq.com>
+Date:   Mon Jan 15 17:22:46 2024 +0800
+
+    补齐文件
+
+[33mcommit 449b2b21d9af08796a828ca66006020b9dc9b4eb[m
+Author: zdh <2579941211@qq.com>
+Date:   Mon Jan 15 17:22:03 2024 +0800
+
+    干就完了
+
+[33mcommit 5bac948c6df55657db0b5e442fb4a2516d0d771b[m
+Author: zdh <2579941211@qq.com>
+Date:   Sun Jan 14 02:04:36 2024 +0800
+
+    找半天bug发现驱动文件放成老版本的了
+
+[33mcommit 87db5b50be05446ae67d3f954c2c9669aa76cd98[m
+Author: zdh <2579941211@qq.com>
+Date:   Sat Jan 13 23:56:46 2024 +0800
+
+    DMA空闲中断，cusart不打印
+
+[33mcommit f201bcc868ed77a5efc18379f6a6682f543c839c[m
+Author: zdh <2579941211@qq.com>
+Date:   Sat Jan 13 22:11:04 2024 +0800
+
+    环形队列的实现
+
+[33mcommit f644bd9255c27236dfa9b4f8082e172ccf91a370[m
+Author: zdh <2579941211@qq.com>
+Date:   Sat Jan 13 17:27:05 2024 +0800
+
+    这两代是一个迭代关系，把应用层跟驱动层分开了
+
+[33mcommit a1e387a92868d3ef2f297aafe56bb6d88bafad27[m
+Author: zdh <2579941211@qq.com>
+Date:   Fri Jan 12 02:47:33 2024 +0800
+
+    笔记4
+
+[33mcommit d70a94e873f8a5c354b4e7401a78f1c5d0bc866d[m
+Author: zdh <2579941211@qq.com>
+Date:   Fri Jan 12 02:46:20 2024 +0800
+
+    笔记4
+
+[33mcommit 17f7925527feefaaf4303e2d0ab1e8804251b1fb[m
+Author: zdh <2579941211@qq.com>
+Date:   Thu Jan 11 21:52:32 2024 +0800
+
+    完结
+
+[33mcommit f57a4e04045fb2985ac7108a268fffcc07bc0af1[m
+Author: zdh <2579941211@qq.com>
+Date:   Thu Jan 11 20:36:17 2024 +0800
+
+    笔记2

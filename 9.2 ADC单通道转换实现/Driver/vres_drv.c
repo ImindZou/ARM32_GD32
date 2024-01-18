@@ -2,7 +2,7 @@
  * @Author: zdh 2579941211@qq.com
  * @Date: 2024-01-18 16:19:57
  * @LastEditors: zdh 2579941211@qq.com
- * @LastEditTime: 2024-01-18 20:03:30
+ * @LastEditTime: 2024-01-18 20:09:31
  * @FilePath: \9.2 ADC???????\Driver\vres_drv.c
  * @Description: ??????,???`customMade`, ??koroFileHeader???? ????: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -26,7 +26,7 @@ static void AdcInit(void)
     /*设置独立模式*/ 
     adc_mode_config(ADC_MODE_FREE);
     /*设置单次模式*/ 
-    adc_special_function_config(ADC0,ADC_CONTINUOUS_MODE,DISABLE);
+    adc_special_function_config(ADC0,ADC_CONTINUOUS_MODE,ENABLE);   //continue convert mode
     /*设置数据对齐*/ 
     adc_data_alignment_config(ADC0,ADC_DATAALIGN_RIGHT);
     /*设置转换通道个数*/
@@ -42,6 +42,8 @@ static void AdcInit(void)
     /*内部校准*/
     DelayNus(50);
     adc_calibration_enable(ADC0);
+    adc_software_trigger_enable(ADC0,ADC_REGULAR_CHANNEL);
+
 }
 
 /**
@@ -60,9 +62,9 @@ void VresDrvInit(void)
 
 static uint16_t GetAdcVal(void)
 {
-    adc_software_trigger_enable(ADC0,ADC_REGULAR_CHANNEL);
-    while (!adc_flag_get(ADC0,ADC_FLAG_EOC));
-    return adc_regular_data_read(ADC0);
+    // adc_software_trigger_enable(ADC0,ADC_REGULAR_CHANNEL);
+    while (!adc_flag_get(ADC0,ADC_FLAG_EOC));    //连续转换模式下无需每次查询跟触发
+    return adc_regular_data_read(ADC0);     //但是加上查询第一次读不是为0
 }
 
 void VresDrvTest(void)
