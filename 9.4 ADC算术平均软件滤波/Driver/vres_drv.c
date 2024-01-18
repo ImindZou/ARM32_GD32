@@ -2,7 +2,7 @@
  * @Author: zdh 2579941211@qq.com
  * @Date: 2024-01-18 16:19:57
  * @LastEditors: zdh 2579941211@qq.com
- * @LastEditTime: 2024-01-18 21:15:04
+ * @LastEditTime: 2024-01-18 21:56:35
  * @FilePath: \9.2 ADC???????\Driver\vres_drv.c
  * @Description: ??????,???`customMade`, ??koroFileHeader???? ????: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -10,12 +10,13 @@
 #include "gd32f30x.h"
 #include "delay.h"
 #include <stdio.h>
+#include <string.h>
 
 static void GpioInit(void)
 {
     rcu_periph_clock_enable(RCU_GPIOC);
     gpio_init(GPIOC,GPIO_MODE_AIN,GPIO_OSPEED_10MHZ,GPIO_PIN_2);
-    gpio_init(GPIOC,GPIO_MODE_AIN,GPIO_OSPEED_10MHZ,GPIO_PIN_3);
+    // gpio_init(GPIOC,GPIO_MODE_AIN,GPIO_OSPEED_10MHZ,GPIO_PIN_3);
 }
 
 static void AdcInit(void)
@@ -33,10 +34,10 @@ static void AdcInit(void)
     /*设置数据对齐*/ 
     adc_data_alignment_config(ADC0,ADC_DATAALIGN_RIGHT);
     /*设置转换通道个数*/
-    adc_channel_length_config(ADC0,ADC_REGULAR_CHANNEL,2);
+    adc_channel_length_config(ADC0,ADC_REGULAR_CHANNEL,1);
     /*设置转换哪一个通道以及所处序列位置*/ 
     adc_regular_channel_config(ADC0,0,ADC_CHANNEL_12,ADC_SAMPLETIME_239POINT5); //PC2????12?????????0????239.5???
-    adc_regular_channel_config(ADC0,1,ADC_CHANNEL_13,ADC_SAMPLETIME_239POINT5); //PC2????12?????????0????239.5???
+    // adc_regular_channel_config(ADC0,1,ADC_CHANNEL_13,ADC_SAMPLETIME_239POINT5); //PC2????12?????????0????239.5???
     /*设置选择哪一个外部触发源*/
     adc_external_trigger_source_config(ADC0,ADC_REGULAR_CHANNEL,ADC0_1_2_EXTTRIG_REGULAR_NONE);
     /*使能外部触发*/
@@ -53,6 +54,8 @@ static void AdcInit(void)
 }
 
 #define ADC0_RDATA_ADDR     (ADC0 + 0x4C);
+#define MAX_BUF_SIZE        10
+
 static uint16_t g_adcVal[2];
 
 static void DmaInit(void)
@@ -80,7 +83,7 @@ static void DmaInit(void)
 	/* 配置目的数据传输位宽；*/ 
 	dmaStruct.memory_width = DMA_MEMORY_WIDTH_16BIT;
 	/* 配置数据传输最大次数；*/ 
-	dmaStruct.number = 2;
+	dmaStruct.number = MAX_BUF_SIZE;
 	/* 配置DMA通道优先级；*/ 
 	dmaStruct.priority = DMA_PRIORITY_HIGH;
 	dma_init(DMA0,DMA_CH0, &dmaStruct);
@@ -104,9 +107,26 @@ void VresDrvInit(void)
     DmaInit();
 }
 
+uint16_t ArithAvgFltr(uint16_t *arr,uint32_t len)
+{
+    uint32_t sum = 0;
+    for(uint32_t i = 0; i < len; i++)
+    {
+        sum += arr[i];
+    }
+    return (uint16_t)(sum / len);
+}
+
 void VresDrvTest(void)
 {
-    printf("CH12 AdcVal1 = %d.\n", g_adcVal[0]);
-    printf("CH13 AdcVal1 = %d.\n", g_adcVal[1]);
+    uint16_t buf[MAX_BUF_SIZE];
+    memcpy(buf,g_adcVal,sizeof(uint16_t) * MAX_BUF_SIZE);       //拷贝到要注意拷贝多少到缓存，刚刚没写他就瞎几把拷贝了，两个0
+    for(uint8_t i = 0;i < MAX_BUF_SIZE;i++)
+    {
+        printf("AdcVal[%d]  =  %d.\n",i, buf[i]);
+    }
+
+    uint16_t res = ArithAvgFltr(buf, MAX_BUF_SIZE);
+    printf("res =  %d.\n",res);
     DelayNms(1000);
 }

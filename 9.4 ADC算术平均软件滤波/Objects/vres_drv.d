@@ -34,3 +34,4 @@
 .\objects\vres_drv.o: .\GD32_Hal\Include\gd32f30x_exmc.h
 .\objects\vres_drv.o: Driver\delay.h
 .\objects\vres_drv.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\vres_drv.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\string.h
