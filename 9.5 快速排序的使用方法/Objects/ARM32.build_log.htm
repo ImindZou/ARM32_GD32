@@ -21,17 +21,26 @@ Target DLL:      Segger\JL2CM3.dll V2.99.38.0
 Dialog DLL:      TCM.DLL V1.48.0.0
  
 <h2>Project:</h2>
-d:\Study\ARM32单片机实战课程\06自己动手\9.4 ADC算术平均软件滤波\ARM32.uvprojx
+D:\Study\ARM32单片机实战课程\06自己动手\9.5 快速排序的使用方法\ARM32.uvprojx
 Project File Date:  01/18/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Study\keil\UV4\ARM\ARMCC\Bin'
 Build target 'ARM32'
-compiling vres_drv.c...
+compiling main.c...
+App\main.c(140): warning:  #550-D: variable "num"  was set but never used
+  	uint16_t num[10] = {5,7,8,1,26,52,9,3,14,56};
+App\main.c(141): warning:  #177-D: variable "sz"  was declared but never referenced
+  	uint16_t sz = sizeof(num) / sizeof(num[0]);
+App\main.c(37): warning:  #177-D: function "TaskHandler"  was declared but never referenced
+  static void TaskHandler(void)
+App\main.c(82): warning:  #177-D: function "AppInit"  was declared but never referenced
+  static void AppInit(void)
+App\main.c: 4 warnings, 0 errors
 linking...
-Program Size: Code=5700 RO-data=336 RW-data=136 ZI-data=1024  
+Program Size: Code=5840 RO-data=376 RW-data=136 ZI-data=1024  
 FromELF: creating hex file...
-".\Objects\ARM32.axf" - 0 Error(s), 0 Warning(s).
+".\Objects\ARM32.axf" - 0 Error(s), 4 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -44,7 +53,7 @@ Package Vendor: GigaDevice
   D:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

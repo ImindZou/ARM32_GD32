@@ -9,3 +9,4 @@
 .\objects\main.o: App\usb2com_app.h
 .\objects\main.o: App\hmi_app.h
 .\objects\main.o: .\Driver\vres_drv.h
+.\objects\main.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdlib.h
