@@ -1,6 +1,14 @@
 {
     "files.associations": {
         "systick.h": "c",
-        "vres_drv.h": "c"
+        "vres_drv.h": "c",
+        "deque": "c",
+        "queue": "c",
+        "string": "c",
+        "vector": "c",
+        "array": "c",
+        "string_view": "c",
+        "initializer_list": "c",
+        "utility": "c"
     }
 }
