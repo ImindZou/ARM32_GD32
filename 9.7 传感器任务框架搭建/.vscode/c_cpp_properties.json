@@ -10,9 +10,7 @@
                 "d:\\Study\\ARM32单片机实战课程\\06自己动手\\9.7 传感器任务框架搭建\\GD32_Hal\\Include",
                 "D:\\Study\\keil\\UV4\\ARM\\ARMCC\\include",
                 "D:\\Study\\keil\\UV4\\ARM\\ARMCC\\include\\rw",
-                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\5.3 实现printf打印通过串口输出\\Driver",
-                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\9.7 传感器任务框架搭建\\GD32_Hal\\Source",
-                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\6.2 裸机程序任务调度框架实现\\GD32_Hal\\Source"
+                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\9.7 传感器任务框架搭建\\GD32_Hal\\Source"
             ],
             "defines": [
                 "__CC_ARM",

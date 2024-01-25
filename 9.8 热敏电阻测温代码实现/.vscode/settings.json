@@ -1,6 +1,0 @@
-{
-    "files.associations": {
-        "systick.h": "c",
-        "vres_drv.h": "c"
-    }
-}
