@@ -1,9 +1,9 @@
 .\objects\ntc_drv.o: Driver\ntc_drv.c
-.\objects\ntc_drv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\ntc_drv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\ntc_drv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\ntc_drv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\ntc_drv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\ntc_drv.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\ntc_drv.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\string.h
+.\objects\ntc_drv.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\ntc_drv.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\ntc_drv.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\ntc_drv.o: .\Arm\gd32f30x.h
 .\objects\ntc_drv.o: .\Arm\core_cm4.h
 .\objects\ntc_drv.o: .\Arm\core_cmInstr.h

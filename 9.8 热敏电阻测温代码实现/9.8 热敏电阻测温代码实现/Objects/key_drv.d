@@ -1,5 +1,5 @@
 .\objects\key_drv.o: Driver\key_drv.c
-.\objects\key_drv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\key_drv.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\key_drv.o: .\Arm\gd32f30x.h
 .\objects\key_drv.o: .\Arm\core_cm4.h
 .\objects\key_drv.o: .\Arm\core_cmInstr.h

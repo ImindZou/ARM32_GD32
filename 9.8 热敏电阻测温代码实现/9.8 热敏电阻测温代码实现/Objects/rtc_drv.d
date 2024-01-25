@@ -1,6 +1,6 @@
 .\objects\rtc_drv.o: Driver\rtc_drv.c
-.\objects\rtc_drv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\rtc_drv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
+.\objects\rtc_drv.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\rtc_drv.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\time.h
 .\objects\rtc_drv.o: .\Arm\gd32f30x.h
 .\objects\rtc_drv.o: .\Arm\core_cm4.h
 .\objects\rtc_drv.o: .\Arm\core_cmInstr.h

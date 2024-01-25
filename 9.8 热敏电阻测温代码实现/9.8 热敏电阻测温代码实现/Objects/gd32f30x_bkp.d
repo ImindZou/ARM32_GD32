@@ -2,7 +2,7 @@
 .\objects\gd32f30x_bkp.o: .\GD32_Hal\Include\gd32f30x_bkp.h
 .\objects\gd32f30x_bkp.o: .\Arm\gd32f30x.h
 .\objects\gd32f30x_bkp.o: .\Arm\core_cm4.h
-.\objects\gd32f30x_bkp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\gd32f30x_bkp.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\gd32f30x_bkp.o: .\Arm\core_cmInstr.h
 .\objects\gd32f30x_bkp.o: .\Arm\core_cmFunc.h
 .\objects\gd32f30x_bkp.o: .\Arm\core_cm4_simd.h

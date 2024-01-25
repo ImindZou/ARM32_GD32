@@ -2,7 +2,7 @@
 .\objects\gd32f30x_rtc.o: .\GD32_Hal\Include\gd32f30x_rtc.h
 .\objects\gd32f30x_rtc.o: .\Arm\gd32f30x.h
 .\objects\gd32f30x_rtc.o: .\Arm\core_cm4.h
-.\objects\gd32f30x_rtc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\gd32f30x_rtc.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\gd32f30x_rtc.o: .\Arm\core_cmInstr.h
 .\objects\gd32f30x_rtc.o: .\Arm\core_cmFunc.h
 .\objects\gd32f30x_rtc.o: .\Arm\core_cm4_simd.h

@@ -1,7 +1,7 @@
 .\objects\system_gd32f30x.o: Arm\system_gd32f30x.c
 .\objects\system_gd32f30x.o: Arm\gd32f30x.h
 .\objects\system_gd32f30x.o: Arm\core_cm4.h
-.\objects\system_gd32f30x.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\system_gd32f30x.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\system_gd32f30x.o: .\Arm\core_cmInstr.h
 .\objects\system_gd32f30x.o: .\Arm\core_cmFunc.h
 .\objects\system_gd32f30x.o: .\Arm\core_cm4_simd.h
