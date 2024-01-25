@@ -1,22 +1,15 @@
-/*	
- * @Author: zdh 2579941211@qq.com
- * @Date: 2024-01-14 00:34:45
- * @LastEditors: zdh 2579941211@qq.com
- * @LastEditTime: 2024-01-18 20:30:47
- * @FilePath: \6.2 ???????????????????\App\main.c
- * @Description: ???????????,??????`customMade`, ??koroFileHeader?????? ????????: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
 #include <stdint.h>
 #include <stdio.h>
 #include "led_drv.h"
 #include "key_drv.h"
 #include "systick.h"
 #include "usb2com_drv.h"
-#include "sensor_drv.h"
+#include "rtc_drv.h"
 #include "delay.h"
+#include "sensor_drv.h"
 #include "usb2com_app.h"
 #include "hmi_app.h"
-#include "sensor_app.h" 
+#include "sensor_app.h"
 
 typedef struct
 {
@@ -28,8 +21,8 @@ typedef struct
 
 static TaskComps_t g_taskComps[] = 
 {
-	{0, 500,   500,   HmiTask},
-	{0,1000, 1000, SensorTask},
+	{0, 500,  500,   HmiTask},
+	{0, 1000, 1000,  SensorTask},
 	/* 添加业务功能模块 */
 };
 
@@ -73,18 +66,19 @@ static void TaskScheduleCb(void)
 
 static void DrvInit(void)
 {
-	SystickInit();
+	DelayInit();
 	LedDrvInit();
 	KeyDrvInit();
-	DelayInit();
 	Usb2ComDrvInit();
+	RtcDrvInit();
 	SensorDrvInit();
+	SystickInit();
 }
 static void AppInit(void)
 {
-	Usb2ComAppInit();
 	TaskScheduleCbReg(TaskScheduleCb);
 }
+
 
 int main(void)
 {	
@@ -96,4 +90,3 @@ int main(void)
 		TaskHandler();
 	}
 }
-

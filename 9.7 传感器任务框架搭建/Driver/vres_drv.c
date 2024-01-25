@@ -1,132 +1,180 @@
-/*
- * @Author: zdh 2579941211@qq.com
- * @Date: 2024-01-18 16:19:57
- * @LastEditors: zdh 2579941211@qq.com
- * @LastEditTime: 2024-01-18 21:56:35
- * @FilePath: \9.2 ADC???????\Driver\vres_drv.c
- * @Description: ??????,???`customMade`, ??koroFileHeader???? ????: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
 #include <stdint.h>
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include "gd32f30x.h"
 #include "delay.h"
-#include <stdio.h>
-#include <string.h>
+
+
+#define ADC0_RDATA_ADDR    (ADC0 + 0x4C)
+
+#define MAX_BUF_SIZE        10
+static uint16_t g_adcVal[MAX_BUF_SIZE];
 
 static void GpioInit(void)
 {
-    rcu_periph_clock_enable(RCU_GPIOC);
-    gpio_init(GPIOC,GPIO_MODE_AIN,GPIO_OSPEED_10MHZ,GPIO_PIN_2);
-    // gpio_init(GPIOC,GPIO_MODE_AIN,GPIO_OSPEED_10MHZ,GPIO_PIN_3);
+	rcu_periph_clock_enable(RCU_GPIOC);
+	gpio_init(GPIOC, GPIO_MODE_AIN, GPIO_OSPEED_10MHZ, GPIO_PIN_2);
 }
 
 static void AdcInit(void)
 {
-    /*ä½¿èƒ½æ—¶é’Ÿ*/
-    rcu_periph_clock_enable(RCU_ADC0);
-    /*è®¾ç½®åˆ†é¢‘ç³»æ•°*/
-    rcu_adc_clock_config(RCU_CKADC_CKAPB2_DIV6);    //8???120MHz / 6 = 20 MHz
-    /*è®¾ç½®ç‹¬ç«‹æ¨¡å¼*/ 
-    adc_mode_config(ADC_MODE_FREE);
-    /*è®¾ç½®è¿ç»­æ¨¡å¼*/ 
-    adc_special_function_config(ADC0,ADC_CONTINUOUS_MODE,ENABLE);   //continue convert mode
-     /*è®¾ç½®æ‰«ææ¨¡å¼*/ 
-    adc_special_function_config(ADC0,ADC_SCAN_MODE,ENABLE);   //Scan Mode
-    /*è®¾ç½®æ•°æ®å¯¹é½*/ 
-    adc_data_alignment_config(ADC0,ADC_DATAALIGN_RIGHT);
-    /*è®¾ç½®è½¬æ¢é€šé“ä¸ªæ•°*/
-    adc_channel_length_config(ADC0,ADC_REGULAR_CHANNEL,1);
-    /*è®¾ç½®è½¬æ¢å“ªä¸€ä¸ªé€šé“ä»¥åŠæ‰€å¤„åºåˆ—ä½ç½®*/ 
-    adc_regular_channel_config(ADC0,0,ADC_CHANNEL_12,ADC_SAMPLETIME_239POINT5); //PC2????12?????????0????239.5???
-    // adc_regular_channel_config(ADC0,1,ADC_CHANNEL_13,ADC_SAMPLETIME_239POINT5); //PC2????12?????????0????239.5???
-    /*è®¾ç½®é€‰æ‹©å“ªä¸€ä¸ªå¤–éƒ¨è§¦å‘æº*/
-    adc_external_trigger_source_config(ADC0,ADC_REGULAR_CHANNEL,ADC0_1_2_EXTTRIG_REGULAR_NONE);
-    /*ä½¿èƒ½å¤–éƒ¨è§¦å‘*/
-    adc_external_trigger_config(ADC0,ADC_REGULAR_CHANNEL,ENABLE);
-    /*ä½¿èƒ½ADCçš„DMAåŠŸèƒ½*/
-    adc_dma_mode_enable(ADC0);
-    /*ä½¿èƒ½ADC*/
-    adc_enable(ADC0);
-    /*å†…éƒ¨æ ¡å‡†*/
-    DelayNus(50);
-    adc_calibration_enable(ADC0);
-    adc_software_trigger_enable(ADC0,ADC_REGULAR_CHANNEL);
-
+	/* Ê¹ÄÜÊ±ÖÓ£»*/
+	rcu_periph_clock_enable(RCU_ADC0);
+	/* ÉèÖÃ·ÖÆµÏµÊı£»*/
+	rcu_adc_clock_config(RCU_CKADC_CKAPB2_DIV6);  // 6·ÖÆµ£¬120MHz / 6 = 20MHz
+	/* ÉèÖÃ¶ÀÁ¢Ä£Ê½£»*/
+	adc_mode_config(ADC_MODE_FREE);
+	/* ÉèÖÃÁ¬ĞøÄ£Ê½£»*/ 
+	adc_special_function_config(ADC0, ADC_CONTINUOUS_MODE, ENABLE);
+	/* ÉèÖÃÉ¨ÃèÄ£Ê½£»*/ 
+	adc_special_function_config(ADC0, ADC_SCAN_MODE, ENABLE);
+	/* ÉèÖÃÊı¾İ¶ÔÆë£»*/
+	adc_data_alignment_config(ADC0, ADC_DATAALIGN_RIGHT);
+	/* ÉèÖÃ×ª»»Í¨µÀ¸öÊı£»*/ 
+	adc_channel_length_config(ADC0, ADC_REGULAR_CHANNEL, 1);
+	/* ÉèÖÃ×ª»»ÄÄÒ»¸öÍ¨µÀÒÔ¼°Ëù´¦ĞòÁĞÎ»ÖÃ£»*/ 
+	adc_regular_channel_config(ADC0, 0, ADC_CHANNEL_12, ADC_SAMPLETIME_239POINT5);  // PC2¶ÔÓ¦Í¨µÀ12£¬·ÅÔÚĞòÁĞ¼Ä´æÆ÷µÄ0ĞòÁĞÖĞ£¬239.5¸öÖÜÆÚ
+	/* ÉèÖÃÑ¡ÔñÄÄÒ»¸öÍâ²¿´¥·¢Ô´£»*/ 
+	adc_external_trigger_source_config(ADC0, ADC_REGULAR_CHANNEL, ADC0_1_2_EXTTRIG_REGULAR_NONE);
+	/* Ê¹ÄÜÍâ²¿´¥·¢£»*/ 
+	adc_external_trigger_config(ADC0, ADC_REGULAR_CHANNEL, ENABLE);
+	/* Ê¹ÄÜADCµÄDMA¹¦ÄÜ£»*/ 
+	adc_dma_mode_enable(ADC0);
+	/* Ê¹ÄÜADC£»*/ 
+	adc_enable(ADC0);
+	/* ÄÚ²¿Ğ£×¼£»*/ 
+	DelayNus(50);
+	adc_calibration_enable(ADC0);
+	adc_software_trigger_enable(ADC0, ADC_REGULAR_CHANNEL);
 }
 
-#define ADC0_RDATA_ADDR     (ADC0 + 0x4C);
-#define MAX_BUF_SIZE        10
-
-static uint16_t g_adcVal[2];
 
 static void DmaInit(void)
 {
-	/* ä½¿èƒ½DMAæ—¶é’Ÿï¼›*/
+	/* Ê¹ÄÜDMAÊ±ÖÓ£»*/
 	rcu_periph_clock_enable(RCU_DMA0);
-	/* å¤ä½DMAé€šé“ï¼›*/
-	dma_deinit(DMA0,DMA_CH0);
- 
+	/* ¸´Î»DMAÍ¨µÀ£»*/
+	dma_deinit(DMA0, DMA_CH0);
+	
 	dma_parameter_struct dmaStruct;
-    dma_struct_para_init(&dmaStruct);
-	/* é…ç½®ä¼ è¾“æ–¹å‘ï¼›*/ 
+	dma_struct_para_init(&dmaStruct);
+	/* ÅäÖÃ´«Êä·½Ïò£»*/ 
 	dmaStruct.direction = DMA_PERIPHERAL_TO_MEMORY;
-	/* é…ç½®æ•°æ®æºåœ°å€ï¼›*/ 
+	/* ÅäÖÃÊı¾İÔ´µØÖ·£»*/ 
 	dmaStruct.periph_addr = ADC0_RDATA_ADDR;
-	/* é…ç½®æºåœ°å€æ˜¯å›ºå®šçš„è¿˜æ˜¯å¢é•¿çš„ï¼›*/ 
+	/* ÅäÖÃÔ´µØÖ·ÊÇ¹Ì¶¨µÄ»¹ÊÇÔö³¤µÄ£»*/ 
 	dmaStruct.periph_inc = DMA_PERIPH_INCREASE_DISABLE;
-	/* é…ç½®æºæ•°æ®ä¼ è¾“ä½å®½ï¼›*/ 
+	/* ÅäÖÃÔ´Êı¾İ´«ÊäÎ»¿í£»*/ 
 	dmaStruct.periph_width = DMA_PERIPHERAL_WIDTH_16BIT;
 	
-	/* é…ç½®æ•°æ®ç›®çš„åœ°å€ï¼›*/
+	/* ÅäÖÃÊı¾İÄ¿µÄµØÖ·£»*/
 	dmaStruct.memory_addr = (uint32_t)g_adcVal;
-	/* é…ç½®ç›®çš„åœ°å€æ˜¯å›ºå®šçš„è¿˜æ˜¯å¢é•¿çš„ï¼›*/ 
+	/* ÅäÖÃÄ¿µÄµØÖ·ÊÇ¹Ì¶¨µÄ»¹ÊÇÔö³¤µÄ£»*/ 
 	dmaStruct.memory_inc = DMA_MEMORY_INCREASE_ENABLE;
-	/* é…ç½®ç›®çš„æ•°æ®ä¼ è¾“ä½å®½ï¼›*/ 
+	/* ÅäÖÃÄ¿µÄÊı¾İ´«ÊäÎ»¿í£»*/ 
 	dmaStruct.memory_width = DMA_MEMORY_WIDTH_16BIT;
-	/* é…ç½®æ•°æ®ä¼ è¾“æœ€å¤§æ¬¡æ•°ï¼›*/ 
+	/* ÅäÖÃÊı¾İ´«Êä×î´ó´ÎÊı£»*/ 
 	dmaStruct.number = MAX_BUF_SIZE;
-	/* é…ç½®DMAé€šé“ä¼˜å…ˆçº§ï¼›*/ 
+	/* ÅäÖÃDMAÍ¨µÀÓÅÏÈ¼¶£»*/ 
 	dmaStruct.priority = DMA_PRIORITY_HIGH;
-	dma_init(DMA0,DMA_CH0, &dmaStruct);
+	dma_init(DMA0, DMA_CH0, &dmaStruct);
 	
-	/* ä½¿èƒ½UARTæ¥æ”¶æ•°æ®ä½¿ç”¨DMAï¼›*/ 
-	dma_circulation_enable(DMA0,DMA_CH0);
-	/* ä½¿èƒ½DMAé€šé“ï¼›*/ 
+	/* Ê¹ÄÜDMAÑ­»·Ä£Ê½°áÒÆÊı¾İ£»*/ 
+	dma_circulation_enable(DMA0, DMA_CH0);
+	/* Ê¹ÄÜDMAÍ¨µÀ£»*/ 
 	dma_channel_enable(DMA0, DMA_CH0);
 }
+
 /**
-***************************************
-*@brief ADCç¡¬ä»¶åˆå§‹åŒ–
-*@param 
-*@return 
-***************************************
+***********************************************************
+* @brief ADCÓ²¼ş³õÊ¼»¯
+* @param
+* @return 
+***********************************************************
 */
 void VresDrvInit(void)
 {
-    GpioInit();
-    AdcInit();
-    DmaInit();
+	GpioInit();
+	AdcInit();
+	DmaInit();
 }
 
-uint16_t ArithAvgFltr(uint16_t *arr,uint32_t len)
+/**
+***********************************************************
+* @brief ËãÊõÆ½¾ùÂË²¨
+* @param arr£¬Êı×éÊ×µØÖ·
+* @param len£¬ÔªËØ¸öÊı
+* @return Æ½¾ùÔËËã½á¹û
+***********************************************************
+*/
+static uint16_t ArithAvgFltr(uint16_t *arr, uint32_t len)
 {
-    uint32_t sum = 0;
-    for(uint32_t i = 0; i < len; i++)
-    {
-        sum += arr[i];
-    }
-    return (uint16_t)(sum / len);
+	uint32_t sum = 0;
+	for (uint32_t i = 0; i < len; i++)
+	{
+		sum += arr[i];
+	}
+	return (uint16_t)(sum / len);
+}
+
+/**
+***********************************************************
+* @brief qsortº¯Êıµ÷ÓÃµÄ»Øµ÷º¯Êı£¬±È½Ï¹æÔò£¬½µĞòÅÅÁĞ
+* @param *_a£¬¶ÔÓ¦Êı×éÔªËØ
+* @param *_b£¬¶ÔÓ¦Êı×éÔªËØ
+* @return ±È½Ï½á¹û
+***********************************************************
+*/
+static int32_t CmpCb(const void *_a, const void *_b)
+{
+	uint16_t *a = (uint16_t *)_a;
+	uint16_t *b = (uint16_t *)_b;
+	int32_t val = 0;
+	 if (*a > *b)
+	 {
+		val = -1;
+	 }
+	 else if (*a < *b)
+	 {
+		val =  1;
+	 }
+	 else
+	 {
+		val = 0;
+	 }
+	 return val;
+}
+
+/**
+***********************************************************
+* @brief ÖĞÎ»ÖµÆ½¾ùÂË²¨
+* @param arr£¬Êı×éÊ×µØÖ·
+* @param len£¬ÔªËØ¸öÊı£¬ĞèÒª´óÓÚµÈÓÚ3¸ö
+* @return Æ½¾ùÔËËã½á¹û
+***********************************************************
+*/
+static uint16_t MedianAvgFltr(uint16_t *arr, uint32_t len)
+{
+	qsort(arr, len, sizeof(uint16_t), CmpCb);
+	printf("\n after qsort.\n");
+	for (uint8_t i = 0; i < len; i++)
+	{
+		printf("AdcVal[%d] = %d.\n", i, arr[i]);
+	}
+	return ArithAvgFltr(&arr[1], len - 2);
 }
 
 void VresDrvTest(void)
 {
-    uint16_t buf[MAX_BUF_SIZE];
-    memcpy(buf,g_adcVal,sizeof(uint16_t) * MAX_BUF_SIZE);       //æ‹·è´åˆ°è¦æ³¨æ„æ‹·è´å¤šå°‘åˆ°ç¼“å­˜ï¼Œåˆšåˆšæ²¡å†™ä»–å°±çå‡ æŠŠæ‹·è´äº†ï¼Œä¸¤ä¸ª0
-    for(uint8_t i = 0;i < MAX_BUF_SIZE;i++)
-    {
-        printf("AdcVal[%d]  =  %d.\n",i, buf[i]);
-    }
+	uint16_t buf[MAX_BUF_SIZE];
+	memcpy(buf, g_adcVal, sizeof(uint16_t) * MAX_BUF_SIZE);
+	for (uint8_t i = 0; i < MAX_BUF_SIZE; i++)
+	{
+		printf("AdcVal[%d] = %d.\n", i, buf[i]);
+	}
 
-    uint16_t res = ArithAvgFltr(buf, MAX_BUF_SIZE);
-    printf("res =  %d.\n",res);
-    DelayNms(1000);
+	uint16_t res = MedianAvgFltr(buf, MAX_BUF_SIZE);
+	printf("res = %d.\n", res);
+	DelayNms(1000);
 }

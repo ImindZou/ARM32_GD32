@@ -5,8 +5,9 @@
 .\objects\main.o: .\Driver\key_drv.h
 .\objects\main.o: .\Driver\systick.h
 .\objects\main.o: .\Driver\usb2com_drv.h
-.\objects\main.o: .\Driver\sensor_drv.h
+.\objects\main.o: .\Driver\rtc_drv.h
 .\objects\main.o: .\Driver\delay.h
+.\objects\main.o: .\Driver\sensor_drv.h
 .\objects\main.o: App\usb2com_app.h
 .\objects\main.o: App\hmi_app.h
 .\objects\main.o: App\sensor_app.h

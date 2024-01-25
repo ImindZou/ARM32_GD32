@@ -1,23 +1,15 @@
-/*
- * @Author: zdh 2579941211@qq.com
- * @Date: 2024-01-14 00:34:46
- * @LastEditors: zdh 2579941211@qq.com
- * @LastEditTime: 2024-01-14 00:59:30
- * @FilePath: \6.2 裸机程序任务调度框架实现\Driver\systick.c
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
 #include <stdint.h>
 #include <stdlib.h>
 #include "gd32f30x.h"
 
-static uint64_t g_sysRunTime = 0;
+static volatile uint64_t g_sysRunTime = 0;
 
-static void (*g_pTaskScheduleFunc)(void);	//函数指针变量，保存任务调度的函数地址
+static void (*g_pTaskScheduleFunc)(void);          // 函数指针变量，保存任务调度的函数地址
 
 /**
 ***********************************************************
 * @brief 注册任务调度回调函数
-* @param pFunc，传入回调函数地址
+* @param pFunc, 传入回调函数地址
 * @return 
 ***********************************************************
 */
@@ -52,7 +44,7 @@ void SystickInit(void)
 void SysTick_Handler(void)
 {
 	g_sysRunTime++;
-	if(g_pTaskScheduleFunc == NULL)
+	if (g_pTaskScheduleFunc == NULL)
 	{
 		return;
 	}

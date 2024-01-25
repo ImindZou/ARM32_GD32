@@ -10,6 +10,11 @@
 #define __SENSOR_DRV_H_
 #include <stdint.h>
 
+typedef struct 
+{   
+    float temp;
+    uint8_t humi;
+} SensorData_t;
 /**
 ***************************************
 *@brief 传感器驱动初始化
@@ -19,12 +24,6 @@
 */
 void SensorDrvInit(void);
 
-
-typedef struct 
-{   
-    float temp;
-    uint8_t humi;
-} SensorData_t;
 
 /**
 ***************************************

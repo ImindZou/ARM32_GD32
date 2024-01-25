@@ -1,4 +1,4 @@
-.\objects\delay.o: ..\5.3 实现printf打印通过串口输出\Driver\delay.c
+.\objects\delay.o: Driver\delay.c
 .\objects\delay.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\delay.o: .\Arm\gd32f30x.h
 .\objects\delay.o: .\Arm\core_cm4.h

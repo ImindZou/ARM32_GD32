@@ -1,4 +1,4 @@
-.\objects\gd32f30x_adc.o: ..\6.2 裸机程序任务调度框架实现\GD32_Hal\Source\gd32f30x_adc.c
+.\objects\gd32f30x_adc.o: GD32_Hal\Source\gd32f30x_adc.c
 .\objects\gd32f30x_adc.o: .\GD32_Hal\Include\gd32f30x_adc.h
 .\objects\gd32f30x_adc.o: .\Arm\gd32f30x.h
 .\objects\gd32f30x_adc.o: .\Arm\core_cm4.h

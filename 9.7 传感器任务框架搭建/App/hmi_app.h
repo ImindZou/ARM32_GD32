@@ -1,9 +1,9 @@
-#ifndef __HMI_APP_H_
-#define __HMI_APP_H_
+#ifndef _HMI_APP_H_
+#define _HMI_APP_H_
 
 /**
 ***********************************************************
-* @brief 人机互动任务处理函数
+* @brief 人机交互任务处理函数
 * @param 
 * @return 
 ***********************************************************
@@ -11,3 +11,4 @@
 void HmiTask(void);
 
 #endif
+

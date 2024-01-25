@@ -1,7 +1,6 @@
 #include <stdint.h>
-#include "gd32f30x.h"
+#include <stdio.h>
 #include "sensor_drv.h"
-
 
 /**
 ***********************************************************
@@ -14,7 +13,3 @@ void SensorTask(void)
 {
 	SensorDrvProc();
 }
-
-
-
-

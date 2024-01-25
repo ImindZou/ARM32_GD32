@@ -1,19 +1,16 @@
 #include <stdint.h>
-#include "gd32f30x.h"
 #include "queue.h"
 
-
-
 /**
-***********************************************************
-* @brief åˆå§‹åŒ–ï¼ˆåˆ›å»ºï¼‰é˜Ÿåˆ—ï¼Œæ¯ä¸ªé˜Ÿåˆ—å…ˆæ‰§è¡Œè¯¥å‡½æ•°åæ‰èƒ½ä½¿ç”¨
-* @param queue,é˜Ÿåˆ—å˜é‡æŒ‡é’ˆ
-* @param bufferï¼Œé˜Ÿåˆ—ç¼“å­˜åŒºåœ°å€
-* @param sizeï¼Œé˜Ÿåˆ—ç¼“å­˜åŒºé•¿åº¦
+****************************************************************
+* @brief   ³õÊ¼»¯£¨´´½¨£©¶ÓÁĞ£¬Ã¿¸ö¶ÓÁĞĞëÏÈÖ´ĞĞ¸Ãº¯Êı²ÅÄÜÊ¹ÓÃ
+* @param   queue, ¶ÓÁĞ±äÁ¿Ö¸Õë
+* @param   buffer, ¶ÓÁĞ»º´æÇøµØÖ·
+* @param   size, ¶ÓÁĞ»º´æÇø³¤¶È
 * @return 
-***********************************************************
+****************************************************************
 */
-void QueueInit(QueueType_t *queue,uint8_t *buffer,uint32_t size)
+void QueueInit(QueueType_t *queue, uint8_t *buffer, uint32_t size)
 {
     queue->buffer = buffer;
     queue->size = size;
@@ -22,20 +19,20 @@ void QueueInit(QueueType_t *queue,uint8_t *buffer,uint32_t size)
 }
 
 /**
-***********************************************************
-* @brief å‹å…¥æ•°æ®åˆ°é˜Ÿåˆ—ä¸­
-* @param queue,é˜Ÿåˆ—å˜é‡æŒ‡é’ˆ
-* @param data,å¾…å‹å…¥é˜Ÿåˆ—çš„æ•°æ® 
-* @return å‹å…¥é˜Ÿåˆ—æ˜¯å¦æˆåŠŸ
-***********************************************************
+****************************************************************
+* @brief   Ñ¹ÈëÊı¾İµ½¶ÓÁĞÖĞ
+* @param   queue, ¶ÓÁĞ±äÁ¿Ö¸Õë
+* @param   data, ´ıÑ¹Èë¶ÓÁĞµÄÊı¾İ
+* @return  Ñ¹Èë¶ÓÁĞÊÇ·ñ³É¹¦
+****************************************************************
 */
-QueueStatus_t QueuePush(QueueType_t *queue,uint8_t data)
+QueueStatus_t QueuePush(QueueType_t *queue, uint8_t data)
 {
-    uint32_t index = (queue->tail+1)%queue->size;
+    uint32_t index = (queue->tail + 1) % queue->size;
 
-    if(index == queue->head)
+    if (index == queue->head)
     {
-        return QUEUE_VOERFLOAD;
+        return QUEUE_OVERLOAD;
     }
     queue->buffer[queue->tail] = data;
     queue->tail = index;
@@ -43,14 +40,14 @@ QueueStatus_t QueuePush(QueueType_t *queue,uint8_t data)
 }
 
 /**
-***********************************************************
-* @brief ä»é˜Ÿåˆ—ä¸­å¼¹å‡ºæ•°æ®
-* @param queue,é˜Ÿåˆ—å˜é‡æŒ‡é’ˆ
-* @param pdata,å¾…å¼¹å‡ºé˜Ÿåˆ—çš„æ•°æ®ç¼“å­˜åœ°å€
-* @return å¼¹å‡ºé˜Ÿåˆ—æ˜¯å¦æˆåŠŸ
-***********************************************************
+****************************************************************
+* @brief   ´Ó¶ÓÁĞÖĞµ¯³öÊı¾İ
+* @param   queue, ¶ÓÁĞ±äÁ¿Ö¸Õë
+* @param   pdata, ´ıµ¯³ö¶ÓÁĞµÄÊı¾İ»º´æµØÖ·
+* @return  µ¯³ö¶ÓÁĞÊÇ·ñ³É¹¦
+****************************************************************
 */
-QueueStatus_t QueuePop(QueueType_t *queue,uint8_t *pdata)
+QueueStatus_t QueuePop(QueueType_t *queue, uint8_t *pdata)
 {
     if(queue->head == queue->tail)
     {
@@ -58,25 +55,25 @@ QueueStatus_t QueuePop(QueueType_t *queue,uint8_t *pdata)
     }
 
     *pdata = queue->buffer[queue->head];
-    queue->head = (queue->head+1)%queue->size;
+    queue->head = (queue->head + 1) % queue->size;
     return QUEUE_OK;
 }
 
 /**
-***********************************************************
-* @brief å‹å…¥ä¸€ç»„æ•°æ®åˆ°é˜Ÿåˆ—ä¸­
-* @param queue,é˜Ÿåˆ—å˜é‡æŒ‡é’ˆ
-* @param pArray,å¾…å‹å…¥é˜Ÿåˆ—çš„æ•°ç»„åœ°å€
-* @param len,å¾…å‹å…¥é˜Ÿåˆ—çš„å…ƒç´ ä¸ªæ•°
-* @return å®é™…å‹å…¥åˆ°é˜Ÿåˆ—çš„å…ƒç´ ä¸ªæ•°
-***********************************************************
+****************************************************************
+* @brief   Ñ¹ÈëÒ»×éÊı¾İµ½¶ÓÁĞÖĞ
+* @param   queue, ¶ÓÁĞ±äÁ¿Ö¸Õë
+* @param   pArray, ´ıÑ¹Èë¶ÓÁĞµÄÊı×éµØÖ·
+* @param   len, ´ıÑ¹Èë¶ÓÁĞµÄÔªËØ¸öÊı
+* @return  Êµ¼ÊÑ¹Èëµ½¶ÓÁĞµÄÔªËØ¸öÊı
+****************************************************************
 */
-uint32_t QueuePushArray(QueueType_t *queue,uint8_t *pArray,uint32_t len)
+uint32_t QueuePushArray(QueueType_t *queue, uint8_t *pArray, uint32_t len)
 {
     uint32_t i;
-    for(i = 0;i < len;i++)
+    for (i = 0; i < len; i++)
     {
-        if(QueuePush(queue,pArray[i]) == QUEUE_VOERFLOAD)
+        if(QueuePush(queue, pArray[i]) == QUEUE_OVERLOAD)
         {
             break;
         }
@@ -85,20 +82,20 @@ uint32_t QueuePushArray(QueueType_t *queue,uint8_t *pArray,uint32_t len)
 }
 
 /**
-***********************************************************
-* @brief ä»é˜Ÿåˆ—ä¸­å¼¹å‡ºä¸€ç»„æ•°æ®
-* @param queue,é˜Ÿåˆ—å˜é‡æŒ‡é’ˆ
-* @param pArray,å¾…å‹å…¥é˜Ÿåˆ—çš„æ•°ç»„åœ°å€
-* @param len,å¾…å¼¹å‡ºé˜Ÿåˆ—çš„æ•°æ®çš„æœ€å¤§é•¿åº¦
-* @return å®é™…å¼¹å‡ºæ•°æ®çš„æ•°é‡
-***********************************************************
+****************************************************************
+* @brief   ´Ó¶ÓÁĞÖĞµ¯³öÒ»×éÊı¾İ
+* @param   queue, ¶ÓÁĞ±äÁ¿Ö¸Õë
+* @param   pArray, ´ıµ¯³ö¶ÓÁĞµÄÊı¾İ»º´æµØÖ·
+* @param   len, ´ıµ¯³ö¶ÓÁĞµÄÊı¾İµÄ×î´ó³¤¶È
+* @return  Êµ¼Êµ¯³öÊı¾İµÄÊıÁ¿
+****************************************************************
 */
-uint32_t QueuePopArray(QueueType_t *queue,uint8_t *pArray,uint32_t len)
+uint32_t QueuePopArray(QueueType_t *queue, uint8_t *pArray, uint32_t len)
 {
     uint32_t i;
-    for(i = 0;i < len; i++)
+    for(i = 0; i < len; i++)
     {
-        if(QueuePop(queue,&pArray[i]) == QUEUE_EMPTY)
+        if (QueuePop(queue, &pArray[i]) == QUEUE_EMPTY)
         {
             break;
         }
@@ -107,19 +104,18 @@ uint32_t QueuePopArray(QueueType_t *queue,uint8_t *pArray,uint32_t len)
 }
 
 /**
-***********************************************************
-* @brief è·å–é˜Ÿåˆ—ä¸­æ•°æ®çš„ä¸ªæ•° 
-* @param queue,é˜Ÿåˆ—å˜é‡æŒ‡é’ˆ
-* @return é˜Ÿåˆ—ä¸­æ•°æ®çš„ä¸ªæ•° 
-***********************************************************
+****************************************************************
+* @brief   »ñÈ¡¶ÓÁĞÖĞÊı¾İµÄ¸öÊı
+* @param   queue, ¶ÓÁĞ±äÁ¿Ö¸Õë
+* @return  ¶ÓÁĞÖĞÊı¾İµÄ¸öÊı
+****************************************************************
 */
 uint32_t QueueCount(QueueType_t *queue)
 {
-    if(queue->head <= queue->tail)
-    {
-        return queue->tail - queue->head;
- 
-    }
-    return queue->size+queue->tail - queue->head;
+	if (queue->head <= queue->tail)
+	{
+		return queue->tail - queue->head;
+	}
+	
+	return queue->size + queue->tail - queue->head;
 }
-

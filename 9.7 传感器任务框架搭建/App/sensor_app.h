@@ -1,5 +1,5 @@
-#ifndef __SENSOR_APP_H_
-#define __SENSOR_APP_H_
+#ifndef _SENSOR_APP_H_
+#define _SENSOR_APP_H_
 
 /**
 ***********************************************************
@@ -10,5 +10,5 @@
 */
 void SensorTask(void);
 
-
 #endif
+

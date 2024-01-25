@@ -1,82 +1,73 @@
-/*
- * @Author: zdh 2579941211@qq.com
- * @Date: 2024-01-11 22:14:49
- * @LastEditors: zdh 2579941211@qq.com
- * @LastEditTime: 2024-01-12 02:16:46
- * @FilePath: \5.3 å®ç°printfæ‰“å°é€šè¿‡ä¸²å£è¾“å‡º\Driver\usb2Com_drv.c
- * @Description: è¿™æ˜¯é»˜è®¤è®¾ç½®,è¯·è®¾ç½®`customMade`, æ‰“å¼€koroFileHeaderæŸ¥çœ‹é…ç½® è¿›è¡Œè®¾ç½®: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
 #include <stdint.h>
-#include "gd32f30x.h"
 #include <stdio.h>
 #include <stdbool.h>
-#include "led_drv.h"
+#include "gd32f30x.h"
 
-typedef struct 
+typedef struct
 {
-    uint32_t uartNo;
-    rcu_periph_enum rcuUart;
-    rcu_periph_enum rcuGpio;
-    uint32_t gpio;
-    uint32_t txPin;
-    uint32_t rxPin;
-    uint8_t irq;
-}UartHwInfo_t;
+	uint32_t uartNo;
+	rcu_periph_enum rcuUart;
+	rcu_periph_enum rcuGpio;
+	uint32_t gpio;
+	uint32_t txPin;
+	uint32_t rxPin;
+	uint8_t irq;
+} UartHwInfo_t;
 
-UartHwInfo_t g_uartHwInfo = {USART0,RCU_USART0,RCU_GPIOA,GPIOA,GPIO_PIN_9,GPIO_PIN_10,USART0_IRQn};
+static UartHwInfo_t g_uartHwInfo = {USART0, RCU_USART0, RCU_GPIOA, GPIOA, GPIO_PIN_9, GPIO_PIN_10, USART0_IRQn};
+
+static void (*pProcUartDataFunc)(uint8_t data);   //º¯ÊıÖ¸Õë±äÁ¿£¬±£´æÓ¦ÓÃ²ã»Øµ÷º¯ÊıµØÖ·
 
 static void Usb2ComGpioInit(void)
 {
-    rcu_periph_clock_enable(g_uartHwInfo.rcuGpio);
-    gpio_init(g_uartHwInfo.gpio,GPIO_MODE_AF_PP,GPIO_OSPEED_10MHZ,g_uartHwInfo.txPin);
-    gpio_init(g_uartHwInfo.gpio,GPIO_MODE_IPU,GPIO_OSPEED_10MHZ,g_uartHwInfo.rxPin);
+	rcu_periph_clock_enable(g_uartHwInfo.rcuGpio);
+	gpio_init(g_uartHwInfo.gpio, GPIO_MODE_AF_PP, GPIO_OSPEED_10MHZ, g_uartHwInfo.txPin);
+	gpio_init(g_uartHwInfo.gpio, GPIO_MODE_IPU, GPIO_OSPEED_10MHZ, g_uartHwInfo.rxPin);
 }
 
-static void UsbComUartInit(uint32_t baudRate)
+static void Usb2ComUartInit(uint32_t baudRate)
 {
-    /*ä½¿èƒ½UARTæ—¶é’Ÿ*/
-    rcu_periph_clock_enable(g_uartHwInfo.rcuUart);
-    /*å¤ä½UART*/
-    usart_deinit(g_uartHwInfo.uartNo);
-    /*é€šè¿‡USART_CTL0å¯„å­˜å™¨çš„WLè®¾ç½®å­—é•¿*/
-    //usart_word_length_set(g_uartHwInfo.uartNo,USART_WL_8BIT);
-    /*é€šè¿‡USART_CTL0å¯„å­˜å™¨çš„PCENè®¾ç½®æ ¡éªŒä½*/
-    //usart_parity_config(g_uartHwInfo.uartNo,USART_PM_NONE);
-    /*åœ¨USART_CTL1å¯„å­˜å™¨ä¸­å†™STB[1:0]ä½æ¥è®¾hiåœæ­¢ä½çš„é•¿åº¦*/
-    //usart_stop_bit_set(g_uartHwInfo.uartNo,USART_STB_1BIT);
-    /*åœ¨USART_BAUDå¯„å­˜å™¨ä¸­è®¾ç½®æ³¢ç‰¹ç‡*/
-    usart_baudrate_set(g_uartHwInfo.uartNo,baudRate);
-    /*åœ¨USART_CTL0å¯„å­˜å™¨ä¸­è®¾ç½®TENä½ï¼Œä½¿èƒ½å‘é€åŠŸèƒ½*/
-    usart_transmit_config(g_uartHwInfo.uartNo,USART_TRANSMIT_ENABLE);
-    /*åœ¨USART_CTL0å¯„å­˜å™¨ä¸­è®¾ç½®TENä½ï¼Œä½¿èƒ½å‘é€åŠŸèƒ½*/
-    usart_receive_config(g_uartHwInfo.uartNo,USART_RECEIVE_ENABLE);
-    /*ä½¿èƒ½ä¸²å£æ¥æ”¶ä¸­æ–­*/
-    usart_interrupt_enable(g_uartHwInfo.uartNo,USART_INT_RBNE);
-    /*ä½¿èƒ½ä¸²å£ä¸­æ–­*/
-    nvic_irq_enable(g_uartHwInfo.irq,0,0);
-    /*åœ¨USART_CTL0 å¯„å­˜å™¨ä¸­ç½®ä¸ºUENä½ï¼Œä½¿èƒ½UART*/
-    usart_enable(g_uartHwInfo.uartNo);
+	/* Ê¹ÄÜUARTÊ±ÖÓ£»*/
+	rcu_periph_clock_enable(g_uartHwInfo.rcuUart);
+	/* ¸´Î»UART£»*/
+	usart_deinit (g_uartHwInfo.uartNo);
+	/* Í¨¹ıUSART_CTL0¼Ä´æÆ÷µÄWLÉèÖÃ×Ö³¤£»*/ 
+	//usart_word_length_set(g_uartHwInfo.uartNo, USART_WL_8BIT);
+	/* Í¨¹ıUSART_CTL0¼Ä´æÆ÷µÄPCENÉèÖÃĞ£ÑéÎ»£»*/ 
+	//usart_parity_config(g_uartHwInfo.uartNo, USART_PM_NONE);
+	/* ÔÚUSART_CTL1¼Ä´æÆ÷ÖĞĞ´STB[1:0]Î»À´ÉèÖÃÍ£Ö¹Î»µÄ³¤¶È£»*/ 
+	//usart_stop_bit_set(g_uartHwInfo.uartNo, USART_STB_1BIT);
+	/* ÔÚUSART_BAUD¼Ä´æÆ÷ÖĞÉèÖÃ²¨ÌØÂÊ£»*/ 
+	usart_baudrate_set(g_uartHwInfo.uartNo, baudRate);
+	/* ÔÚUSART_CTL0¼Ä´æÆ÷ÖĞÉèÖÃTENÎ»£¬Ê¹ÄÜ·¢ËÍ¹¦ÄÜ£»*/
+	usart_transmit_config(g_uartHwInfo.uartNo, USART_TRANSMIT_ENABLE);
+	/* ÔÚUSART_CTL0¼Ä´æÆ÷ÖĞÉèÖÃTENÎ»£¬Ê¹ÄÜ½ÓÊÕ¹¦ÄÜ£»*/
+	usart_receive_config(g_uartHwInfo.uartNo, USART_RECEIVE_ENABLE);
+	/* Ê¹ÄÜ´®¿Ú½ÓÊÕÖĞ¶Ï£»*/
+	usart_interrupt_enable(g_uartHwInfo.uartNo, USART_INT_RBNE);
+	/* Ê¹ÄÜ´®¿ÚÖĞ¶Ï£»*/
+	nvic_irq_enable(g_uartHwInfo.irq, 0, 0);
+	/* ÔÚUSART_CTL0¼Ä´æÆ÷ÖĞÖÃÎ»UENÎ»£¬Ê¹ÄÜUART£»*/ 
+	usart_enable(g_uartHwInfo.uartNo);
 }
 
 /**
 ***********************************************************
-* @brief USBè½¬ä¸²å£ç¡¬ä»¶åˆå§‹åŒ–
+* @brief USB×ª´®¿ÚÓ²¼ş³õÊ¼»¯
 * @param
 * @return 
 ***********************************************************
 */
 void Usb2ComDrvInit(void)
 {
-    Usb2ComGpioInit();
-    UsbComUartInit(115200);
+	Usb2ComGpioInit();
+	Usb2ComUartInit(115200);
 }
-
-static void (*pProcUartDataFunc)(uint8_t data);
 
 /**
 ***********************************************************
-* @brief æ³¨å†Œå›è°ƒå‡½æ•°
-* @param pFuncï¼Œå‡½æ•°æŒ‡é’ˆå˜é‡ï¼Œæ¥æ”¶ä¼ å…¥çš„å›è°ƒå‡½æ•°åœ°å€
+* @brief ×¢²á»Øµ÷º¯Êı
+* @param pFunc£¬º¯ÊıÖ¸Õë±äÁ¿£¬½ÓÊÕ´«ÈëµÄ»Øµ÷º¯ÊıµØÖ·
 * @return 
 ***********************************************************
 */
@@ -87,25 +78,25 @@ void regUsb2ComCb(void (*pFunc)(uint8_t data))
 
 /**
 ***********************************************************
-* @brief ä¸²å£ä¸­æ–­æœåŠ¡å‡½æ•°
+* @brief ´®¿Ú0ÖĞ¶Ï·şÎñº¯Êı
 * @param
 * @return 
 ***********************************************************
 */
 void USART0_IRQHandler(void)
 {
-    if(usart_interrupt_flag_get(g_uartHwInfo.uartNo,USART_INT_FLAG_RBNE) != RESET)
-    {
-        usart_interrupt_flag_clear(g_uartHwInfo.uartNo,USART_INT_FLAG_RBNE);
-        uint8_t uData = (uint8_t)usart_data_receive(g_uartHwInfo.uartNo);
-        pProcUartDataFunc(uData);
-    }
+	if (usart_interrupt_flag_get(g_uartHwInfo.uartNo, USART_INT_FLAG_RBNE) != RESET)
+	{
+		usart_interrupt_flag_clear(g_uartHwInfo.uartNo, USART_INT_FLAG_RBNE);
+		uint8_t uData = (uint8_t)usart_data_receive(g_uartHwInfo.uartNo);
+		pProcUartDataFunc(uData);
+	}
 }
 
 /**
 ***********************************************************
-* @brief printfå‡½æ•°é»˜è®¤æ‰“å°è¾“å‡ºåˆ°æ˜¾ç¤ºå™¨ï¼Œå¦‚æœè¦è¾“å‡ºåˆ°ä¸²å£ï¼Œ
-		 å¿…é¡»é‡æ–°å®ç°fputcå‡½æ•°ï¼Œå°†è¾“å‡ºæŒ‡å‘ä¸²å£ï¼Œç§°ä¸ºé‡å®šå‘
+* @brief printfº¯ÊıÄ¬ÈÏ´òÓ¡Êä³öµ½ÏÔÊ¾Æ÷£¬Èç¹ûÒªÊä³öµ½´®¿Ú£¬
+		 ±ØĞëÖØĞÂÊµÏÖfputcº¯Êı£¬½«Êä³öÖ¸Ïò´®¿Ú£¬³ÆÎªÖØ¶¨Ïò
 * @param
 * @return 
 ***********************************************************

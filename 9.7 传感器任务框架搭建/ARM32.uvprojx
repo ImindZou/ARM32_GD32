@@ -389,11 +389,6 @@
               <FilePath>.\App\main.c</FilePath>
             </File>
             <File>
-              <FileName>usb2com_app.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\App\usb2com_app.c</FilePath>
-            </File>
-            <File>
               <FileName>hmi_app.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\App\hmi_app.c</FilePath>
@@ -434,14 +429,19 @@
               <FilePath>.\Driver\usb2Com_drv.c</FilePath>
             </File>
             <File>
-              <FileName>delay.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\5.3 实现printf打印通过串口输出\Driver\delay.c</FilePath>
-            </File>
-            <File>
               <FileName>queue.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Driver\queue.c</FilePath>
+            </File>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Driver\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>rtc_drv.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Driver\rtc_drv.c</FilePath>
             </File>
             <File>
               <FileName>sensor_drv.c</FileName>
@@ -479,14 +479,29 @@
               <FilePath>.\GD32_Hal\Source\gd32f30x_usart.c</FilePath>
             </File>
             <File>
+              <FileName>gd32f30x_rtc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GD32_Hal\Source\gd32f30x_rtc.c</FilePath>
+            </File>
+            <File>
+              <FileName>gd32f30x_pmu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GD32_Hal\Source\gd32f30x_pmu.c</FilePath>
+            </File>
+            <File>
+              <FileName>gd32f30x_bkp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GD32_Hal\Source\gd32f30x_bkp.c</FilePath>
+            </File>
+            <File>
               <FileName>gd32f30x_adc.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\6.2 裸机程序任务调度框架实现\GD32_Hal\Source\gd32f30x_adc.c</FilePath>
+              <FilePath>.\GD32_Hal\Source\gd32f30x_adc.c</FilePath>
             </File>
             <File>
               <FileName>gd32f30x_dma.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\6.2 裸机程序任务调度框架实现\GD32_Hal\Source\gd32f30x_dma.c</FilePath>
+              <FilePath>.\GD32_Hal\Source\gd32f30x_dma.c</FilePath>
             </File>
           </Files>
         </Group>

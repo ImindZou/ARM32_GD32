@@ -1,5 +1,8 @@
 .\objects\vres_drv.o: Driver\vres_drv.c
-.\objects\vres_drv.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\vres_drv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\vres_drv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\vres_drv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\vres_drv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\vres_drv.o: .\Arm\gd32f30x.h
 .\objects\vres_drv.o: .\Arm\core_cm4.h
 .\objects\vres_drv.o: .\Arm\core_cmInstr.h
@@ -33,5 +36,3 @@
 .\objects\vres_drv.o: .\GD32_Hal\Include\gd32f30x_enet.h
 .\objects\vres_drv.o: .\GD32_Hal\Include\gd32f30x_exmc.h
 .\objects\vres_drv.o: Driver\delay.h
-.\objects\vres_drv.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\vres_drv.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\string.h

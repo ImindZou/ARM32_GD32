@@ -1,49 +1,39 @@
-/*
- * @Author: zdh 2579941211@qq.com
- * @Date: 2024-01-25 16:01:59
- * @LastEditors: zdh 2579941211@qq.com
- * @LastEditTime: 2024-01-25 16:19:37
- * @FilePath: \9.7 ä¼ æ„Ÿå™¨ä»»åŠ¡æ¡†æ¶æ­å»º\Driver\sensor_drv.h
- * @Description: è¿™æ˜¯é»˜è®¤è®¾ç½®,è¯·è®¾ç½®`customMade`, æ‰“å¼€koroFileHeaderæŸ¥çœ‹é…ç½® è¿›è¡Œè®¾ç½®: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
-#ifndef __SENSOR_DRV_H_
-#define __SENSOR_DRV_H_
+#ifndef _SENSOR_DRV_H_
+#define _SENSOR_DRV_H_
+
 #include <stdint.h>
 
-/**
-***************************************
-*@brief ä¼ æ„Ÿå™¨é©±åŠ¨åˆå§‹åŒ–
-*@param 
-*@return 
-***************************************
-*/
-void SensorDrvInit(void);
-
-
-typedef struct 
-{   
-    float temp;
-    uint8_t humi;
+typedef struct
+{
+	float temp;
+	uint8_t humi;
 } SensorData_t;
 
 /**
-***************************************
-*@brief è·å–ä¼ æ„Ÿå™¨æ•°æ®
-*@param sensorData,è¾“å‡ºï¼Œä¼ æ„Ÿå™¨æ•°æ®å›å†™åœ°å€
-*@return 
-***************************************
+***********************************************************
+* @brief ´«¸ĞÆ÷Çı¶¯³õÊ¼»¯
+* @param
+* @return 
+***********************************************************
+*/
+void SensorDrvInit(void);
+
+/**
+***********************************************************
+* @brief »ñÈ¡´«¸ĞÆ÷Êı¾İ
+* @param sensorData,Êä³ö£¬´«¸ĞÆ÷Êı¾İ»ØĞ´µØÖ·
+* @return 
+***********************************************************
 */
 void GetSensorData(SensorData_t *sensorData);
 
 /**
-***************************************
-*@brief è§¦å‘é©±åŠ¨è½¬æ¢ä¼ æ„Ÿå™¨æ•°æ®
-*@param 
-*@return 
-***************************************
+***********************************************************
+* @brief ´¥·¢Çı¶¯×ª»»´«¸ĞÆ÷Êı¾İ
+* @param
+* @return 
+***********************************************************
 */
 void SensorDrvProc(void);
-
-
 
 #endif

@@ -13,8 +13,7 @@ static Key_GPIO_t g_gpioList[] =
 {
 	{RCU_GPIOA, GPIOA, GPIO_PIN_0},  // key1
 	{RCU_GPIOG, GPIOG, GPIO_PIN_13}, // key2
-	{RCU_GPIOG, GPIOG, GPIO_PIN_14},  // key3
-	{RCU_GPIOG,GPIOG,GPIO_PIN_15}   //KEY4
+	{RCU_GPIOG, GPIOG, GPIO_PIN_14}  // key3
 };
 
 #define KEY_NUM_MAX (sizeof(g_gpioList) / sizeof(g_gpioList[0]))
