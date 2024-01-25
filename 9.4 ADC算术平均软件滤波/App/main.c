@@ -11,11 +11,12 @@
 #include "led_drv.h"
 #include "key_drv.h"
 #include "systick.h"
+#include "vres_drv.h"
 #include "usb2com_drv.h"
 #include "delay.h"
 #include "usb2com_app.h"
 #include "hmi_app.h"
-#include "vres_drv.h"
+
 
 typedef struct
 {

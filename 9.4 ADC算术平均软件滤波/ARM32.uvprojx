@@ -398,6 +398,16 @@
               <FileType>1</FileType>
               <FilePath>.\App\hmi_app.c</FilePath>
             </File>
+            <File>
+              <FileName>sensor_app.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\9.7 传感器任务框架搭建\App\sensor_app.c</FilePath>
+            </File>
+            <File>
+              <FileName>sensor_app.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\9.7 传感器任务框架搭建\App\sensor_app.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -442,6 +452,11 @@
               <FileName>vres_drv.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Driver\vres_drv.c</FilePath>
+            </File>
+            <File>
+              <FileName>sensor_drv.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\9.7 传感器任务框架搭建\Driver\sensor_drv.c</FilePath>
             </File>
           </Files>
         </Group>

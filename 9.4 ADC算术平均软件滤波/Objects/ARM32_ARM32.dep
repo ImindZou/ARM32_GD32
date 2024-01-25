@@ -1,16 +1,17 @@
 Dependencies for Project 'ARM32', Target 'ARM32': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::ARMCC
-F (.\App\main.c)(0x65A919F7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DGD32F30X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\App\main.c)(0x65B21DB5)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DGD32F30X_HD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (.\Driver\led_drv.h)(0x64B8C2AA)
 I (.\Driver\key_drv.h)(0x65A2CEC2)
 I (.\Driver\systick.h)(0x65A2C34F)
+I (.\Driver\vres_drv.h)(0x65A91384)
 I (.\Driver\usb2com_drv.h)(0x65A251A8)
+I (.\Driver\sensor_drv.h)(0x65B2164A)
 I (.\Driver\delay.h)(0x64B35649)
 I (App\usb2com_app.h)(0x65A254B2)
 I (App\hmi_app.h)(0x65A2CC81)
-I (.\Driver\vres_drv.h)(0x65A91384)
 F (.\App\usb2com_app.c)(0x65A298E4)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DGD32F30X_HD-o .\objects\usb2com_app.o --omf_browse .\objects\usb2com_app.crf --depend .\objects\usb2com_app.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
@@ -52,6 +53,41 @@ F (.\App\hmi_app.c)(0x65A2CC81)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
 I (.\Driver\led_drv.h)(0x64B8C2AA)
 I (.\Driver\key_drv.h)(0x65A2CEC2)
+F (..\9.7 传感器任务框架搭建\App\sensor_app.c)(0x65B21BDC)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DGD32F30X_HD-o .\objects\sensor_app.o --omf_browse .\objects\sensor_app.crf --depend .\objects\sensor_app.d)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (.\Arm\gd32f30x.h)(0x61CC215C)
+I (.\Arm\core_cm4.h)(0x61CC215C)
+I (.\Arm\core_cmInstr.h)(0x61CC215C)
+I (.\Arm\core_cmFunc.h)(0x61CC215C)
+I (.\Arm\core_cm4_simd.h)(0x61CC215C)
+I (.\Arm\system_gd32f30x.h)(0x61CC215C)
+I (.\GD32_Hal\gd32f30x_libopt.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_rcu.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_adc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_can.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_crc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_ctc.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_dac.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_dbg.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_dma.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_exti.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_fmc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_fwdgt.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_gpio.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_i2c.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_pmu.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_bkp.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_rtc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_sdio.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_spi.h)(0x62F9F4F9)
+I (.\GD32_Hal\Include\gd32f30x_timer.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_usart.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
+I (.\Driver\sensor_drv.h)(0x65B2164A)
+F (..\9.7 传感器任务框架搭建\App\sensor_app.h)(0x65B21CE1)()
 F (.\Driver\key_drv.c)(0x65A2C969)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DGD32F30X_HD-o .\objects\key_drv.o --omf_browse .\objects\key_drv.crf --depend .\objects\key_drv.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
 I (.\Arm\gd32f30x.h)(0x61CC215C)
@@ -257,7 +293,7 @@ I (.\GD32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
 I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
 I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
 I (Driver\queue.h)(0x65A26BAD)
-F (.\Driver\vres_drv.c)(0x65A92DCB)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DGD32F30X_HD-o .\objects\vres_drv.o --omf_browse .\objects\vres_drv.crf --depend .\objects\vres_drv.d)
+F (.\Driver\vres_drv.c)(0x65A92E13)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DGD32F30X_HD-o .\objects\vres_drv.o --omf_browse .\objects\vres_drv.crf --depend .\objects\vres_drv.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
 I (.\Arm\gd32f30x.h)(0x61CC215C)
 I (.\Arm\core_cm4.h)(0x61CC215C)
@@ -293,6 +329,40 @@ I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
 I (Driver\delay.h)(0x64B35649)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
+F (..\9.7 传感器任务框架搭建\Driver\sensor_drv.c)(0x65B21C30)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DGD32F30X_HD-o .\objects\sensor_drv.o --omf_browse .\objects\sensor_drv.crf --depend .\objects\sensor_drv.d)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (.\Arm\gd32f30x.h)(0x61CC215C)
+I (.\Arm\core_cm4.h)(0x61CC215C)
+I (.\Arm\core_cmInstr.h)(0x61CC215C)
+I (.\Arm\core_cmFunc.h)(0x61CC215C)
+I (.\Arm\core_cm4_simd.h)(0x61CC215C)
+I (.\Arm\system_gd32f30x.h)(0x61CC215C)
+I (.\GD32_Hal\gd32f30x_libopt.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_rcu.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_adc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_can.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_crc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_ctc.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_dac.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_dbg.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_dma.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_exti.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_fmc.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_fwdgt.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_gpio.h)(0x6392DB4B)
+I (.\GD32_Hal\Include\gd32f30x_i2c.h)(0x62C28B52)
+I (.\GD32_Hal\Include\gd32f30x_pmu.h)(0x62C28B53)
+I (.\GD32_Hal\Include\gd32f30x_bkp.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_rtc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_sdio.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_spi.h)(0x62F9F4F9)
+I (.\GD32_Hal\Include\gd32f30x_timer.h)(0x61CC215C)
+I (.\GD32_Hal\Include\gd32f30x_usart.h)(0x63ABB35A)
+I (.\GD32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
+I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
+I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
+I (..\9.7 浼犳劅鍣ㄤ换鍔℃鏋舵惌寤篭Driver\sensor_drv.h)(0x00000000)
 F (.\GD32_Hal\Source\gd32f30x_gpio.c)(0x61CC215B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DGD32F30X_HD-o .\objects\gd32f30x_gpio.o --omf_browse .\objects\gd32f30x_gpio.crf --depend .\objects\gd32f30x_gpio.d)
 I (.\GD32_Hal\Include\gd32f30x_gpio.h)(0x6392DB4B)
 I (.\Arm\gd32f30x.h)(0x61CC215C)

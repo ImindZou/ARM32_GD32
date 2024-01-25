@@ -1,0 +1,15 @@
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Study\keil\UV4\ARM\ARMCC\Bin'
+Build target 'ARM32'
+compiling hmi_app.c...
+App\hmi_app.c(24): warning:  #224-D: the format string requires additional arguments
+  	printf("\n temp is %.1f.\n");
+App\hmi_app.c: 1 warning, 0 errors
+compiling sensor_drv.c...
+Driver\sensor_drv.c(33): error:  #165: too few arguments in function call
+      sensorData->temp = GetSensorData(); 
+Driver\sensor_drv.c(33): error:  #513: a value of type "void" cannot be assigned to an entity of type "float"
+      sensorData->temp = GetSensorData(); 
+Driver\sensor_drv.c: 0 warnings, 2 errors
+".\Objects\ARM32.axf" - 2 Error(s), 1 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:00
