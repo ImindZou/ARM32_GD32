@@ -371,7 +371,7 @@ i2c_err:          // 命令执行失败后，要发送停止信号，避免影响I2C总线上其他设备
 	return false;
 }
 
-#define BUFFER_SIZE              256
+#define BUFFER_SIZE              255
 void EepromDrvTest(void)
 {
 	uint8_t bufferWrite[BUFFER_SIZE];

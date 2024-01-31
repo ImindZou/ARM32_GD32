@@ -1,8 +1,8 @@
 .\objects\porttimer.o: Drv_Modbus\porttimer.c
 .\objects\porttimer.o: Drv_Modbus\port.h
-.\objects\porttimer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h
-.\objects\porttimer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
-.\objects\porttimer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\porttimer.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\porttimer.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\inttypes.h
+.\objects\porttimer.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\porttimer.o: .\Arm_Kernel\gd32f30x.h
 .\objects\porttimer.o: .\Arm_Kernel\core_cm4.h
 .\objects\porttimer.o: .\Arm_Kernel\core_cmInstr.h

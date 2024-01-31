@@ -1,5 +1,5 @@
 .\objects\led_drv.o: Drv_Common\led_drv.c
-.\objects\led_drv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\led_drv.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\led_drv.o: .\Arm_Kernel\gd32f30x.h
 .\objects\led_drv.o: .\Arm_Kernel\core_cm4.h
 .\objects\led_drv.o: .\Arm_Kernel\core_cmInstr.h

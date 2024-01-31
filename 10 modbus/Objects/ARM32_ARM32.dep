@@ -709,7 +709,7 @@ I (.\GD32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
 I (.\GD32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
 I (.\GD32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
 I (.\GD32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
-F (.\App_Modbus\modbus_app.c)(0x65B788E7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include -I .\App_Modbus -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Drv_Modbus -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\modbus_app.o --omf_browse .\objects\modbus_app.crf --depend .\objects\modbus_app.d)
+F (.\App_Modbus\modbus_app.c)(0x65B788F8)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App -I .\Arm -I .\Driver -I .\GD32_Hal -I .\GD32_Hal\Include -I .\App_Modbus -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Drv_Modbus -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\modbus_app.o --omf_browse .\objects\modbus_app.crf --depend .\objects\modbus_app.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
 I (.\Mid_Modbus\modbus_slave.h)(0x65B50388)

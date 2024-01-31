@@ -1,10 +1,10 @@
 .\objects\mb.o: Mid_Modbus\mb.c
-.\objects\mb.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\mb.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\mb.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\mb.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\string.h
 .\objects\mb.o: .\Drv_Modbus\port.h
-.\objects\mb.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h
-.\objects\mb.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
-.\objects\mb.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\mb.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\mb.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\inttypes.h
+.\objects\mb.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\mb.o: .\Mid_Modbus\include\mb.h
 .\objects\mb.o: .\Mid_Modbus\include\mbport.h
 .\objects\mb.o: .\Mid_Modbus\include\mbproto.h

@@ -1,5 +1,5 @@
 .\objects\sensor_drv.o: Drv_Common\sensor_drv.c
-.\objects\sensor_drv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\sensor_drv.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\sensor_drv.o: .\Arm_Kernel\gd32f30x.h
 .\objects\sensor_drv.o: .\Arm_Kernel\core_cm4.h
 .\objects\sensor_drv.o: .\Arm_Kernel\core_cmInstr.h

@@ -1,9 +1,9 @@
 .\objects\rh_drv.o: Drv_Common\rh_drv.c
-.\objects\rh_drv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\rh_drv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\objects\rh_drv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\rh_drv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\rh_drv.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\rh_drv.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\rh_drv.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\string.h
+.\objects\rh_drv.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\rh_drv.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\rh_drv.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\rh_drv.o: .\Arm_Kernel\gd32f30x.h
 .\objects\rh_drv.o: .\Arm_Kernel\core_cm4.h
 .\objects\rh_drv.o: .\Arm_Kernel\core_cmInstr.h

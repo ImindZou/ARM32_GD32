@@ -2,7 +2,7 @@
 .\objects\gd32f30x_timer.o: .\Gd32_Hal\Include\gd32f30x_timer.h
 .\objects\gd32f30x_timer.o: .\Arm_Kernel\gd32f30x.h
 .\objects\gd32f30x_timer.o: .\Arm_Kernel\core_cm4.h
-.\objects\gd32f30x_timer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\gd32f30x_timer.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\gd32f30x_timer.o: .\Arm_Kernel\core_cmInstr.h
 .\objects\gd32f30x_timer.o: .\Arm_Kernel\core_cmFunc.h
 .\objects\gd32f30x_timer.o: .\Arm_Kernel\core_cm4_simd.h

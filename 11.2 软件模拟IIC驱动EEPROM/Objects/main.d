@@ -1,6 +1,6 @@
 .\objects\main.o: App_Common\main.c
-.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: .\Drv_Common\led_drv.h
 .\objects\main.o: .\Drv_Common\key_drv.h
 .\objects\main.o: .\Drv_Common\systick.h

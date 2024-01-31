@@ -1,8 +1,8 @@
 .\objects\portserial.o: Drv_Modbus\portserial.c
 .\objects\portserial.o: Drv_Modbus\port.h
-.\objects\portserial.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h
-.\objects\portserial.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
-.\objects\portserial.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\portserial.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\assert.h
+.\objects\portserial.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\inttypes.h
+.\objects\portserial.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\portserial.o: .\Arm_Kernel\gd32f30x.h
 .\objects\portserial.o: .\Arm_Kernel\core_cm4.h
 .\objects\portserial.o: .\Arm_Kernel\core_cmInstr.h

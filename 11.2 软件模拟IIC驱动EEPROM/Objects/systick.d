@@ -1,6 +1,6 @@
 .\objects\systick.o: Drv_Common\systick.c
-.\objects\systick.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\systick.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\systick.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\systick.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\systick.o: .\Arm_Kernel\gd32f30x.h
 .\objects\systick.o: .\Arm_Kernel\core_cm4.h
 .\objects\systick.o: .\Arm_Kernel\core_cmInstr.h
