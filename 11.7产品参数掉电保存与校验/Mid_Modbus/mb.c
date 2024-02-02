@@ -409,3 +409,21 @@ eMBPoll( void )
     }
     return MB_ENOERR;
 }
+
+eMBErrorCode
+eMBSetSlaveAddr(UCHAR ucSlaveAddress)
+{
+    eMBErrorCode eStatus = MB_ENOERR;
+
+    /*check preconditions*/
+    if ( (ucSlaveAddress == MB_ADDRESS_BROADCAST ) ||
+        (ucSlaveAddress < MB_ADDRESS_MIN ) || (ucSlaveAddress > MB_ADDRESS_MAX ))
+        {
+            eStatus = MB_EINVAL;
+        }
+        else
+        {
+            ucMBAddress = ucSlaveAddress;
+        }
+        return eStatus;
+}

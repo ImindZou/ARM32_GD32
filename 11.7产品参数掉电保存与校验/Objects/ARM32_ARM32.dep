@@ -1,13 +1,15 @@
 Dependencies for Project 'ARM32', Target 'ARM32': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::ARMCC
-F (.\App_Common\hmi_app.c)(0x6502F30F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\hmi_app.o --omf_browse .\objects\hmi_app.crf --depend .\objects\hmi_app.d)
+F (.\App_Common\hmi_app.c)(0x65BC7AA7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\hmi_app.o --omf_browse .\objects\hmi_app.crf --depend .\objects\hmi_app.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (.\Drv_Common\rtc_drv.h)(0x64E3186C)
 I (.\Drv_Common\sensor_drv.h)(0x64F15877)
 I (.\Drv_Common\led_drv.h)(0x64B8C2AA)
 I (.\Drv_Common\key_drv.h)(0x64BF4B4E)
-F (.\App_Common\main.c)(0x650C0A90)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (App_Common\store_app.h)(0x65BC7234)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
+F (.\App_Common\main.c)(0x65BC7483)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (.\Drv_Common\led_drv.h)(0x64B8C2AA)
@@ -17,19 +19,32 @@ I (.\Drv_Common\usb2com_drv.h)(0x64C777D2)
 I (.\Drv_Common\rtc_drv.h)(0x64E3186C)
 I (.\Drv_Common\delay.h)(0x64B35649)
 I (.\Drv_Common\sensor_drv.h)(0x64F15877)
-I (.\Drv_Common\eeprom_drv.h)(0x650C0A6B)
+I (.\Drv_Common\eeprom_drv.h)(0x65BC6BAE)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
 I (App_Common\hmi_app.h)(0x64D5D842)
 I (App_Common\sensor_app.h)(0x64F15971)
 I (.\App_Modbus\modbus_app.h)(0x6503EA85)
+I (App_Common\store_app.h)(0x65BC7234)
 F (.\App_Common\sensor_app.c)(0x64F159FA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\sensor_app.o --omf_browse .\objects\sensor_app.crf --depend .\objects\sensor_app.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (.\Drv_Common\sensor_drv.h)(0x64F15877)
+F (.\App_Common\store_app.c)(0x65BC7AA7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\store_app.o --omf_browse .\objects\store_app.crf --depend .\objects\store_app.d)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
+I (.\Drv_Common\eeprom_drv.h)(0x65BC6BAE)
+I (.\Mid_Modbus\include\mb.h)(0x65BC70C0)
+I (.\Drv_Modbus\port.h)(0x5B9AC2A6)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
+I (D:\Study\keil\UV4\ARM\ARMCC\include\inttypes.h)(0x5E8E2EB2)
+I (.\Mid_Modbus\include\mbport.h)(0x5B9AC2A6)
+I (.\Mid_Modbus\include\mbproto.h)(0x5B9AC2A6)
 F (.\App_Modbus\modbus_app.c)(0x65067D69)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\modbus_app.o --omf_browse .\objects\modbus_app.crf --depend .\objects\modbus_app.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
 I (.\Mid_Modbus\modbus_slave.h)(0x6503E4CB)
-I (.\Mid_Modbus\include\mb.h)(0x6503E381)
+I (.\Mid_Modbus\include\mb.h)(0x65BC70C0)
 I (.\Drv_Modbus\port.h)(0x5B9AC2A6)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\inttypes.h)(0x5E8E2EB2)
@@ -37,14 +52,14 @@ I (.\Mid_Modbus\include\mbport.h)(0x5B9AC2A6)
 I (.\Mid_Modbus\include\mbproto.h)(0x5B9AC2A6)
 I (.\Drv_Common\sensor_drv.h)(0x64F15877)
 I (.\Drv_Common\led_drv.h)(0x64B8C2AA)
-F (.\Mid_Modbus\mb.c)(0x5B9AC2A6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\mb.o --omf_browse .\objects\mb.crf --depend .\objects\mb.d)
+F (.\Mid_Modbus\mb.c)(0x65BC7061)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\mb.o --omf_browse .\objects\mb.crf --depend .\objects\mb.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
 I (.\Drv_Modbus\port.h)(0x5B9AC2A6)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\inttypes.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (.\Mid_Modbus\include\mb.h)(0x6503E381)
+I (.\Mid_Modbus\include\mb.h)(0x65BC70C0)
 I (.\Mid_Modbus\include\mbport.h)(0x5B9AC2A6)
 I (.\Mid_Modbus\include\mbproto.h)(0x5B9AC2A6)
 I (.\Mid_Modbus\include\mbconfig.h)(0x6502FCDB)
@@ -56,14 +71,14 @@ I (.\Drv_Modbus\port.h)(0x5B9AC2A6)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\inttypes.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-F (.\Mid_Modbus\rtu\mbrtu.c)(0x6506862F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\mbrtu.o --omf_browse .\objects\mbrtu.crf --depend .\objects\mbrtu.d)
+F (.\Mid_Modbus\rtu\mbrtu.c)(0x65BC7B15)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\mbrtu.o --omf_browse .\objects\mbrtu.crf --depend .\objects\mbrtu.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdlib.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\string.h)(0x5E8E2EB2)
 I (.\Drv_Modbus\port.h)(0x5B9AC2A6)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\inttypes.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (.\Mid_Modbus\include\mb.h)(0x6503E381)
+I (.\Mid_Modbus\include\mb.h)(0x65BC70C0)
 I (.\Mid_Modbus\include\mbport.h)(0x5B9AC2A6)
 I (.\Mid_Modbus\include\mbproto.h)(0x5B9AC2A6)
 I (Mid_Modbus\rtu\mbrtu.h)(0x5B9AC2A6)
@@ -76,7 +91,7 @@ I (.\Drv_Modbus\port.h)(0x5B9AC2A6)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\inttypes.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (.\Mid_Modbus\include\mb.h)(0x6503E381)
+I (.\Mid_Modbus\include\mb.h)(0x65BC70C0)
 I (.\Mid_Modbus\include\mbport.h)(0x5B9AC2A6)
 I (.\Mid_Modbus\include\mbproto.h)(0x5B9AC2A6)
 I (.\Mid_Modbus\include\mbframe.h)(0x5B9AC2A6)
@@ -88,12 +103,12 @@ I (.\Drv_Modbus\port.h)(0x5B9AC2A6)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\inttypes.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (.\Mid_Modbus\include\mb.h)(0x6503E381)
+I (.\Mid_Modbus\include\mb.h)(0x65BC70C0)
 I (.\Mid_Modbus\include\mbport.h)(0x5B9AC2A6)
 I (.\Mid_Modbus\include\mbproto.h)(0x5B9AC2A6)
 F (.\Mid_Modbus\modbus_slave.c)(0x6503E653)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\modbus_slave.o --omf_browse .\objects\modbus_slave.crf --depend .\objects\modbus_slave.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
-I (.\Mid_Modbus\include\mb.h)(0x6503E381)
+I (.\Mid_Modbus\include\mb.h)(0x65BC70C0)
 I (.\Drv_Modbus\port.h)(0x5B9AC2A6)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\inttypes.h)(0x5E8E2EB2)
@@ -422,7 +437,7 @@ I (.\Gd32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
 I (.\Gd32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
 I (.\Gd32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
 I (.\Gd32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
-F (.\Drv_Common\eeprom_drv.c)(0x65B904C2)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\eeprom_drv.o --omf_browse .\objects\eeprom_drv.crf --depend .\objects\eeprom_drv.d)
+F (.\Drv_Common\eeprom_drv.c)(0x65BC6BB0)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\eeprom_drv.o --omf_browse .\objects\eeprom_drv.crf --depend .\objects\eeprom_drv.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
@@ -459,7 +474,7 @@ I (.\Gd32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
 I (.\Gd32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
 I (Drv_Common\delay.h)(0x64B35649)
 F (.\Drv_Modbus\portevent.c)(0x5B9AC2A6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\portevent.o --omf_browse .\objects\portevent.crf --depend .\objects\portevent.d)
-I (.\Mid_Modbus\include\mb.h)(0x6503E381)
+I (.\Mid_Modbus\include\mb.h)(0x65BC70C0)
 I (.\Drv_Modbus\port.h)(0x5B9AC2A6)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\assert.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\inttypes.h)(0x5E8E2EB2)
@@ -502,7 +517,7 @@ I (.\Gd32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
 I (.\Gd32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
 I (.\Gd32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
 I (.\Gd32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
-I (.\Mid_Modbus\include\mb.h)(0x6503E381)
+I (.\Mid_Modbus\include\mb.h)(0x65BC70C0)
 I (.\Mid_Modbus\include\mbport.h)(0x5B9AC2A6)
 I (.\Mid_Modbus\include\mbproto.h)(0x5B9AC2A6)
 F (.\Drv_Modbus\porttimer.c)(0x65030442)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\porttimer.o --omf_browse .\objects\porttimer.crf --depend .\objects\porttimer.d)
@@ -541,7 +556,7 @@ I (.\Gd32_Hal\Include\gd32f30x_wwdgt.h)(0x62A6E3C7)
 I (.\Gd32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
 I (.\Gd32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
 I (.\Gd32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
-I (.\Mid_Modbus\include\mb.h)(0x6503E381)
+I (.\Mid_Modbus\include\mb.h)(0x65BC70C0)
 I (.\Mid_Modbus\include\mbport.h)(0x5B9AC2A6)
 I (.\Mid_Modbus\include\mbproto.h)(0x5B9AC2A6)
 F (.\Gd32_Hal\Source\gd32f30x_adc.c)(0x62FC5E35)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\gd32f30x_adc.o --omf_browse .\objects\gd32f30x_adc.crf --depend .\objects\gd32f30x_adc.d)

@@ -409,7 +409,8 @@ eMBErrorCode    eMBRegCoilsCB( UCHAR * pucRegBuffer, USHORT usAddress,
  */
 eMBErrorCode    eMBRegDiscreteCB( UCHAR * pucRegBuffer, USHORT usAddress,
                                   USHORT usNDiscrete );
-
+                                  
+eMBErrorCode eMBSetSlaveAddr(UCHAR ucSlaveAddress);
 #ifdef __cplusplus
 PR_END_EXTERN_C
 #endif

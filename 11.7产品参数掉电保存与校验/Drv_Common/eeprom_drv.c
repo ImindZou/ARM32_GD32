@@ -240,7 +240,7 @@ void I2CSendNack(void)
 * @return   
 *******************************************************************
 */
-static bool ReadEepromData(uint8_t readAddr, uint8_t *pBuffer, uint16_t numToRead)
+bool ReadEepromData(uint8_t readAddr, uint8_t *pBuffer, uint16_t numToRead)
 {
 	if ((readAddr + numToRead) > EEPROM_SIZE || pBuffer == NULL)
 	{
@@ -293,7 +293,7 @@ i2c_err:
 * @return                                                         
 *******************************************************************
 */
-static bool WriteEepromData(uint8_t writeAddr, uint8_t *pBuffer, uint16_t numToWrite)
+bool WriteEepromData(uint8_t writeAddr, uint8_t *pBuffer, uint16_t numToWrite)
 {
 	if ((writeAddr + numToWrite) > EEPROM_SIZE || pBuffer == NULL)
 	{

@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "eeprom_drv.h": "c",
+        "mb.h": "c",
+        "store_app.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}

@@ -1,3 +1,11 @@
+/*
+ * @Author: zdh 2579941211@qq.com
+ * @Date: 2024-02-02 11:36:54
+ * @LastEditors: zdh 2579941211@qq.com
+ * @LastEditTime: 2024-02-02 12:50:11
+ * @FilePath: \11.7产品参数掉电保存与校验\App_Common\main.c
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 #include <stdint.h>
 #include <stdio.h>
 #include "led_drv.h"
@@ -11,13 +19,14 @@
 #include "hmi_app.h"
 #include "sensor_app.h"
 #include "modbus_app.h"
+#include "store_app.h"
 
 typedef struct
 {
-	uint8_t run;                // 调度标志，1：调度，0：挂起
-	uint16_t timCount;          // 时间片计数值
-	uint16_t timRload;          // 时间片重载值
-	void (*pTaskFuncCb)(void);  // 函数指针变量，用来保存业务功能模块函数地址
+	uint8_t run;                // 锟斤拷锟饺憋拷志锟斤拷1锟斤拷锟斤拷锟饺ｏ拷0锟斤拷锟斤拷锟斤拷
+	uint16_t timCount;          // 时锟斤拷片锟斤拷锟斤拷值
+	uint16_t timRload;          // 时锟斤拷片锟斤拷锟斤拷值
+	void (*pTaskFuncCb)(void);  // 锟斤拷锟斤拷指锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟揭碉拷锟斤拷锟侥ｏ拷楹?锟斤拷锟斤拷址
 } TaskComps_t;
 
 static TaskComps_t g_taskComps[] = 
@@ -25,7 +34,7 @@ static TaskComps_t g_taskComps[] =
 	{0, 5,  5,   HmiTask},
 	{0, 1000, 1000,  SensorTask},
 	{0, 1,    1,     ModbusTask},
-	/* 添加业务功能模块 */
+	/* 锟斤拷锟斤拷业锟斤拷锟斤拷模锟斤拷 */
 };
 
 #define TASK_NUM_MAX   (sizeof(g_taskComps) / sizeof(g_taskComps[0]))
@@ -34,18 +43,18 @@ static void TaskHandler(void)
 {
 	for (uint8_t i = 0; i < TASK_NUM_MAX; i++)
 	{
-		if (g_taskComps[i].run)                  // 判断时间片标志
+		if (g_taskComps[i].run)                  // 锟叫讹拷时锟斤拷片锟斤拷志
 		{
-			g_taskComps[i].run = 0;              // 标志清零
-			g_taskComps[i].pTaskFuncCb();        // 执行调度业务功能模块
+			g_taskComps[i].run = 0;              // 锟斤拷志锟斤拷锟斤拷
+			g_taskComps[i].pTaskFuncCb();        // 执锟叫碉拷锟斤拷业锟斤拷锟斤拷模锟斤拷
 		}
 	}
 }
 
 /**
 ***********************************************************
-* @brief 在定时器中断服务函数中被间接调用，设置时间片标记，
-         需要定时器1ms产生1次中断
+* @brief 锟节讹拷时锟斤拷锟叫断凤拷锟斤拷锟斤拷锟叫憋拷锟斤拷拥锟斤拷茫锟斤拷锟斤拷锟绞憋拷锟狡?锟斤拷牵锟?
+         锟斤拷要锟斤拷时锟斤拷1ms锟斤拷锟斤拷1锟斤拷锟叫讹拷
 * @param
 * @return 
 ***********************************************************
@@ -81,6 +90,7 @@ static void AppInit(void)
 {
 	TaskScheduleCbReg(TaskScheduleCb);
 	ModbusAppInit();
+	InitSysParam();
 }
 
 
@@ -89,7 +99,6 @@ int main(void)
 	DrvInit();
 	AppInit();
 
-	EepromDrvTest();
 	while (1)
 	{
 		TaskHandler();
