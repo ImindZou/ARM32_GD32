@@ -2,7 +2,7 @@
  * @Author: zdh 2579941211@qq.com
  * @Date: 2024-02-02 13:51:12
  * @LastEditors: zdh 2579941211@qq.com
- * @LastEditTime: 2024-02-02 14:46:03
+ * @LastEditTime: 2024-02-02 14:50:58
  * @FilePath: \12.1软件模拟SPI驱动NOR FLASH\Drv_Common\norflash_drv.c
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -66,7 +66,7 @@ static void SPIInit(void)
     GpioInit();
 
     SET_SPI_NSS();
-    CLR_SPI_SCK();
+    SET_SPI_SCK();
 }
 
 static void SPIStart(void)
@@ -85,6 +85,7 @@ static uint8_t SPIReadWriteByte(uint8_t sendData)
 
     for (uint8_t i = 0; i < 8; i++)
     {
+        CLR_SPI_SCK();
         if((sendData & 0x80))
         {
             SET_SPI_MOSI();
@@ -98,7 +99,6 @@ static uint8_t SPIReadWriteByte(uint8_t sendData)
         SET_SPI_SCK();
         revData <<= 1;
         revData |= READ_SPI_MISO();
-        CLR_SPI_SCK();
     }
 }
 
