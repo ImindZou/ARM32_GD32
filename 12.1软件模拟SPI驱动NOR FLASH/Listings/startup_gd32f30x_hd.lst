@@ -69,26 +69,26 @@ ARM Macro Assembler    Page 1
 ARM Macro Assembler    Page 2 
 
 
-   42 00000000 00000400 
+   42 00000000 00003200 
                        Stack_Size
-                               EQU              0x00000400
+                               EQU              0x00003200
    43 00000000         
    44 00000000                 AREA             STACK, NOINIT, READWRITE, ALIGN
 =3
    45 00000000         Stack_Mem
                                SPACE            Stack_Size
-   46 00000400         __initial_sp
-   47 00000400         
-   48 00000400         
-   49 00000400         ; <h> Heap Configuration
-   50 00000400         ;   <o>  Heap Size (in Bytes) <0x0-0xFFFFFFFF:8>
-   51 00000400         ; </h>
-   52 00000400         
-   53 00000400 00000400 
+   46 00003200         __initial_sp
+   47 00003200         
+   48 00003200         
+   49 00003200         ; <h> Heap Configuration
+   50 00003200         ;   <o>  Heap Size (in Bytes) <0x0-0xFFFFFFFF:8>
+   51 00003200         ; </h>
+   52 00003200         
+   53 00003200 00000400 
                        Heap_Size
                                EQU              0x00000400
-   54 00000400         
-   55 00000400                 AREA             HEAP, NOINIT, READWRITE, ALIGN=
+   54 00003200         
+   55 00003200                 AREA             HEAP, NOINIT, READWRITE, ALIGN=
 3
    56 00000000         __heap_base
    57 00000000         Heap_Mem
@@ -600,7 +600,7 @@ Symbol: Stack_Mem
    Uses
       None
 Comment: Stack_Mem unused
-__initial_sp 00000400
+__initial_sp 00003200
 
 Symbol: __initial_sp
    Definitions
@@ -1409,7 +1409,7 @@ Symbol: Heap_Size
    Uses
       At line 57 in file Arm_Kernel\startup_gd32f30x_hd.s
 Comment: Heap_Size used once
-Stack_Size 00000400
+Stack_Size 00003200
 
 Symbol: Stack_Size
    Definitions
