@@ -21,17 +21,24 @@ Target DLL:      Segger\JL2CM3.dll V2.99.38.0
 Dialog DLL:      TCM.DLL V1.48.0.0
  
 <h2>Project:</h2>
-D:\Study\ARM32单片机实战课程\06自己动手\11.2 软件模拟IIC驱动EEPROM\ARM32.uvprojx
-Project File Date:  01/30/2024
+d:\Study\ARM32单片机实战课程\06自己动手\12.1软件模拟SPI驱动NOR FLASH\ARM32.uvprojx
+Project File Date:  02/02/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Study\keil\UV4\ARM\ARMCC\Bin'
 Build target 'ARM32'
-compiling eeprom_drv.c...
+compiling norflash_drv.c...
+Drv_Common\norflash_drv.c(103): warning:  #940-D: missing return statement at end of non-void function "SPIReadWriteByte" 
+  }
+Drv_Common\norflash_drv.c(178): warning:  #177-D: variable "bufferWrite"  was declared but never referenced
+      uint8_t bufferWrite[BUFFER_SIZE];
+Drv_Common\norflash_drv.c(179): warning:  #177-D: variable "bufferRead"  was declared but never referenced
+      uint8_t bufferRead[BUFFER_SIZE];
+Drv_Common\norflash_drv.c: 3 warnings, 0 errors
 linking...
-Program Size: Code=13052 RO-data=1632 RW-data=468 ZI-data=1356  
+Program Size: Code=12472 RO-data=1632 RW-data=468 ZI-data=1356  
 FromELF: creating hex file...
-".\Objects\ARM32.axf" - 0 Error(s), 0 Warning(s).
+".\Objects\ARM32.axf" - 0 Error(s), 3 Warning(s).
 
 <h2>Software Packages used:</h2>
 

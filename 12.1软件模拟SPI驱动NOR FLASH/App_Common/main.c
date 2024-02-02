@@ -11,13 +11,14 @@
 #include "hmi_app.h"
 #include "sensor_app.h"
 #include "modbus_app.h"
+#include "norflash_drv.h"
 
 typedef struct
 {
-	uint8_t run;                // µ÷¶È±êÖ¾£¬1£ºµ÷¶È£¬0£º¹ÒÆð
-	uint16_t timCount;          // Ê±¼äÆ¬¼ÆÊýÖµ
-	uint16_t timRload;          // Ê±¼äÆ¬ÖØÔØÖµ
-	void (*pTaskFuncCb)(void);  // º¯ÊýÖ¸Õë±äÁ¿£¬ÓÃÀ´±£´æÒµÎñ¹¦ÄÜÄ£¿éº¯ÊýµØÖ·
+	uint8_t run;                // ï¿½ï¿½ï¿½È±ï¿½Ö¾ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½È£ï¿½0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	uint16_t timCount;          // Ê±ï¿½ï¿½Æ¬ï¿½ï¿½ï¿½ï¿½Öµ
+	uint16_t timRload;          // Ê±ï¿½ï¿½Æ¬ï¿½ï¿½ï¿½ï¿½Öµ
+	void (*pTaskFuncCb)(void);  // ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½Ä£ï¿½éº¯ï¿½ï¿½ï¿½ï¿½Ö·
 } TaskComps_t;
 
 static TaskComps_t g_taskComps[] = 
@@ -25,7 +26,7 @@ static TaskComps_t g_taskComps[] =
 	{0, 5,  5,   HmiTask},
 	{0, 1000, 1000,  SensorTask},
 	{0, 1,    1,     ModbusTask},
-	/* Ìí¼ÓÒµÎñ¹¦ÄÜÄ£¿é */
+	/* ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ */
 };
 
 #define TASK_NUM_MAX   (sizeof(g_taskComps) / sizeof(g_taskComps[0]))
@@ -34,18 +35,18 @@ static void TaskHandler(void)
 {
 	for (uint8_t i = 0; i < TASK_NUM_MAX; i++)
 	{
-		if (g_taskComps[i].run)                  // ÅÐ¶ÏÊ±¼äÆ¬±êÖ¾
+		if (g_taskComps[i].run)                  // ï¿½Ð¶ï¿½Ê±ï¿½ï¿½Æ¬ï¿½ï¿½Ö¾
 		{
-			g_taskComps[i].run = 0;              // ±êÖ¾ÇåÁã
-			g_taskComps[i].pTaskFuncCb();        // Ö´ÐÐµ÷¶ÈÒµÎñ¹¦ÄÜÄ£¿é
+			g_taskComps[i].run = 0;              // ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½
+			g_taskComps[i].pTaskFuncCb();        // Ö´ï¿½Ðµï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½
 		}
 	}
 }
 
 /**
 ***********************************************************
-* @brief ÔÚ¶¨Ê±Æ÷ÖÐ¶Ï·þÎñº¯ÊýÖÐ±»¼ä½Óµ÷ÓÃ£¬ÉèÖÃÊ±¼äÆ¬±ê¼Ç£¬
-         ÐèÒª¶¨Ê±Æ÷1ms²úÉú1´ÎÖÐ¶Ï
+* @brief ï¿½Ú¶ï¿½Ê±ï¿½ï¿½ï¿½Ð¶Ï·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½Óµï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Æ¬ï¿½ï¿½Ç£ï¿½
+         ï¿½ï¿½Òªï¿½ï¿½Ê±ï¿½ï¿½1msï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½Ð¶ï¿½
 * @param
 * @return 
 ***********************************************************
@@ -76,6 +77,7 @@ static void DrvInit(void)
 	SensorDrvInit();
 	EepromDrvInit();
 	SystickInit();
+	NorflashDrvInit();
 }
 static void AppInit(void)
 {
@@ -88,8 +90,9 @@ int main(void)
 {	
 	DrvInit();
 	AppInit();
+	NorflashDrvTest();
 
-	EepromDrvTest();
+	
 	while (1)
 	{
 		TaskHandler();

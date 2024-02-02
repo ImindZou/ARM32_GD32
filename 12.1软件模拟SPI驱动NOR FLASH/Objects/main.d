@@ -12,3 +12,4 @@
 .\objects\main.o: App_Common\hmi_app.h
 .\objects\main.o: App_Common\sensor_app.h
 .\objects\main.o: .\App_Modbus\modbus_app.h
+.\objects\main.o: .\Drv_Common\norflash_drv.h

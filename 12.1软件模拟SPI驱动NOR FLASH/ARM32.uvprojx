@@ -508,6 +508,11 @@
               <FileType>1</FileType>
               <FilePath>.\Drv_Common\eeprom_drv.c</FilePath>
             </File>
+            <File>
+              <FileName>norflash_drv.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Drv_Common\norflash_drv.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -21,6 +21,7 @@
 ".\objects\systick.o"
 ".\objects\usb2com_drv.o"
 ".\objects\eeprom_drv.o"
+".\objects\norflash_drv.o"
 ".\objects\portevent.o"
 ".\objects\portserial.o"
 ".\objects\porttimer.o"

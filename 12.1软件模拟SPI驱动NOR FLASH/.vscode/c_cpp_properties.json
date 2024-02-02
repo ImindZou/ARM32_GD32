@@ -3,20 +3,20 @@
         {
             "name": "ARM32",
             "includePath": [
-                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\11.2 软件模拟IIC驱动EEPROM\\App_Common",
-                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\11.2 软件模拟IIC驱动EEPROM\\App_Modbus",
-                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\11.2 软件模拟IIC驱动EEPROM\\Arm_Kernel",
-                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\11.2 软件模拟IIC驱动EEPROM\\Drv_Common",
-                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\11.2 软件模拟IIC驱动EEPROM\\Drv_Modbus",
-                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\11.2 软件模拟IIC驱动EEPROM\\Gd32_Hal",
-                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\11.2 软件模拟IIC驱动EEPROM\\Gd32_Hal\\Include",
-                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\11.2 软件模拟IIC驱动EEPROM\\Mid_Modbus",
-                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\11.2 软件模拟IIC驱动EEPROM\\Mid_Modbus\\rtu",
-                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\11.2 软件模拟IIC驱动EEPROM\\Mid_Modbus\\include",
+                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\12.1软件模拟SPI驱动NOR FLASH\\App_Common",
+                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\12.1软件模拟SPI驱动NOR FLASH\\App_Modbus",
+                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\12.1软件模拟SPI驱动NOR FLASH\\Arm_Kernel",
+                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\12.1软件模拟SPI驱动NOR FLASH\\Drv_Common",
+                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\12.1软件模拟SPI驱动NOR FLASH\\Drv_Modbus",
+                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\12.1软件模拟SPI驱动NOR FLASH\\Gd32_Hal",
+                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\12.1软件模拟SPI驱动NOR FLASH\\Gd32_Hal\\Include",
+                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\12.1软件模拟SPI驱动NOR FLASH\\Mid_Modbus",
+                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\12.1软件模拟SPI驱动NOR FLASH\\Mid_Modbus\\rtu",
+                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\12.1软件模拟SPI驱动NOR FLASH\\Mid_Modbus\\include",
                 "D:\\Study\\keil\\UV4\\ARM\\ARMCC\\include",
                 "D:\\Study\\keil\\UV4\\ARM\\ARMCC\\include\\rw",
-                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\11.2 软件模拟IIC驱动EEPROM\\Mid_Modbus\\functions",
-                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\11.2 软件模拟IIC驱动EEPROM\\Gd32_Hal\\Source"
+                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\12.1软件模拟SPI驱动NOR FLASH\\Mid_Modbus\\functions",
+                "d:\\Study\\ARM32单片机实战课程\\06自己动手\\12.1软件模拟SPI驱动NOR FLASH\\Gd32_Hal\\Source"
             ],
             "defines": [
                 "__CC_ARM",
