@@ -1,0 +1,10 @@
+.\objects\update.o: App_Common\update.c
+.\objects\update.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\update.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\update.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\update.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\update.o: .\Drv_Common\rs485_drv.h
+.\objects\update.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\update.o: .\Drv_Common\delay.h
+.\objects\update.o: .\Drv_Common\flash_drv.h
+.\objects\update.o: App_Common\update.h
