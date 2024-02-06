@@ -1,0 +1,16 @@
+.\objects\main.o: App_Common\main.c
+.\objects\main.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: .\Drv_Common\led_drv.h
+.\objects\main.o: .\Drv_Common\key_drv.h
+.\objects\main.o: .\Drv_Common\systick.h
+.\objects\main.o: .\Drv_Common\usb2com_drv.h
+.\objects\main.o: .\Drv_Common\rtc_drv.h
+.\objects\main.o: .\Drv_Common\delay.h
+.\objects\main.o: .\Drv_Common\sensor_drv.h
+.\objects\main.o: .\Drv_Common\eeprom_drv.h
+.\objects\main.o: .\Drv_Common\norflash_drv.h
+.\objects\main.o: App_Common\hmi_app.h
+.\objects\main.o: App_Common\sensor_app.h
+.\objects\main.o: .\App_Modbus\modbus_app.h
+.\objects\main.o: App_Common\fatfs_app.h
