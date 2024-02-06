@@ -543,6 +543,11 @@
               <FileType>1</FileType>
               <FilePath>.\Drv_Common\norflash_drv.c</FilePath>
             </File>
+            <File>
+              <FileName>sdcard.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Drv_Common\sdcard.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -622,6 +627,11 @@
               <FileName>gd32f30x_spi.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Gd32_Hal\Source\gd32f30x_spi.c</FilePath>
+            </File>
+            <File>
+              <FileName>gd32f30x_sdio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Gd32_Hal\Source\gd32f30x_sdio.c</FilePath>
             </File>
           </Files>
         </Group>

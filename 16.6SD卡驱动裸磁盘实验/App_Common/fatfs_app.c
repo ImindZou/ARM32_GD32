@@ -5,9 +5,10 @@
 #include "rtc_drv.h"
 #include "ff.h"
 #include "sensor_drv.h"
+#include "sdcard.h"
 
 #define DEV_PATH_STR				"0:"
-#define SENSOR_FILE_PATH_STR		"0:温度传感器记录.txt"
+#define SENSOR_FILE_PATH_STR		"0:sensor record.txt"
 
 static FATFS g_fs;
 static FIL g_sensorFile;
@@ -43,6 +44,13 @@ void FatfsInit(void)
 	}
 	g_fsInitStat = true;
 }
+void FatfsDeinit(void)
+{
+	f_mount(NULL, DEV_PATH_STR, 1);
+	g_fsInitStat = false;
+	
+}
+
 
 void FatfsTask(void)
 {
@@ -95,3 +103,17 @@ void PrintSensorFile(void)
 	f_unlink(SENSOR_FILE_PATH_STR);
 }
 
+void SdcardHotPlugTask(void)
+{
+	sd_error_enum status = SdcardDetect();
+	if (status != SD_OK && g_fsInitStat)
+	{
+		printf("SD卡不在位，文件系统已经注册过，注销文件系统.\n");
+		FatfsDeinit();
+	}
+	if (status == SD_OK && !g_fsInitStat)
+	{
+		printf("SD卡在位，文件系统没用注册过，注册文件系统.\n");
+		FatfsInit();
+	}
+}

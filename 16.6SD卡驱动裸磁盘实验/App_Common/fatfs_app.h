@@ -4,6 +4,6 @@
 void FatfsInit(void);
 void FatfsTask(void);
 void PrintSensorFile(void);
-
+void SdcardHotPlugTask(void);
 
 #endif 

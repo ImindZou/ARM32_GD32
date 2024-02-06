@@ -2,14 +2,11 @@
     \file    sdcard.c
     \brief   SD card driver 
 
-    \version 2017-02-10, V1.0.0, firmware for GD32F30x
-    \version 2018-10-10, V1.1.0, firmware for GD32F30x
-    \version 2018-12-25, V2.0.0, firmware for GD32F30x
-    \version 2020-09-30, V2.1.0, firmware for GD32F30x
+    \version 2021-03-23, V2.0.0, demo for GD32F30x
 */
 
 /*
-    Copyright (c) 2020, GigaDevice Semiconductor Inc.
+    Copyright (c) 2021, GigaDevice Semiconductor Inc.
 
     Redistribution and use in source and binary forms, with or without modification, 
 are permitted provided that the following conditions are met:
@@ -39,6 +36,7 @@ OF SUCH DAMAGE.
 #include "gd32f30x_sdio.h"
 #include "gd32f30x_dma.h"
 #include <stddef.h>
+#include <stdio.h>
 
 /* card status of R1 definitions */
 #define SD_R1_OUT_OF_RANGE                  BIT(31)                   /* command's argument was out of the allowed range */
@@ -107,7 +105,7 @@ OF SUCH DAMAGE.
 #define SD_ALLZERO                          ((uint32_t)0x00000000)    /* all zero */
 #define SD_RCA_SHIFT                        ((uint8_t)0x10)           /* RCA shift bits */
 #define SD_CLK_DIV_INIT                     ((uint16_t)0x012A)        /* SD clock division in initilization phase */
-#define SD_CLK_DIV_TRANS                    ((uint16_t)0x0009)        /* SD clock division in transmission phase */
+#define SD_CLK_DIV_TRANS                    ((uint16_t)0x0008)        /* SD clock division in transmission phase */
 
 #define SDIO_MASK_INTC_FLAGS                ((uint32_t)0x00C007FF)    /* mask flags of SDIO_INTC */
 
@@ -441,7 +439,7 @@ sd_error_enum sd_block_read(uint32_t *preadbuffer, uint32_t readaddr, uint16_t b
     sd_error_enum status = SD_OK;
     uint32_t count = 0, align = 0, datablksize = SDIO_DATABLOCKSIZE_1BYTE, *ptempbuff = preadbuffer;
     __IO uint32_t timeout = 0;
-    
+
     if(NULL == preadbuffer){
         status = SD_PARAMETER_INVALID;
         return status;
@@ -573,7 +571,7 @@ sd_error_enum sd_multiblocks_read(uint32_t *preadbuffer, uint32_t readaddr, uint
     sd_error_enum status = SD_OK;
     uint32_t count = 0, align = 0, datablksize = SDIO_DATABLOCKSIZE_1BYTE, *ptempbuff = preadbuffer;
     __IO uint32_t timeout = 0;
-    
+
     if(NULL == preadbuffer){
         status = SD_PARAMETER_INVALID;
         return status;
@@ -735,7 +733,7 @@ sd_error_enum sd_block_write(uint32_t *pwritebuffer, uint32_t writeaddr, uint16_
     uint32_t count = 0, align = 0, datablksize = SDIO_DATABLOCKSIZE_1BYTE, *ptempbuff = pwritebuffer;
     uint32_t transbytes = 0, restwords = 0, response = 0;
     __IO uint32_t timeout = 0;
-    
+
     if(NULL == pwritebuffer){
         status = SD_PARAMETER_INVALID;
         return status;
@@ -922,7 +920,7 @@ sd_error_enum sd_multiblocks_write(uint32_t *pwritebuffer, uint32_t writeaddr, u
     uint32_t count = 0, align = 0, datablksize = SDIO_DATABLOCKSIZE_1BYTE, *ptempbuff = pwritebuffer;
     uint32_t transbytes = 0, restwords = 0;
     __IO uint32_t timeout = 0;
-    
+
     if(NULL == pwritebuffer){
         status = SD_PARAMETER_INVALID;
         return status;
@@ -1591,7 +1589,7 @@ uint32_t sd_card_capacity_get(void)
     if((SDIO_STD_CAPACITY_SD_CARD_V1_1 == cardtype) || (SDIO_STD_CAPACITY_SD_CARD_V2_0 == cardtype)){
         /* calculate the c_size(device size) */
         tempbyte = (uint8_t)((sd_csd[1] & SD_MASK_8_15BITS) >> 8);
-        devicesize |= (uint32_t)((uint32_t)(tempbyte & 0x03) << 10);
+        devicesize = (uint32_t)((uint32_t)(tempbyte & 0x03) << 10);
         tempbyte = (uint8_t)(sd_csd[1] & SD_MASK_0_7BITS);
         devicesize |= (uint32_t)((uint32_t)tempbyte << 2);
         tempbyte = (uint8_t)((sd_csd[2] & SD_MASK_24_31BITS) >> 24);
@@ -1602,7 +1600,7 @@ uint32_t sd_card_capacity_get(void)
         devicesize_mult = (tempbyte & 0x03) << 1;
         tempbyte = (uint8_t)((sd_csd[2] & SD_MASK_8_15BITS) >> 8);
         devicesize_mult |= (tempbyte & 0x80) >> 7;
-        
+
         /* calculate the read_bl_len */
         tempbyte = (uint8_t)((sd_csd[1] & SD_MASK_16_23BITS) >> 16);
         readblklen = tempbyte & 0x0F;
@@ -1789,7 +1787,7 @@ sd_error_enum sd_card_information_get(sd_card_info_struct *pcardinfo)
         
         /* calculate the card block size and capacity */
         pcardinfo->card_blocksize = 512;
-        pcardinfo->card_capacity = (pcardinfo->card_csd.c_size + 1) * 512 *1024;
+        pcardinfo->card_capacity = (uint64_t)(pcardinfo->card_csd.c_size + 1) * 512 *1024;  // 加上uint64_t强制转换，否则会出现溢出
     }
     
     pcardinfo->card_csd.erase_blk_en = (tempbyte & 0x40) >> 6;
@@ -2243,7 +2241,6 @@ static sd_error_enum sd_scr_get(uint16_t rca, uint32_t *pscr)
     /* send CMD16(SET_BLOCKLEN) to set block length */
     sdio_command_response_config(SD_CMD_SET_BLOCKLEN, (uint32_t)8, SDIO_RESPONSETYPE_SHORT);
     sdio_wait_type_set(SDIO_WAITTYPE_NO);
-    sdio_csm_enable();
     /* check if some error occurs */
     status = r1_error_check(SD_CMD_SET_BLOCKLEN);
     if(SD_OK != status){
@@ -2353,8 +2350,9 @@ static uint32_t sd_datablocksize_get(uint16_t bytesnumber)
 static void gpio_config(void)
 {
     /* configure the SDIO_DAT0(PC8), SDIO_DAT1(PC9), SDIO_DAT2(PC10), SDIO_DAT3(PC11), SDIO_CLK(PC12) and SDIO_CMD(PD2) */
-    gpio_init(GPIOC, GPIO_MODE_AF_PP, GPIO_OSPEED_10MHZ, GPIO_PIN_8 | GPIO_PIN_9 | GPIO_PIN_10 | GPIO_PIN_11 | GPIO_PIN_12);
-    gpio_init(GPIOD, GPIO_MODE_AF_PP, GPIO_OSPEED_10MHZ, GPIO_PIN_2);
+    gpio_init(GPIOC, GPIO_MODE_AF_PP, GPIO_OSPEED_50MHZ, GPIO_PIN_8 | GPIO_PIN_9 | GPIO_PIN_10 | GPIO_PIN_11 | GPIO_PIN_12);
+    gpio_init(GPIOD, GPIO_MODE_AF_PP, GPIO_OSPEED_50MHZ, GPIO_PIN_2);  
+	gpio_init(GPIOD, GPIO_MODE_IPU, GPIO_OSPEED_50MHZ, GPIO_PIN_3);  
 }
 
 /*!
@@ -2391,7 +2389,7 @@ static void dma_transfer_config(uint32_t *srcbuf, uint32_t bufsize)
     dma_channel_disable(DMA1, DMA_CH3);
     dma_deinit(DMA1, DMA_CH3);
     
-    /* configure the DMA1 channel 3 */
+    /* configure the DMA1 channel3 */
     dma_struct.periph_addr = (uint32_t)SDIO_FIFO_ADDR;
     dma_struct.memory_addr = (uint32_t)srcbuf;
     dma_struct.direction = DMA_MEMORY_TO_PERIPHERAL;
@@ -2439,4 +2437,306 @@ static void dma_receive_config(uint32_t *dstbuf, uint32_t bufsize)
     
     dma_circulation_disable(DMA1, DMA_CH3);
     dma_channel_enable(DMA1, DMA_CH3);
+}
+
+void SDIO_IRQHandler(void)
+{
+    sd_interrupts_process();
+}
+
+void nvic_config(void)
+{
+    //nvic_priority_group_set(NVIC_PRIGROUP_PRE1_SUB3);
+    nvic_irq_enable(SDIO_IRQn, 0, 0);
+}
+
+sd_error_enum SdcardDetect(void)
+{
+	if (RESET == gpio_input_bit_get(GPIOD, GPIO_PIN_3))
+	{
+		return SD_OK;
+	}
+	else
+	{
+		return SD_ERROR;
+	}
+}
+sd_error_enum SdcardDrvInit(void)
+{
+	sd_error_enum status = SD_OK;
+	uint32_t cardstate = 0;
+	sd_card_info_struct sd_cardinfo;
+	//nvic_config();
+	status = sd_init();
+	if (SD_OK == status)
+	{
+		status = sd_card_information_get(&sd_cardinfo);
+	}
+	if (SD_OK == status)
+	{
+		status = sd_card_select_deselect(sd_cardinfo.card_rca);
+	}
+	status = sd_cardstatus_get(&cardstate);
+	if (cardstate & 0x02000000)
+	{
+		printf("the card is locked! \n");
+		return SD_ERROR;
+	}
+	if ((SD_OK == status) && (!(cardstate & 0x02000000)))
+	{
+		/* set bus mode */
+		status = sd_bus_mode_config(SDIO_BUSMODE_4BIT);
+	}
+	if (SD_OK == status)
+	{
+		/* set data transfer mode */
+		status = sd_transfer_mode_config(SD_POLLING_MODE);
+	}
+	if (status != SD_OK)
+	{
+		printf("the card init failed! \n");
+	}
+	return status;
+}
+
+void card_info_get(void)
+{
+    uint8_t sd_spec, sd_spec3, sd_spec4, sd_security;
+    uint16_t temp_ccc;
+	sd_card_info_struct sd_cardinfo;
+	
+	sd_card_information_get(&sd_cardinfo);
+	
+    printf("\r\n Card information:");
+    sd_spec = (sd_scr[1] & 0x0F000000) >> 24;
+    sd_spec3 = (sd_scr[1] & 0x00008000) >> 15;
+    sd_spec4 = (sd_scr[1] & 0x00000400) >> 10;
+    if(2 == sd_spec)
+    {
+        if(1 == sd_spec3)
+        {
+            if(1 == sd_spec4) 
+            {
+                printf("\r\n## Card version 4.xx ##");
+            }
+            else 
+            {
+                printf("\r\n## Card version 3.0x ##");
+            }
+        }
+        else 
+        {
+            printf("\r\n## Card version 2.00 ##");
+        }
+    }
+    else if(1 == sd_spec) 
+    {
+        printf("\r\n## Card version 1.10 ##");
+    }
+    else if(0 == sd_spec) 
+    {
+        printf("\r\n## Card version 1.0x ##");
+    }
+    
+    sd_security = (sd_scr[1] & 0x00700000) >> 20;
+    if(2 == sd_security) 
+    {
+        printf("\r\n## SDSC card ##");
+    }
+    else if(3 == sd_security) 
+    {   
+        printf("\r\n## SDHC card ##");
+    }
+    else if(4 == sd_security) 
+    {
+        printf("\r\n## SDXC card ##");
+    }
+	printf("\r\n## Device size is %dKB ##", (uint32_t)(sd_cardinfo.card_capacity / 1024));
+    printf("\r\n## Block size is %dB ##", sd_cardinfo.card_blocksize);
+    printf("\r\n## Block count is %d ##", (uint32_t)(sd_cardinfo.card_capacity / sd_cardinfo.card_blocksize));
+    printf("\r\n## SD RCA is %d ##", sd_cardinfo.card_rca);
+
+    if(sd_cardinfo.card_csd.read_bl_partial){
+        printf("\r\n## Partial blocks for read allowed ##" );
+    }
+    if(sd_cardinfo.card_csd.write_bl_partial){
+        printf("\r\n## Partial blocks for write allowed ##" );
+    }
+    temp_ccc = sd_cardinfo.card_csd.ccc;
+    printf("\r\n## CardCommandClasses is: %x ##", temp_ccc);
+    if((SD_CCC_BLOCK_READ & temp_ccc) && (SD_CCC_BLOCK_WRITE & temp_ccc)){
+        printf("\r\n## Block operation supported ##");
+    }
+    if(SD_CCC_ERASE & temp_ccc){
+        printf("\r\n## Erase supported ##");
+    }
+    if(SD_CCC_WRITE_PROTECTION & temp_ccc){
+        printf("\r\n## Write protection supported ##");
+    }
+    if(SD_CCC_LOCK_CARD & temp_ccc){
+        printf("\r\n## Lock unlock supported ##");
+    }
+    if(SD_CCC_APPLICATION_SPECIFIC & temp_ccc){
+        printf("\r\n## Application specific supported ##");
+    }
+    if(SD_CCC_IO_MODE & temp_ccc){
+        printf("\r\n## I/O mode supported ##");
+    }
+    if(SD_CCC_SWITCH & temp_ccc){
+        printf("\r\n## Switch function supported ##");
+    }
+}
+
+void SdcardDrvTest(void)
+{
+	uint32_t buf_write[512];                                    /* store the data written to the card */
+	uint32_t buf_read[512];                                     /* store the data read from the card */
+	sd_error_enum status;
+	 /* get the information of the card and print it out by USART */
+    card_info_get();
+    
+    /* init the write buffer */
+    for(uint16_t i=0; i<512; i++){
+        buf_write[i] = i;
+    }
+    
+    printf("\r\n\r\n Card test:");
+    
+    /* single block operation test */
+    status = sd_block_write(buf_write, 100*512, 512);
+    if (SD_OK != status){
+        printf("\r\n Block write fail!");
+        return;
+    }
+	else
+	{
+        printf("\r\n Block write success!");
+    }
+    status = sd_block_read(buf_read, 100*512, 512);
+    if (SD_OK != status){
+        printf("\r\n Block read fail!");
+        return;
+    }
+	else
+	{
+        printf("\r\n Block read success!");
+#ifdef DATA_PRINT
+        pdata = (uint8_t *)buf_read;
+        /* print data by USART */
+        printf("\r\n");
+        for(i = 0; i < 128; i++){
+            printf(" %3d %3d %3d %3d ", *pdata, *(pdata+1), *(pdata+2), *(pdata+3));
+            pdata += 4;
+            if(0 == (i + 1) % 4){
+                printf("\r\n");
+            }
+        }
+#endif /* DATA_PRINT */
+    }
+    sd_card_info_struct sd_cardinfo;
+	sd_card_information_get(&sd_cardinfo);
+
+    /* lock and unlock operation test */
+    if (SD_CCC_LOCK_CARD & sd_cardinfo.card_csd.ccc)
+	{
+        /* lock the card */
+        status = sd_lock_unlock(SD_LOCK);
+        if (SD_OK != status){
+            printf("\r\n Lock failed!");
+            return;
+        }
+		else
+		{
+            printf("\r\n The card is locked!");
+        }
+		
+        status = sd_erase(100*512, 101*512);
+        if (SD_OK != status)
+		{
+            printf("\r\n Erase failed!");
+        }
+		else
+		{
+            printf("\r\n Erase success!");
+        }
+        
+        /* unlock the card */
+        status = sd_lock_unlock(SD_UNLOCK);
+        if (SD_OK != status)
+		{
+            printf("\r\n Unlock failed!");
+            return;
+        }
+		else
+		{
+            printf("\r\n The card is unlocked!");
+        }
+        status = sd_erase(100*512, 101*512);
+        if (SD_OK != status)
+		{
+            printf("\r\n Erase failed!");
+			return;
+        }
+		else
+		{
+            printf("\r\n Erase success!");
+        }
+        
+        status = sd_block_read(buf_read, 100*512, 512);
+        if (SD_OK != status)
+		{
+            printf("\r\n Block read fail!");
+            return;
+        }
+		else
+		{
+            printf("\r\n Block read success!");
+#ifdef DATA_PRINT
+        pdata = (uint8_t *)buf_read;
+        /* print data by USART */
+        printf("\r\n");
+        for(i = 0; i < 128; i++){
+            printf(" %3d %3d %3d %3d ", *pdata, *(pdata+1), *(pdata+2), *(pdata+3));
+            pdata += 4;
+            if(0 == (i + 1) % 4){
+                printf("\r\n");
+            }
+        }
+#endif /* DATA_PRINT */
+        }
+    }
+    
+    /* multiple blocks operation test */
+    status = sd_multiblocks_write(buf_write, 200*512, 512, 3);
+    if (SD_OK != status)
+	{
+        printf("\r\n Multiple block write fail!");
+        return;
+    }
+	else
+	{
+        printf("\r\n Multiple block write success!");
+    }
+    status = sd_multiblocks_read(buf_read, 200*512, 512, 3);
+    if (SD_OK != status)
+	{
+        printf("\r\n Multiple block read fail!");
+        return;
+    }
+	else
+	{
+        printf("\r\n Multiple block read success!");
+#ifdef DATA_PRINT
+        pdata = (uint8_t *)buf_read;
+        /* print data by USART */
+        printf("\r\n");
+        for(i = 0; i < 512; i++){
+            printf(" %3d %3d %3d %3d ", *pdata, *(pdata+1), *(pdata+2), *(pdata+3));
+            pdata += 4;
+            if(0 == (i + 1) % 4){
+                printf("\r\n");
+            }
+        }
+#endif /* DATA_PRINT */
+    }
 }

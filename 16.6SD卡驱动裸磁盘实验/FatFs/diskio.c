@@ -11,13 +11,12 @@
 #include "ff.h"			/* Obtains integer types */
 #include "diskio.h"		/* Declarations of disk functions */
 #include "rtc_drv.h"
-#include "norflash_drv.h"
+#include "sdcard.h"
 
 /* Definitions of physical drive number for each drive */
-#define DEV_NORFLASH		0	/* Example: Map Ramdisk to physical drive 0 */
-#define DEV_MMC		1	/* Example: Map MMC/SD card to physical drive 1 */
-#define DEV_USB		2	/* Example: Map USB MSD to physical drive 2 */
+#define DEV_SD		0	/* Example: Map Ramdisk to physical drive 0 */
 
+static sd_card_info_struct g_SdInfo;
 
 /*-----------------------------------------------------------------------*/
 /* Get Drive Status                                                      */
@@ -40,19 +39,19 @@ DSTATUS disk_initialize (
 	BYTE pdrv				/* Physical drive nmuber to identify the drive */
 )
 {
-	uint8_t mid = 0;
-	uint16_t did = 0;
+//	uint8_t mid = 0;
+//	uint16_t did = 0;
 
 	switch (pdrv) {
-	case DEV_NORFLASH :
-		NorflashDrvInit();
-		ReadNorflashID(&mid, &did);
-		if (((uint32_t)mid << 16 | did) == NORFLASH_ID)
+	case DEV_SD :
+		if (SD_OK != SdcardDrvInit())
 		{
 			return RES_OK;
 		}
+		sd_card_information_get(&g_SdInfo);
+		return RES_OK;
 	}
-	return STA_NOINIT;
+	return RES_NOTRDY;
 }
 
 
@@ -68,11 +67,23 @@ DRESULT disk_read (
 	UINT count		/* Number of sectors to read */
 )
 {
-
+	sd_error_enum status = SD_ERROR;
 	switch (pdrv) {
-	case DEV_NORFLASH :
-		ReadNorflashData(sector * NORFLASH_SECTOR_SIZE, buff, count * NORFLASH_SECTOR_SIZE);
-		return RES_OK;
+	case DEV_SD :
+		if (1 == count)
+		{
+			/* single sector read */
+			status = sd_block_read((uint32_t *)buff, (uint32_t)(sector << 9), g_SdInfo.card_blocksize);
+		}
+		else
+		{
+			/* multiple sectors read */
+			status = sd_multiblocks_read((uint32_t *)buff, (uint32_t)(sector << 9), g_SdInfo.card_blocksize, (uint32_t)count);
+		}
+		if(SD_OK == status)
+		{
+			return RES_OK;
+		}
 	}
 	return RES_PARERR;
 }
@@ -92,12 +103,24 @@ DRESULT disk_write (
 	UINT count			/* Number of sectors to write */
 )
 {
+	sd_error_enum status = SD_ERROR;
 	switch (pdrv) {
-	case DEV_NORFLASH :
-		EraseNorflashForWrite(sector * NORFLASH_SECTOR_SIZE, count * NORFLASH_SECTOR_SIZE);
-		WriteNorflashData(sector * NORFLASH_SECTOR_SIZE, (uint8_t *)buff, count * NORFLASH_SECTOR_SIZE);
-		return RES_OK;
+	case DEV_SD :
+		if (1 == count)
+		{
+			/* single sector write */
+			status = sd_block_write((uint32_t *)buff, sector << 9, g_SdInfo.card_blocksize);
+		}
+		else
+		{
+			/* muliple sectors write */
+			status = sd_multiblocks_write((uint32_t *)buff, sector << 9, g_SdInfo.card_blocksize, (uint32_t)count);		}
+		if (SD_OK == status)
+		{
+			return RES_OK;
+		}
 	}
+	
 	return RES_PARERR;
 }
 
@@ -115,14 +138,14 @@ DRESULT disk_ioctl (
 )
 {
 	switch (pdrv) {
-		case DEV_NORFLASH :
+		case DEV_SD :
 			switch (cmd)
 			{
 				case GET_SECTOR_COUNT :
-					*(DWORD *)buff = NORFLASH_SECTOR_COUNT;
+					*(DWORD *)buff = (uint32_t)(g_SdInfo.card_capacity / g_SdInfo.card_blocksize);
 					break;
 				case GET_SECTOR_SIZE :
-					*(WORD *)buff = NORFLASH_SECTOR_SIZE;
+					*(WORD *)buff = g_SdInfo.card_blocksize;
 					break;
 			}
 			return RES_OK;

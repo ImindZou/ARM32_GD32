@@ -2,14 +2,11 @@
     \file    sdcard.h
     \brief   the header file of SD card driver
 
-    \version 2017-02-10, V1.0.0, firmware for GD32F30x
-    \version 2018-10-10, V1.1.0, firmware for GD32F30x
-    \version 2018-12-25, V2.0.0, firmware for GD32F30x
-    \version 2020-09-30, V2.1.0, firmware for GD32F30x
+    \version 2021-03-23, V2.0.0, demo for GD32F30x
 */
 
 /*
-    Copyright (c) 2020, GigaDevice Semiconductor Inc.
+    Copyright (c) 2021, GigaDevice Semiconductor Inc.
 
     Redistribution and use in source and binary forms, with or without modification, 
 are permitted provided that the following conditions are met:
@@ -163,7 +160,7 @@ typedef struct
     sd_cid_struct card_cid;               /* CID register */
     sd_csd_struct card_csd;               /* CSD register */
     sdio_card_type_enum card_type;        /* card tpye */
-    uint32_t card_capacity;               /* card capacity */
+    uint64_t card_capacity;               /* card capacity */ // modify,old uit32_t
     uint32_t card_blocksize;              /* card block size */
     uint16_t card_rca;                    /* card relative card address */
 }sd_card_info_struct;
@@ -258,5 +255,10 @@ sd_transfer_state_enum sd_transfer_state_get(void);
 uint32_t sd_card_capacity_get(void);
 /* get the detailed information of the SD card based on received CID and CSD */
 sd_error_enum sd_card_information_get(sd_card_info_struct *pcardinfo);
+/* init sd card */
+sd_error_enum SdcardDrvInit(void);
+/* sd card insert detect */
+sd_error_enum SdcardDetect(void);
+void SdcardDrvTest(void);
 
 #endif /* SDCARD_H */

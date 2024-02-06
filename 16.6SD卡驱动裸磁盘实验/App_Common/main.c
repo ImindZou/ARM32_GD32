@@ -9,6 +9,7 @@
 #include "sensor_drv.h"
 #include "eeprom_drv.h"
 #include "norflash_drv.h"
+#include "sdcard.h"
 #include "hmi_app.h"
 #include "sensor_app.h"
 #include "modbus_app.h"
@@ -27,6 +28,7 @@ static TaskComps_t g_taskComps[] =
 	{0, 5,  5,   HmiTask},
 	{0, 1000, 1000,  SensorTask},
 	{0, 1,    1,     ModbusTask},
+	{0, 5,  5,   SdcardHotPlugTask},
 	{0, 10000, 10000,  FatfsTask},
 
 	/* 添加业务功能模块 */
@@ -76,10 +78,10 @@ static void DrvInit(void)
 	LedDrvInit();
 	KeyDrvInit();
 	Usb2ComDrvInit();
-	RtcDrvInit();
+	RtcDrvInit(); 
 	SensorDrvInit();
-	EepromDrvInit();
-	NorflashDrvInit();
+//	EepromDrvInit();
+//	NorflashDrvInit();
 	SystickInit();
 }
 static void AppInit(void)
@@ -94,9 +96,8 @@ int main(void)
 {	
 	DrvInit();
 	AppInit();
-	 
-	RtcTime_t rtcTime = {2024,2,6,10,0,0}; 
-	SetRtcTime(&rtcTime);
+	 SdcardDrvTest();
+	
 	while (1)
 	{
 		TaskHandler();
