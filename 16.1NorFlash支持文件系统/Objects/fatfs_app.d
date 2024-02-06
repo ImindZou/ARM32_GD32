@@ -1,0 +1,9 @@
+.\objects\fatfs_app.o: App_Common\fatfs_app.c
+.\objects\fatfs_app.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\fatfs_app.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\fatfs_app.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\string.h
+.\objects\fatfs_app.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\fatfs_app.o: .\Drv_Common\rtc_drv.h
+.\objects\fatfs_app.o: .\FatFs\ff.h
+.\objects\fatfs_app.o: .\FatFs\ffconf.h
+.\objects\fatfs_app.o: .\Drv_Common\sensor_drv.h

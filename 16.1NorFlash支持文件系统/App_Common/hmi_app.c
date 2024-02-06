@@ -4,6 +4,8 @@
 #include "sensor_drv.h"
 #include "led_drv.h"
 #include "key_drv.h"
+#include "fatfs_app.h"
+
 /**
 ***********************************************************
 * @brief 人机交互任务处理函数
@@ -23,6 +25,7 @@ void HmiTask(void)
 	{
 		case KEY1_SHORT_PRESS:
 			TurnOnLed(LED1);
+			PrintSensorFile();
 			break;
 		case KEY1_LONG_PRESS:
 			TurnOffLed(LED1);

@@ -398,6 +398,11 @@
               <FileType>1</FileType>
               <FilePath>.\App_Common\sensor_app.c</FilePath>
             </File>
+            <File>
+              <FileName>fatfs_app.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\App_Common\fatfs_app.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -2,6 +2,7 @@
 ".\objects\hmi_app.o"
 ".\objects\main.o"
 ".\objects\sensor_app.o"
+".\objects\fatfs_app.o"
 ".\objects\modbus_app.o"
 ".\objects\mb.o"
 ".\objects\mbcrc.o"

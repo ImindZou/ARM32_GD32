@@ -12,6 +12,7 @@
 #include "hmi_app.h"
 #include "sensor_app.h"
 #include "modbus_app.h"
+#include "fatfs_app.h"
 
 typedef struct
 {
@@ -26,6 +27,8 @@ static TaskComps_t g_taskComps[] =
 	{0, 5,  5,   HmiTask},
 	{0, 1000, 1000,  SensorTask},
 	{0, 1,    1,     ModbusTask},
+	{0, 10000, 10000,  FatfsTask},
+
 	/* 添加业务功能模块 */
 };
 
@@ -83,6 +86,7 @@ static void AppInit(void)
 {
 	TaskScheduleCbReg(TaskScheduleCb);
 	ModbusAppInit();
+	FatfsInit();
 }
 
 
@@ -90,7 +94,9 @@ int main(void)
 {	
 	DrvInit();
 	AppInit();
-
+	 
+	RtcTime_t rtcTime = {2024,2,6,10,0,0}; 
+	SetRtcTime(&rtcTime);
 	while (1)
 	{
 		TaskHandler();

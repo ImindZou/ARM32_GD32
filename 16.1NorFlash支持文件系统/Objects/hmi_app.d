@@ -5,3 +5,4 @@
 .\objects\hmi_app.o: .\Drv_Common\sensor_drv.h
 .\objects\hmi_app.o: .\Drv_Common\led_drv.h
 .\objects\hmi_app.o: .\Drv_Common\key_drv.h
+.\objects\hmi_app.o: App_Common\fatfs_app.h
