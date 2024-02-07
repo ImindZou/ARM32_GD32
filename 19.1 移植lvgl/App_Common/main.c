@@ -14,6 +14,7 @@
 #include "sensor_app.h"
 #include "modbus_app.h"
 #include "store_app.h"
+#include "hmi_app.h"
 
 typedef struct
 {
@@ -78,8 +79,7 @@ static void DrvInit(void)
 	RtcDrvInit();
 	SensorDrvInit();
 	EepromDrvInit();
-	LcdDrvInit();
-	TouchDrvInit();
+	
 	SystickInit();
 }
 static void AppInit(void)
@@ -87,6 +87,7 @@ static void AppInit(void)
 	TaskScheduleCbReg(TaskScheduleCb);
 	ModbusAppInit();
 	InitSysParam();
+	HmiInit();
 }
 
 int main(void)
@@ -94,7 +95,6 @@ int main(void)
 	DrvInit();
 	AppInit();
 	
-	LcdClear(BLACK);
 	
 	while (1)
 	{

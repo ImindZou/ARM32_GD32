@@ -12,7 +12,7 @@
 .\objects\main.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\main.o: .\Drv_Common\lcd_drv.h
 .\objects\main.o: .\Drv_Common\touch_drv.h
-.\objects\main.o: App_Common\hmi_app.h
+.\objects\main.o: .\App_Hmi\hmi_app.h
 .\objects\main.o: App_Common\sensor_app.h
 .\objects\main.o: .\App_Modbus\modbus_app.h
 .\objects\main.o: App_Common\store_app.h
