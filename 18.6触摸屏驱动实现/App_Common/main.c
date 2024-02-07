@@ -97,13 +97,6 @@ int main(void)
 	
 	LcdClear(BLACK);
 	
-//	LcdShowChar(10, 10, 'A', ASCII_FONT_SIZE_24, RED, BLUE);
-//	LcdShowString(10, 10, "I am learning ARM! I am learning ARM! I am learning ARM! I am learning ARM!", ASCII_FONT_SIZE_24, RED, BLUE);
-	for (uint16_t i = 0; i < 8; i++)
-	{
-	LcdShowChinese(10 + CHINESE_FONT_SIZE_16 * i, 10, (uint8_t *)&ilearning16x16[i][0], CHINESE_FONT_SIZE_16, RED, BLUE);
-	}
-	LcdShowChinese(10, 40, (uint8_t *)&ilearning24x24[0][0], CHINESE_FONT_SIZE_24, RED, BLUE);
 	while (1)
 	{
 		TaskHandler();

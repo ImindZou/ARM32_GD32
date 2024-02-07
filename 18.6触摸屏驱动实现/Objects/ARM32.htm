@@ -3,9 +3,9 @@
 <title>Static Call Graph - [.\Objects\ARM32.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\ARM32.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Wed Feb 07 18:03:07 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Wed Feb 07 18:17:33 2024
 <BR><P>
-<H3>Maximum Stack Usage =        276 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        260 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 main &rArr; AppInit &rArr; ModbusAppInit &rArr; ModbusSlaveInit &rArr; eMBInit &rArr; eMBRTUInit &rArr; xMBPortSerialInit &rArr; UartInit &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
 <P>
@@ -121,7 +121,7 @@ Global Symbols
 <P><STRONG><a name="[52]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_hd.o(.text)
 </UL>
-<P><STRONG><a name="[126]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+<P><STRONG><a name="[125]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
 
 <P><STRONG><a name="[5f]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
@@ -131,17 +131,17 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
-<P><STRONG><a name="[127]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+<P><STRONG><a name="[126]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
 
-<P><STRONG><a name="[128]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+<P><STRONG><a name="[127]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
 
-<P><STRONG><a name="[129]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+<P><STRONG><a name="[128]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
 
-<P><STRONG><a name="[12a]"></a>__rt_lib_shutdown_fini</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry12b.o(.ARM.Collect$$$$0000000E))
+<P><STRONG><a name="[129]"></a>__rt_lib_shutdown_fini</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry12b.o(.ARM.Collect$$$$0000000E))
 
-<P><STRONG><a name="[12b]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000F))
+<P><STRONG><a name="[12a]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000F))
 
-<P><STRONG><a name="[12c]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$00000011))
+<P><STRONG><a name="[12b]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$00000011))
 
 <P><STRONG><a name="[a]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_gd32f30x_hd.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_hd.o(RESET)
@@ -324,7 +324,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qsort
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MedianAvgFltr
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MedianAvgFltr
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qsort
 </UL>
 
@@ -332,15 +332,15 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalcHumiAdcByTemp
 </UL>
 
-<P><STRONG><a name="[12d]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+<P><STRONG><a name="[12c]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
 
-<P><STRONG><a name="[12e]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+<P><STRONG><a name="[12d]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
 
 <P><STRONG><a name="[62]"></a>__aeabi_uldivmod</STRONG> (Thumb, 98 bytes, Stack size 40 bytes, uldiv.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
 <LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
 </UL>
-<BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
 <P><STRONG><a name="[60]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
@@ -349,23 +349,23 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
 </UL>
 
-<P><STRONG><a name="[12f]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+<P><STRONG><a name="[12e]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
 <P><STRONG><a name="[64]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
 <BR><BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
 
-<P><STRONG><a name="[130]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+<P><STRONG><a name="[12f]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
 
 <P><STRONG><a name="[63]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
 <BR><BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
 
-<P><STRONG><a name="[131]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+<P><STRONG><a name="[130]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
 
-<P><STRONG><a name="[132]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+<P><STRONG><a name="[131]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
 
-<P><STRONG><a name="[133]"></a>__decompress1</STRONG> (Thumb, 86 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+<P><STRONG><a name="[132]"></a>__decompress1</STRONG> (Thumb, 86 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
 
 <P><STRONG><a name="[e]"></a>BusFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f30x_it.o(i.BusFault_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_hd.o(RESET)
@@ -448,7 +448,7 @@ Global Symbols
 
 <P><STRONG><a name="[a6]"></a>GetTempData</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, ntc_drv.o(i.GetTempData))
 <BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSensorData
-<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvProc
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvProc
 </UL>
 
 <P><STRONG><a name="[c]"></a>HardFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f30x_it.o(i.HardFault_Handler))
@@ -482,7 +482,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalcHumiAdcByTemp
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcToHumi
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvProc
+<BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvProc
 </UL>
 
 <P><STRONG><a name="[81]"></a>InitSysParam</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, store_app.o(i.InitSysParam))
@@ -539,14 +539,6 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LcdClear
 </UL>
 
-<P><STRONG><a name="[ca]"></a>LcdShowChinese</STRONG> (Thumb, 214 bytes, Stack size 56 bytes, lcd_drv.o(i.LcdShowChinese))
-<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = LcdShowChinese &rArr; LcdSetCursor
-</UL>
-<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LcdSetCursor
-</UL>
-<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
 <P><STRONG><a name="[91]"></a>LedDrvInit</STRONG> (Thumb, 86 bytes, Stack size 8 bytes, led_drv.o(i.LedDrvInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = LedDrvInit &rArr; gpio_init
 </UL>
@@ -563,16 +555,16 @@ Global Symbols
 <P><STRONG><a name="[80]"></a>ModbusAppInit</STRONG> (Thumb, 18 bytes, Stack size 24 bytes, modbus_app.o(i.ModbusAppInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 252<LI>Call Chain = ModbusAppInit &rArr; ModbusSlaveInit &rArr; eMBInit &rArr; eMBRTUInit &rArr; xMBPortSerialInit &rArr; UartInit &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSlaveInit
+<BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSlaveInit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppInit
 </UL>
 
-<P><STRONG><a name="[cd]"></a>ModbusSlaveInit</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, modbus_slave.o(i.ModbusSlaveInit))
+<P><STRONG><a name="[cc]"></a>ModbusSlaveInit</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, modbus_slave.o(i.ModbusSlaveInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 228<LI>Call Chain = ModbusSlaveInit &rArr; eMBInit &rArr; eMBRTUInit &rArr; xMBPortSerialInit &rArr; UartInit &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBInit
-<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBEnable
+<BR>[Calls]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBInit
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBEnable
 </UL>
 <BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusAppInit
 </UL>
@@ -580,7 +572,7 @@ Global Symbols
 <P><STRONG><a name="[2]"></a>ModbusTask</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, modbus_app.o(i.ModbusTask))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ModbusTask &rArr; eMBPoll
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBPoll
+<BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBPoll
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(.data)
 </UL>
@@ -590,11 +582,11 @@ Global Symbols
 <P><STRONG><a name="[12]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, gd32f30x_it.o(i.PendSV_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_hd.o(RESET)
 </UL>
-<P><STRONG><a name="[ea]"></a>PushDataToBuf</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, ntc_drv.o(i.PushDataToBuf))
-<BR><BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempSensorProc
+<P><STRONG><a name="[e9]"></a>PushDataToBuf</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, ntc_drv.o(i.PushDataToBuf))
+<BR><BR>[Called By]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempSensorProc
 </UL>
 
-<P><STRONG><a name="[d2]"></a>ReadEepromData</STRONG> (Thumb, 126 bytes, Stack size 16 bytes, eeprom_drv.o(i.ReadEepromData))
+<P><STRONG><a name="[d1]"></a>ReadEepromData</STRONG> (Thumb, 126 bytes, Stack size 16 bytes, eeprom_drv.o(i.ReadEepromData))
 <BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = ReadEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus &rArr; rcu_clock_freq_get
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CWaitAck
@@ -605,24 +597,24 @@ Global Symbols
 <LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CSendAck
 <LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CReadByte
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadDataWithCheck
+<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadDataWithCheck
 </UL>
 
 <P><STRONG><a name="[94]"></a>RtcDrvInit</STRONG> (Thumb, 142 bytes, Stack size 8 bytes, rtc_drv.o(i.RtcDrvInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = RtcDrvInit &rArr; rcu_osci_stab_wait
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_register_sync_wait
-<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_prescaler_set
-<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_lwoff_wait
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_counter_set
-<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_rtc_clock_config
-<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_osci_stab_wait
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_osci_on
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pmu_backup_write_enable
-<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bkp_write_data
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bkp_read_data
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bkp_deinit
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_register_sync_wait
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_prescaler_set
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_lwoff_wait
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_counter_set
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_rtc_clock_config
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_osci_stab_wait
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_osci_on
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pmu_backup_write_enable
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bkp_write_data
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bkp_read_data
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bkp_deinit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
 </UL>
@@ -634,16 +626,16 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = SensorDrvInit &rArr; HumiDrvInit &rArr; AdcInit &rArr; DelayNus &rArr; rcu_clock_freq_get
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HumiDrvInit
-<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempDrvInit
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempDrvInit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
 </UL>
 
-<P><STRONG><a name="[e1]"></a>SensorDrvProc</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, sensor_drv.o(i.SensorDrvProc))
+<P><STRONG><a name="[e0]"></a>SensorDrvProc</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, sensor_drv.o(i.SensorDrvProc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = SensorDrvProc &rArr; HumiSensorProc &rArr; AdcToHumi &rArr; AsceBinarySearch
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HumiSensorProc
-<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempSensorProc
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempSensorProc
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetTempData
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorTask
@@ -652,7 +644,7 @@ Global Symbols
 <P><STRONG><a name="[1]"></a>SensorTask</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, sensor_app.o(i.SensorTask))
 <BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = SensorTask &rArr; SensorDrvProc &rArr; HumiSensorProc &rArr; AdcToHumi &rArr; AsceBinarySearch
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvProc
+<BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvProc
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> main.o(.data)
 </UL>
@@ -660,7 +652,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = SetModbusParam &rArr; WriteSysParam &rArr; WriteDataWithCheck &rArr; WriteEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus &rArr; rcu_clock_freq_get
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBSetSlaveAddr
-<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteSysParam
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteSysParam
 </UL>
 <BR>[Called By]<UL><LI><a href="#[0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HmiTask
 </UL>
@@ -673,7 +665,7 @@ Global Symbols
 <P><STRONG><a name="[51]"></a>SystemInit</STRONG> (Thumb, 156 bytes, Stack size 8 bytes, system_gd32f30x.o(i.SystemInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SystemInit &rArr; system_clock_config
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_clock_config
+<BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_clock_config
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_hd.o(.text)
 </UL>
@@ -688,18 +680,18 @@ Global Symbols
 <P><STRONG><a name="[32]"></a>TIMER3_IRQHandler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, porttimer.o(i.TIMER3_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = TIMER3_IRQHandler &rArr; prvvTIMERExpiredISR
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_flag_get
-<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_flag_clear
-<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_counter_value_config
-<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvvTIMERExpiredISR
+<BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_flag_get
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_flag_clear
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_counter_value_config
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvvTIMERExpiredISR
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_hd.o(RESET)
 </UL>
 <P><STRONG><a name="[46]"></a>TIMER4_IRQHandler</STRONG> (Thumb, 80 bytes, Stack size 8 bytes, rh_drv.o(i.TIMER4_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = TIMER4_IRQHandler &rArr; GetAdcVal
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_flag_get
-<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_flag_clear
+<BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_flag_get
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_flag_clear
 <LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetAdcVal
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AcPowerProc
 </UL>
@@ -709,7 +701,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppInit
 </UL>
 
-<P><STRONG><a name="[e0]"></a>TempDrvInit</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, ntc_drv.o(i.TempDrvInit))
+<P><STRONG><a name="[df]"></a>TempDrvInit</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, ntc_drv.o(i.TempDrvInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = TempDrvInit &rArr; AdcInit &rArr; DelayNus &rArr; rcu_clock_freq_get
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
@@ -718,21 +710,21 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvInit
 </UL>
 
-<P><STRONG><a name="[e2]"></a>TempSensorProc</STRONG> (Thumb, 118 bytes, Stack size 16 bytes, ntc_drv.o(i.TempSensorProc))
+<P><STRONG><a name="[e1]"></a>TempSensorProc</STRONG> (Thumb, 118 bytes, Stack size 16 bytes, ntc_drv.o(i.TempSensorProc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = TempSensorProc &rArr; MedianAvgFltr &rArr; qsort &rArr;  qsort (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PushDataToBuf
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MedianAvgFltr
+<BR>[Calls]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PushDataToBuf
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MedianAvgFltr
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetAdcVal
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcToTemp10Mpl
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvProc
+<BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorDrvProc
 </UL>
 
 <P><STRONG><a name="[98]"></a>TouchDrvInit</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, touch_drv.o(i.TouchDrvInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 148<LI>Call Chain = TouchDrvInit &rArr; ReadTouchReg &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus &rArr; rcu_clock_freq_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadTouchReg
+<BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadTouchReg
 <LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
 <LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ConfigDevAddr
 <LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
@@ -744,8 +736,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 164<LI>Call Chain = TouchScan &rArr; WriteTouchReg &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus &rArr; rcu_clock_freq_get
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSysRunTime
-<LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteTouchReg
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadTouchReg
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteTouchReg
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadTouchReg
 <LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CanvasTask
@@ -774,19 +766,19 @@ Global Symbols
 <P><STRONG><a name="[39]"></a>USART0_IRQHandler</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, usb2com_drv.o(i.USART0_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = USART0_IRQHandler &rArr; usart_interrupt_flag_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_flag_get
-<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_flag_clear
-<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_data_receive
+<BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_flag_get
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_flag_clear
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_data_receive
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_hd.o(RESET)
 </UL>
 <P><STRONG><a name="[3a]"></a>USART1_IRQHandler</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, portserial.o(i.USART1_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = USART1_IRQHandler &rArr; usart_interrupt_flag_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_flag_get
-<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_flag_clear
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvvUARTTxReadyISR
-<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvvUARTRxISR
+<BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_flag_get
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_flag_clear
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvvUARTTxReadyISR
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prvvUARTRxISR
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_gd32f30x_hd.o(RESET)
 </UL>
@@ -796,13 +788,13 @@ Global Symbols
 <P><STRONG><a name="[93]"></a>Usb2ComDrvInit</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, usb2com_drv.o(i.Usb2ComDrvInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = Usb2ComDrvInit &rArr; Usb2ComUartInit &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComUartInit
-<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComGpioInit
+<BR>[Calls]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComUartInit
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComGpioInit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
 </UL>
 
-<P><STRONG><a name="[101]"></a>WriteEepromData</STRONG> (Thumb, 150 bytes, Stack size 32 bytes, eeprom_drv.o(i.WriteEepromData))
+<P><STRONG><a name="[100]"></a>WriteEepromData</STRONG> (Thumb, 150 bytes, Stack size 32 bytes, eeprom_drv.o(i.WriteEepromData))
 <BR><BR>[Stack]<UL><LI>Max Depth = 148<LI>Call Chain = WriteEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus &rArr; rcu_clock_freq_get
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CWaitAck
@@ -810,14 +802,14 @@ Global Symbols
 <LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CStart
 <LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CSendByte
 </UL>
-<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteDataWithCheck
+<BR>[Called By]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteDataWithCheck
 </UL>
 
-<P><STRONG><a name="[102]"></a>__0printf$8</STRONG> (Thumb, 22 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<P><STRONG><a name="[101]"></a>__0printf$8</STRONG> (Thumb, 22 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 
-<P><STRONG><a name="[134]"></a>__1printf$8</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8), UNUSED)
+<P><STRONG><a name="[133]"></a>__1printf$8</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8), UNUSED)
 
 <P><STRONG><a name="[af]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0printf$8))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
@@ -828,11 +820,11 @@ Global Symbols
 <LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LcdInit
 </UL>
 
-<P><STRONG><a name="[104]"></a>__aeabi_assert</STRONG> (Thumb, 110 bytes, Stack size 16 bytes, retarget_io.o(i.__aeabi_assert))
+<P><STRONG><a name="[103]"></a>__aeabi_assert</STRONG> (Thumb, 110 bytes, Stack size 16 bytes, retarget_io.o(i.__aeabi_assert))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = __aeabi_assert &rArr; fputs &rArr; fputc &rArr; usart_flag_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputs
-<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
+<BR>[Calls]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputs
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBRTUTransmitFSM
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBRTUTimerT35Expired
@@ -840,14 +832,14 @@ Global Symbols
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUReceive
 </UL>
 
-<P><STRONG><a name="[135]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<P><STRONG><a name="[134]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
 
-<P><STRONG><a name="[136]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+<P><STRONG><a name="[135]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
 
-<P><STRONG><a name="[137]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P><STRONG><a name="[136]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
-<P><STRONG><a name="[106]"></a>abort</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, retarget_io.o(i.abort))
-<BR><BR>[Called By]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<P><STRONG><a name="[105]"></a>abort</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, retarget_io.o(i.abort))
+<BR><BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 
 <P><STRONG><a name="[77]"></a>adc_calibration_enable</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, gd32f30x_adc.o(i.adc_calibration_enable))
@@ -924,114 +916,114 @@ Global Symbols
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcInit
 </UL>
 
-<P><STRONG><a name="[d7]"></a>bkp_deinit</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, gd32f30x_bkp.o(i.bkp_deinit))
+<P><STRONG><a name="[d6]"></a>bkp_deinit</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, gd32f30x_bkp.o(i.bkp_deinit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = bkp_deinit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_bkp_reset_enable
-<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_bkp_reset_disable
+<BR>[Calls]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_bkp_reset_enable
+<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_bkp_reset_disable
 </UL>
 <BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 </UL>
 
-<P><STRONG><a name="[d5]"></a>bkp_read_data</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, gd32f30x_bkp.o(i.bkp_read_data))
+<P><STRONG><a name="[d4]"></a>bkp_read_data</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, gd32f30x_bkp.o(i.bkp_read_data))
 <BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 </UL>
 
-<P><STRONG><a name="[df]"></a>bkp_write_data</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, gd32f30x_bkp.o(i.bkp_write_data))
+<P><STRONG><a name="[de]"></a>bkp_write_data</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, gd32f30x_bkp.o(i.bkp_write_data))
 <BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 </UL>
 
-<P><STRONG><a name="[cf]"></a>eMBEnable</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, mb.o(i.eMBEnable))
+<P><STRONG><a name="[ce]"></a>eMBEnable</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, mb.o(i.eMBEnable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = eMBEnable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSlaveInit
+<BR>[Called By]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSlaveInit
 </UL>
 
 <P><STRONG><a name="[7]"></a>eMBFuncReadHoldingRegister</STRONG> (Thumb, 134 bytes, Stack size 32 bytes, mbfuncholding.o(i.eMBFuncReadHoldingRegister))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = eMBFuncReadHoldingRegister &rArr; eMBRegHoldingCB
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prveMBError2Exception
-<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRegHoldingCB
+<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prveMBError2Exception
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRegHoldingCB
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mb.o(.data)
 </UL>
 <P><STRONG><a name="[9]"></a>eMBFuncWriteHoldingRegister</STRONG> (Thumb, 62 bytes, Stack size 24 bytes, mbfuncholding.o(i.eMBFuncWriteHoldingRegister))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = eMBFuncWriteHoldingRegister &rArr; eMBRegHoldingCB
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prveMBError2Exception
-<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRegHoldingCB
+<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prveMBError2Exception
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRegHoldingCB
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mb.o(.data)
 </UL>
 <P><STRONG><a name="[8]"></a>eMBFuncWriteMultipleHoldingRegister</STRONG> (Thumb, 106 bytes, Stack size 32 bytes, mbfuncholding.o(i.eMBFuncWriteMultipleHoldingRegister))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = eMBFuncWriteMultipleHoldingRegister &rArr; eMBRegHoldingCB
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prveMBError2Exception
-<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRegHoldingCB
+<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;prveMBError2Exception
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRegHoldingCB
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mb.o(.data)
 </UL>
-<P><STRONG><a name="[ce]"></a>eMBInit</STRONG> (Thumb, 150 bytes, Stack size 32 bytes, mb.o(i.eMBInit))
+<P><STRONG><a name="[cd]"></a>eMBInit</STRONG> (Thumb, 150 bytes, Stack size 32 bytes, mb.o(i.eMBInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 212<LI>Call Chain = eMBInit &rArr; eMBRTUInit &rArr; xMBPortSerialInit &rArr; UartInit &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortEventInit
-<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUInit
+<BR>[Calls]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortEventInit
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSlaveInit
+<BR>[Called By]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusSlaveInit
 </UL>
 
-<P><STRONG><a name="[d0]"></a>eMBPoll</STRONG> (Thumb, 268 bytes, Stack size 16 bytes, mb.o(i.eMBPoll))
+<P><STRONG><a name="[cf]"></a>eMBPoll</STRONG> (Thumb, 268 bytes, Stack size 16 bytes, mb.o(i.eMBPoll))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = eMBPoll
 </UL>
-<BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortEventPost
-<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortEventGet
+<BR>[Calls]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortEventPost
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortEventGet
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ModbusTask
 </UL>
 
-<P><STRONG><a name="[10d]"></a>eMBRTUInit</STRONG> (Thumb, 76 bytes, Stack size 32 bytes, mbrtu.o(i.eMBRTUInit))
+<P><STRONG><a name="[10c]"></a>eMBRTUInit</STRONG> (Thumb, 76 bytes, Stack size 32 bytes, mbrtu.o(i.eMBRTUInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 180<LI>Call Chain = eMBRTUInit &rArr; xMBPortSerialInit &rArr; UartInit &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
-<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialInit
+<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBInit
+<BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBInit
 </UL>
 
 <P><STRONG><a name="[59]"></a>eMBRTUReceive</STRONG> (Thumb, 82 bytes, Stack size 24 bytes, mbrtu.o(i.eMBRTUReceive))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = eMBRTUReceive &rArr; __aeabi_assert &rArr; fputs &rArr; fputc &rArr; usart_flag_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
-<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usMBCRC16
+<BR>[Calls]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usMBCRC16
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mb.o(i.eMBInit)
 </UL>
 <P><STRONG><a name="[58]"></a>eMBRTUSend</STRONG> (Thumb, 146 bytes, Stack size 24 bytes, mbrtu.o(i.eMBRTUSend))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = eMBRTUSend &rArr; vMBPortSerialEnable &rArr; usart_interrupt_enable
 </UL>
-<BR>[Calls]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialPutByte
-<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
-<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usMBCRC16
+<BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialPutByte
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usMBCRC16
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mb.o(i.eMBInit)
 </UL>
 <P><STRONG><a name="[56]"></a>eMBRTUStart</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, mbrtu.o(i.eMBRTUStart))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = eMBRTUStart &rArr; vMBPortSerialEnable &rArr; usart_interrupt_enable
 </UL>
-<BR>[Calls]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersEnable
-<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
+<BR>[Calls]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersEnable
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mb.o(i.eMBInit)
 </UL>
 <P><STRONG><a name="[57]"></a>eMBRTUStop</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, mbrtu.o(i.eMBRTUStop))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = eMBRTUStop &rArr; vMBPortSerialEnable &rArr; usart_interrupt_enable
 </UL>
-<BR>[Calls]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersDisable
-<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
+<BR>[Calls]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersDisable
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mb.o(i.eMBInit)
 </UL>
-<P><STRONG><a name="[10b]"></a>eMBRegHoldingCB</STRONG> (Thumb, 54 bytes, Stack size 24 bytes, modbus_slave.o(i.eMBRegHoldingCB))
+<P><STRONG><a name="[10a]"></a>eMBRegHoldingCB</STRONG> (Thumb, 54 bytes, Stack size 24 bytes, modbus_slave.o(i.eMBRegHoldingCB))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = eMBRegHoldingCB
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBFuncWriteMultipleHoldingRegister
@@ -1061,23 +1053,23 @@ Global Symbols
 <P><STRONG><a name="[55]"></a>fputc</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, usb2com_drv.o(i.fputc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = fputc &rArr; usart_flag_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_flag_get
-<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_data_transmit
+<BR>[Calls]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_flag_get
+<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_data_transmit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputs
+<BR>[Called By]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputs
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> printf8.o(i.__0printf$8)
 </UL>
-<P><STRONG><a name="[105]"></a>fputs</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, fputs.o(i.fputs))
+<P><STRONG><a name="[104]"></a>fputs</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, fputs.o(i.fputs))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = fputs &rArr; fputc &rArr; usart_flag_get
 </UL>
 <BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 
 <P><STRONG><a name="[8b]"></a>gpio_bit_reset</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f30x_gpio.o(i.gpio_bit_reset))
-<BR><BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
+<BR><BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
 <LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDrvInit
 <LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TurnOffLed
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CWaitAck
@@ -1098,7 +1090,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[8c]"></a>gpio_bit_set</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f30x_gpio.o(i.gpio_bit_set))
-<BR><BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
+<BR><BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
 <LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LcdDrvInit
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TurnOnLed
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CWaitAck
@@ -1133,10 +1125,10 @@ Global Symbols
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BacklightInit
 <LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
-<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComGpioInit
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComGpioInit
 <LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
-<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchInit
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchInit
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
 </UL>
 
@@ -1152,37 +1144,36 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AcPowerProc
 </UL>
 
-<P><STRONG><a name="[50]"></a>main</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 276<LI>Call Chain = main &rArr; AppInit &rArr; ModbusAppInit &rArr; ModbusSlaveInit &rArr; eMBInit &rArr; eMBRTUInit &rArr; xMBPortSerialInit &rArr; UartInit &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
+<P><STRONG><a name="[50]"></a>main</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 260<LI>Call Chain = main &rArr; AppInit &rArr; ModbusAppInit &rArr; ModbusSlaveInit &rArr; eMBInit &rArr; eMBRTUInit &rArr; xMBPortSerialInit &rArr; UartInit &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LcdShowChinese
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LcdClear
-<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TaskHandler
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LcdClear
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TaskHandler
 <LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DrvInit
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppInit
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
-<P><STRONG><a name="[ef]"></a>nvic_irq_enable</STRONG> (Thumb, 186 bytes, Stack size 24 bytes, gd32f30x_misc.o(i.nvic_irq_enable))
+<P><STRONG><a name="[ee]"></a>nvic_irq_enable</STRONG> (Thumb, 186 bytes, Stack size 24 bytes, gd32f30x_misc.o(i.nvic_irq_enable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = nvic_irq_enable
 </UL>
-<BR>[Calls]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_priority_group_set
+<BR>[Calls]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_priority_group_set
 </UL>
-<BR>[Called By]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
-<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComUartInit
+<BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComUartInit
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerInit
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
 </UL>
 
-<P><STRONG><a name="[11b]"></a>nvic_priority_group_set</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f30x_misc.o(i.nvic_priority_group_set))
-<BR><BR>[Called By]<UL><LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_irq_enable
+<P><STRONG><a name="[11a]"></a>nvic_priority_group_set</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f30x_misc.o(i.nvic_priority_group_set))
+<BR><BR>[Called By]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_irq_enable
 </UL>
 
-<P><STRONG><a name="[d6]"></a>pmu_backup_write_enable</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, gd32f30x_pmu.o(i.pmu_backup_write_enable))
+<P><STRONG><a name="[d5]"></a>pmu_backup_write_enable</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, gd32f30x_pmu.o(i.pmu_backup_write_enable))
 <BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 </UL>
 
-<P><STRONG><a name="[10c]"></a>prveMBError2Exception</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, mbutils.o(i.prveMBError2Exception))
+<P><STRONG><a name="[10b]"></a>prveMBError2Exception</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, mbutils.o(i.prveMBError2Exception))
 <BR><BR>[Called By]<UL><LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBFuncWriteMultipleHoldingRegister
 <LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBFuncWriteHoldingRegister
 <LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBFuncReadHoldingRegister
@@ -1193,12 +1184,12 @@ Global Symbols
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcInit
 </UL>
 
-<P><STRONG><a name="[10a]"></a>rcu_bkp_reset_disable</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, gd32f30x_rcu.o(i.rcu_bkp_reset_disable))
-<BR><BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bkp_deinit
+<P><STRONG><a name="[109]"></a>rcu_bkp_reset_disable</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, gd32f30x_rcu.o(i.rcu_bkp_reset_disable))
+<BR><BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bkp_deinit
 </UL>
 
-<P><STRONG><a name="[109]"></a>rcu_bkp_reset_enable</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, gd32f30x_rcu.o(i.rcu_bkp_reset_enable))
-<BR><BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bkp_deinit
+<P><STRONG><a name="[108]"></a>rcu_bkp_reset_enable</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, gd32f30x_rcu.o(i.rcu_bkp_reset_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bkp_deinit
 </UL>
 
 <P><STRONG><a name="[8d]"></a>rcu_clock_freq_get</STRONG> (Thumb, 310 bytes, Stack size 84 bytes, gd32f30x_rcu.o(i.rcu_clock_freq_get))
@@ -1206,27 +1197,27 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DelayNus
 <LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystickInit
-<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_baudrate_set
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_baudrate_set
 </UL>
 
-<P><STRONG><a name="[11c]"></a>rcu_flag_get</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gd32f30x_rcu.o(i.rcu_flag_get))
-<BR><BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_osci_stab_wait
+<P><STRONG><a name="[11b]"></a>rcu_flag_get</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, gd32f30x_rcu.o(i.rcu_flag_get))
+<BR><BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_osci_stab_wait
 </UL>
 
-<P><STRONG><a name="[d8]"></a>rcu_osci_on</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gd32f30x_rcu.o(i.rcu_osci_on))
+<P><STRONG><a name="[d7]"></a>rcu_osci_on</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gd32f30x_rcu.o(i.rcu_osci_on))
 <BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 </UL>
 
-<P><STRONG><a name="[d9]"></a>rcu_osci_stab_wait</STRONG> (Thumb, 268 bytes, Stack size 20 bytes, gd32f30x_rcu.o(i.rcu_osci_stab_wait))
+<P><STRONG><a name="[d8]"></a>rcu_osci_stab_wait</STRONG> (Thumb, 268 bytes, Stack size 20 bytes, gd32f30x_rcu.o(i.rcu_osci_stab_wait))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = rcu_osci_stab_wait
 </UL>
-<BR>[Calls]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_flag_get
+<BR>[Calls]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_flag_get
 </UL>
 <BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 </UL>
 
 <P><STRONG><a name="[6a]"></a>rcu_periph_clock_enable</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gd32f30x_rcu.o(i.rcu_periph_clock_enable))
-<BR><BR>[Called By]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
+<BR><BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 <LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LedDrvInit
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyDrvInit
@@ -1235,214 +1226,214 @@ Global Symbols
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ExmcLcdInit
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BacklightInit
 <LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
-<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComUartInit
-<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComGpioInit
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComUartInit
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComGpioInit
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerInit
 <LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcInit
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AdcInit
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
-<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchInit
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchInit
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
 </UL>
 
-<P><STRONG><a name="[121]"></a>rcu_periph_reset_disable</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gd32f30x_rcu.o(i.rcu_periph_reset_disable))
-<BR><BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_deinit
-<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_deinit
+<P><STRONG><a name="[120]"></a>rcu_periph_reset_disable</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gd32f30x_rcu.o(i.rcu_periph_reset_disable))
+<BR><BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_deinit
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_deinit
 </UL>
 
-<P><STRONG><a name="[120]"></a>rcu_periph_reset_enable</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gd32f30x_rcu.o(i.rcu_periph_reset_enable))
-<BR><BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_deinit
-<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_deinit
+<P><STRONG><a name="[11f]"></a>rcu_periph_reset_enable</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gd32f30x_rcu.o(i.rcu_periph_reset_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_deinit
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_deinit
 </UL>
 
-<P><STRONG><a name="[da]"></a>rcu_rtc_clock_config</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, gd32f30x_rcu.o(i.rcu_rtc_clock_config))
+<P><STRONG><a name="[d9]"></a>rcu_rtc_clock_config</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, gd32f30x_rcu.o(i.rcu_rtc_clock_config))
 <BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 </UL>
 
-<P><STRONG><a name="[11d]"></a>rtc_configuration_mode_enter</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, gd32f30x_rtc.o(i.rtc_configuration_mode_enter))
-<BR><BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_prescaler_set
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_counter_set
+<P><STRONG><a name="[11c]"></a>rtc_configuration_mode_enter</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, gd32f30x_rtc.o(i.rtc_configuration_mode_enter))
+<BR><BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_prescaler_set
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_counter_set
 </UL>
 
-<P><STRONG><a name="[11e]"></a>rtc_configuration_mode_exit</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, gd32f30x_rtc.o(i.rtc_configuration_mode_exit))
-<BR><BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_prescaler_set
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_counter_set
+<P><STRONG><a name="[11d]"></a>rtc_configuration_mode_exit</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, gd32f30x_rtc.o(i.rtc_configuration_mode_exit))
+<BR><BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_prescaler_set
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_counter_set
 </UL>
 
-<P><STRONG><a name="[de]"></a>rtc_counter_set</STRONG> (Thumb, 26 bytes, Stack size 4 bytes, gd32f30x_rtc.o(i.rtc_counter_set))
+<P><STRONG><a name="[dd]"></a>rtc_counter_set</STRONG> (Thumb, 26 bytes, Stack size 4 bytes, gd32f30x_rtc.o(i.rtc_counter_set))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = rtc_counter_set
 </UL>
-<BR>[Calls]<UL><LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_configuration_mode_exit
-<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_configuration_mode_enter
+<BR>[Calls]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_configuration_mode_exit
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_configuration_mode_enter
 </UL>
 <BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 </UL>
 
-<P><STRONG><a name="[dc]"></a>rtc_lwoff_wait</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f30x_rtc.o(i.rtc_lwoff_wait))
+<P><STRONG><a name="[db]"></a>rtc_lwoff_wait</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32f30x_rtc.o(i.rtc_lwoff_wait))
 <BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 </UL>
 
-<P><STRONG><a name="[dd]"></a>rtc_prescaler_set</STRONG> (Thumb, 28 bytes, Stack size 4 bytes, gd32f30x_rtc.o(i.rtc_prescaler_set))
+<P><STRONG><a name="[dc]"></a>rtc_prescaler_set</STRONG> (Thumb, 28 bytes, Stack size 4 bytes, gd32f30x_rtc.o(i.rtc_prescaler_set))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = rtc_prescaler_set
 </UL>
-<BR>[Calls]<UL><LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_configuration_mode_exit
-<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_configuration_mode_enter
+<BR>[Calls]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_configuration_mode_exit
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rtc_configuration_mode_enter
 </UL>
 <BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 </UL>
 
-<P><STRONG><a name="[db]"></a>rtc_register_sync_wait</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gd32f30x_rtc.o(i.rtc_register_sync_wait))
+<P><STRONG><a name="[da]"></a>rtc_register_sync_wait</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gd32f30x_rtc.o(i.rtc_register_sync_wait))
 <BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RtcDrvInit
 </UL>
 
-<P><STRONG><a name="[e8]"></a>timer_counter_value_config</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_counter_value_config))
-<BR><BR>[Called By]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersEnable
-<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersDisable
+<P><STRONG><a name="[e7]"></a>timer_counter_value_config</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_counter_value_config))
+<BR><BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersEnable
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersDisable
 <LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER3_IRQHandler
 </UL>
 
-<P><STRONG><a name="[eb]"></a>timer_deinit</STRONG> (Thumb, 210 bytes, Stack size 8 bytes, gd32f30x_timer.o(i.timer_deinit))
+<P><STRONG><a name="[ea]"></a>timer_deinit</STRONG> (Thumb, 210 bytes, Stack size 8 bytes, gd32f30x_timer.o(i.timer_deinit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = timer_deinit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_reset_enable
-<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_reset_disable
+<BR>[Calls]<UL><LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_reset_enable
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_reset_disable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
+<BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerInit
 </UL>
 
-<P><STRONG><a name="[124]"></a>timer_disable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_disable))
-<BR><BR>[Called By]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersDisable
+<P><STRONG><a name="[123]"></a>timer_disable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_disable))
+<BR><BR>[Called By]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersDisable
 </UL>
 
-<P><STRONG><a name="[f0]"></a>timer_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_enable))
-<BR><BR>[Called By]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersEnable
+<P><STRONG><a name="[ef]"></a>timer_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersEnable
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerInit
 </UL>
 
-<P><STRONG><a name="[ed]"></a>timer_init</STRONG> (Thumb, 122 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_init))
-<BR><BR>[Called By]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
+<P><STRONG><a name="[ec]"></a>timer_init</STRONG> (Thumb, 122 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_init))
+<BR><BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerInit
 </UL>
 
-<P><STRONG><a name="[123]"></a>timer_interrupt_disable</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_interrupt_disable))
-<BR><BR>[Called By]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersDisable
+<P><STRONG><a name="[122]"></a>timer_interrupt_disable</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_interrupt_disable))
+<BR><BR>[Called By]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersDisable
 </UL>
 
-<P><STRONG><a name="[ee]"></a>timer_interrupt_enable</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_interrupt_enable))
-<BR><BR>[Called By]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
-<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersEnable
+<P><STRONG><a name="[ed]"></a>timer_interrupt_enable</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_interrupt_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersEnable
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerInit
 </UL>
 
-<P><STRONG><a name="[e7]"></a>timer_interrupt_flag_clear</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_interrupt_flag_clear))
-<BR><BR>[Called By]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersEnable
-<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersDisable
+<P><STRONG><a name="[e6]"></a>timer_interrupt_flag_clear</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_interrupt_flag_clear))
+<BR><BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersEnable
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersDisable
 <LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER4_IRQHandler
 <LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER3_IRQHandler
 </UL>
 
-<P><STRONG><a name="[e6]"></a>timer_interrupt_flag_get</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_interrupt_flag_get))
+<P><STRONG><a name="[e5]"></a>timer_interrupt_flag_get</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_interrupt_flag_get))
 <BR><BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER4_IRQHandler
 <LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER3_IRQHandler
 </UL>
 
-<P><STRONG><a name="[ec]"></a>timer_struct_para_init</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_struct_para_init))
-<BR><BR>[Called By]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
+<P><STRONG><a name="[eb]"></a>timer_struct_para_init</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, gd32f30x_timer.o(i.timer_struct_para_init))
+<BR><BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortTimersInit
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerInit
 </UL>
 
-<P><STRONG><a name="[113]"></a>usMBCRC16</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, mbcrc.o(i.usMBCRC16))
+<P><STRONG><a name="[112]"></a>usMBCRC16</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, mbcrc.o(i.usMBCRC16))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = usMBCRC16
 </UL>
 <BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUSend
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUReceive
 </UL>
 
-<P><STRONG><a name="[f9]"></a>usart_baudrate_set</STRONG> (Thumb, 136 bytes, Stack size 32 bytes, gd32f30x_usart.o(i.usart_baudrate_set))
+<P><STRONG><a name="[f8]"></a>usart_baudrate_set</STRONG> (Thumb, 136 bytes, Stack size 32 bytes, gd32f30x_usart.o(i.usart_baudrate_set))
 <BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = usart_baudrate_set &rArr; rcu_clock_freq_get
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_clock_freq_get
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComUartInit
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
+<BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComUartInit
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
 </UL>
 
-<P><STRONG><a name="[f4]"></a>usart_data_receive</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f30x_usart.o(i.usart_data_receive))
-<BR><BR>[Called By]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialGetByte
+<P><STRONG><a name="[f3]"></a>usart_data_receive</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f30x_usart.o(i.usart_data_receive))
+<BR><BR>[Called By]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialGetByte
 <LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART0_IRQHandler
 </UL>
 
-<P><STRONG><a name="[118]"></a>usart_data_transmit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gd32f30x_usart.o(i.usart_data_transmit))
-<BR><BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialPutByte
+<P><STRONG><a name="[117]"></a>usart_data_transmit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gd32f30x_usart.o(i.usart_data_transmit))
+<BR><BR>[Called By]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialPutByte
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
 </UL>
 
-<P><STRONG><a name="[f8]"></a>usart_deinit</STRONG> (Thumb, 136 bytes, Stack size 8 bytes, gd32f30x_usart.o(i.usart_deinit))
+<P><STRONG><a name="[f7]"></a>usart_deinit</STRONG> (Thumb, 136 bytes, Stack size 8 bytes, gd32f30x_usart.o(i.usart_deinit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usart_deinit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_reset_enable
-<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_reset_disable
+<BR>[Calls]<UL><LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_reset_enable
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_reset_disable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComUartInit
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
-</UL>
-
-<P><STRONG><a name="[fc]"></a>usart_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f30x_usart.o(i.usart_enable))
-<BR><BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComUartInit
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
+<BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComUartInit
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
 </UL>
 
-<P><STRONG><a name="[119]"></a>usart_flag_get</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, gd32f30x_usart.o(i.usart_flag_get))
+<P><STRONG><a name="[fb]"></a>usart_enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32f30x_usart.o(i.usart_enable))
+<BR><BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComUartInit
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
+</UL>
+
+<P><STRONG><a name="[118]"></a>usart_flag_get</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, gd32f30x_usart.o(i.usart_flag_get))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usart_flag_get
 </UL>
 <BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
 </UL>
 
-<P><STRONG><a name="[122]"></a>usart_interrupt_disable</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, gd32f30x_usart.o(i.usart_interrupt_disable))
+<P><STRONG><a name="[121]"></a>usart_interrupt_disable</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, gd32f30x_usart.o(i.usart_interrupt_disable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usart_interrupt_disable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
+<BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
 </UL>
 
-<P><STRONG><a name="[ff]"></a>usart_interrupt_enable</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, gd32f30x_usart.o(i.usart_interrupt_enable))
+<P><STRONG><a name="[fe]"></a>usart_interrupt_enable</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, gd32f30x_usart.o(i.usart_interrupt_enable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usart_interrupt_enable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
-<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComUartInit
+<BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComUartInit
 </UL>
 
-<P><STRONG><a name="[f3]"></a>usart_interrupt_flag_clear</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, gd32f30x_usart.o(i.usart_interrupt_flag_clear))
+<P><STRONG><a name="[f2]"></a>usart_interrupt_flag_clear</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, gd32f30x_usart.o(i.usart_interrupt_flag_clear))
 <BR><BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART0_IRQHandler
 <LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
 </UL>
 
-<P><STRONG><a name="[f2]"></a>usart_interrupt_flag_get</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, gd32f30x_usart.o(i.usart_interrupt_flag_get))
+<P><STRONG><a name="[f1]"></a>usart_interrupt_flag_get</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, gd32f30x_usart.o(i.usart_interrupt_flag_get))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = usart_interrupt_flag_get
 </UL>
 <BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART0_IRQHandler
 <LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
 </UL>
 
-<P><STRONG><a name="[fb]"></a>usart_receive_config</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, gd32f30x_usart.o(i.usart_receive_config))
-<BR><BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComUartInit
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
+<P><STRONG><a name="[fa]"></a>usart_receive_config</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, gd32f30x_usart.o(i.usart_receive_config))
+<BR><BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComUartInit
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
 </UL>
 
-<P><STRONG><a name="[fa]"></a>usart_transmit_config</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, gd32f30x_usart.o(i.usart_transmit_config))
-<BR><BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComUartInit
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
+<P><STRONG><a name="[f9]"></a>usart_transmit_config</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, gd32f30x_usart.o(i.usart_transmit_config))
+<BR><BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComUartInit
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
 </UL>
 
-<P><STRONG><a name="[115]"></a>vMBPortSerialEnable</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, portserial.o(i.vMBPortSerialEnable))
+<P><STRONG><a name="[114]"></a>vMBPortSerialEnable</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, portserial.o(i.vMBPortSerialEnable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = vMBPortSerialEnable &rArr; usart_interrupt_enable
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_enable
+<BR>[Calls]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_enable
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
-<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_disable
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_disable
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBRTUTransmitFSM
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUStop
@@ -1450,109 +1441,109 @@ Global Symbols
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUSend
 </UL>
 
-<P><STRONG><a name="[117]"></a>vMBPortTimersDisable</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, porttimer.o(i.vMBPortTimersDisable))
+<P><STRONG><a name="[116]"></a>vMBPortTimersDisable</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, porttimer.o(i.vMBPortTimersDisable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = vMBPortTimersDisable
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_flag_clear
-<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_disable
-<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_disable
-<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_counter_value_config
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_flag_clear
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_disable
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_disable
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_counter_value_config
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBRTUTimerT35Expired
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUStop
 </UL>
 
-<P><STRONG><a name="[116]"></a>vMBPortTimersEnable</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, porttimer.o(i.vMBPortTimersEnable))
+<P><STRONG><a name="[115]"></a>vMBPortTimersEnable</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, porttimer.o(i.vMBPortTimersEnable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = vMBPortTimersEnable
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_flag_clear
-<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_enable
-<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_enable
-<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_counter_value_config
+<BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_flag_clear
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_enable
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_enable
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_counter_value_config
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBRTUReceiveFSM
 <LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUStart
 </UL>
 
-<P><STRONG><a name="[10f]"></a>xMBPortEventGet</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, portevent.o(i.xMBPortEventGet))
-<BR><BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBPoll
+<P><STRONG><a name="[10e]"></a>xMBPortEventGet</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, portevent.o(i.xMBPortEventGet))
+<BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBPoll
 </UL>
 
-<P><STRONG><a name="[10e]"></a>xMBPortEventInit</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, portevent.o(i.xMBPortEventInit))
-<BR><BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBInit
+<P><STRONG><a name="[10d]"></a>xMBPortEventInit</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, portevent.o(i.xMBPortEventInit))
+<BR><BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBInit
 </UL>
 
-<P><STRONG><a name="[110]"></a>xMBPortEventPost</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, portevent.o(i.xMBPortEventPost))
+<P><STRONG><a name="[10f]"></a>xMBPortEventPost</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, portevent.o(i.xMBPortEventPost))
 <BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBRTUTransmitFSM
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBRTUTimerT35Expired
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBPoll
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBPoll
 </UL>
 
-<P><STRONG><a name="[125]"></a>xMBPortSerialGetByte</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, portserial.o(i.xMBPortSerialGetByte))
+<P><STRONG><a name="[124]"></a>xMBPortSerialGetByte</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, portserial.o(i.xMBPortSerialGetByte))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = xMBPortSerialGetByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_data_receive
+<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_data_receive
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBRTUReceiveFSM
 </UL>
 
-<P><STRONG><a name="[111]"></a>xMBPortSerialInit</STRONG> (Thumb, 32 bytes, Stack size 24 bytes, portserial.o(i.xMBPortSerialInit))
+<P><STRONG><a name="[110]"></a>xMBPortSerialInit</STRONG> (Thumb, 32 bytes, Stack size 24 bytes, portserial.o(i.xMBPortSerialInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 148<LI>Call Chain = xMBPortSerialInit &rArr; UartInit &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
-<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchInit
+<BR>[Calls]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UartInit
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchInit
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUInit
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUInit
 </UL>
 
-<P><STRONG><a name="[114]"></a>xMBPortSerialPutByte</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, portserial.o(i.xMBPortSerialPutByte))
+<P><STRONG><a name="[113]"></a>xMBPortSerialPutByte</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, portserial.o(i.xMBPortSerialPutByte))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = xMBPortSerialPutByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_data_transmit
+<BR>[Calls]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_data_transmit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBRTUTransmitFSM
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUSend
 </UL>
 
-<P><STRONG><a name="[112]"></a>xMBPortTimersInit</STRONG> (Thumb, 68 bytes, Stack size 24 bytes, porttimer.o(i.xMBPortTimersInit))
+<P><STRONG><a name="[111]"></a>xMBPortTimersInit</STRONG> (Thumb, 68 bytes, Stack size 24 bytes, porttimer.o(i.xMBPortTimersInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = xMBPortTimersInit &rArr; nvic_irq_enable
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
-<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_struct_para_init
-<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_enable
-<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_init
-<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_deinit
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_irq_enable
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_struct_para_init
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_enable
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_init
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_deinit
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_irq_enable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUInit
+<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eMBRTUInit
 </UL>
 
 <P><STRONG><a name="[5a]"></a>xMBRTUReceiveFSM</STRONG> (Thumb, 140 bytes, Stack size 16 bytes, mbrtu.o(i.xMBRTUReceiveFSM))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = xMBRTUReceiveFSM &rArr; __aeabi_assert &rArr; fputs &rArr; fputc &rArr; usart_flag_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialGetByte
-<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersEnable
-<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<BR>[Calls]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialGetByte
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersEnable
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mb.o(i.eMBInit)
 </UL>
 <P><STRONG><a name="[5c]"></a>xMBRTUTimerT35Expired</STRONG> (Thumb, 96 bytes, Stack size 8 bytes, mbrtu.o(i.xMBRTUTimerT35Expired))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = xMBRTUTimerT35Expired &rArr; __aeabi_assert &rArr; fputs &rArr; fputc &rArr; usart_flag_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersDisable
-<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
-<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortEventPost
+<BR>[Calls]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortTimersDisable
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortEventPost
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mb.o(i.eMBInit)
 </UL>
 <P><STRONG><a name="[5b]"></a>xMBRTUTransmitFSM</STRONG> (Thumb, 116 bytes, Stack size 8 bytes, mbrtu.o(i.xMBRTUTransmitFSM))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = xMBRTUTransmitFSM &rArr; __aeabi_assert &rArr; fputs &rArr; fputc &rArr; usart_flag_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialPutByte
-<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
-<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
-<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortEventPost
+<BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialPutByte
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vMBPortSerialEnable
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortEventPost
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> mb.o(i.eMBInit)
 </UL><P>
@@ -1603,7 +1594,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[11a]"></a>TaskHandler</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, main.o(i.TaskHandler))
+<P><STRONG><a name="[119]"></a>TaskHandler</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, main.o(i.TaskHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TaskHandler
 </UL>
 <BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -1612,18 +1603,18 @@ Local Symbols
 <P><STRONG><a name="[53]"></a>TaskScheduleCb</STRONG> (Thumb, 98 bytes, Stack size 0 bytes, main.o(i.TaskScheduleCb))
 <BR>[Address Reference Count : 1]<UL><LI> main.o(i.AppInit)
 </UL>
-<P><STRONG><a name="[d3]"></a>CalcCrc8</STRONG> (Thumb, 58 bytes, Stack size 12 bytes, store_app.o(i.CalcCrc8))
+<P><STRONG><a name="[d2]"></a>CalcCrc8</STRONG> (Thumb, 58 bytes, Stack size 12 bytes, store_app.o(i.CalcCrc8))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = CalcCrc8
 </UL>
-<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteDataWithCheck
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadDataWithCheck
+<BR>[Called By]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteDataWithCheck
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadDataWithCheck
 </UL>
 
-<P><STRONG><a name="[d1]"></a>ReadDataWithCheck</STRONG> (Thumb, 54 bytes, Stack size 24 bytes, store_app.o(i.ReadDataWithCheck))
+<P><STRONG><a name="[d0]"></a>ReadDataWithCheck</STRONG> (Thumb, 54 bytes, Stack size 24 bytes, store_app.o(i.ReadDataWithCheck))
 <BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = ReadDataWithCheck &rArr; ReadEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus &rArr; rcu_clock_freq_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalcCrc8
+<BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalcCrc8
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadSysParam
 </UL>
@@ -1631,24 +1622,24 @@ Local Symbols
 <P><STRONG><a name="[c3]"></a>ReadSysParam</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, store_app.o(i.ReadSysParam))
 <BR><BR>[Stack]<UL><LI>Max Depth = 172<LI>Call Chain = ReadSysParam &rArr; ReadDataWithCheck &rArr; ReadEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus &rArr; rcu_clock_freq_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadDataWithCheck
+<BR>[Calls]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadDataWithCheck
 </UL>
 <BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitSysParam
 </UL>
 
-<P><STRONG><a name="[100]"></a>WriteDataWithCheck</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, store_app.o(i.WriteDataWithCheck))
+<P><STRONG><a name="[ff]"></a>WriteDataWithCheck</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, store_app.o(i.WriteDataWithCheck))
 <BR><BR>[Stack]<UL><LI>Max Depth = 164<LI>Call Chain = WriteDataWithCheck &rArr; WriteEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus &rArr; rcu_clock_freq_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEepromData
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalcCrc8
+<BR>[Calls]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEepromData
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CalcCrc8
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteSysParam
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteSysParam
 </UL>
 
-<P><STRONG><a name="[e3]"></a>WriteSysParam</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, store_app.o(i.WriteSysParam))
+<P><STRONG><a name="[e2]"></a>WriteSysParam</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, store_app.o(i.WriteSysParam))
 <BR><BR>[Stack]<UL><LI>Max Depth = 180<LI>Call Chain = WriteSysParam &rArr; WriteDataWithCheck &rArr; WriteEepromData &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus &rArr; rcu_clock_freq_get
 </UL>
-<BR>[Calls]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteDataWithCheck
+<BR>[Calls]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteDataWithCheck
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetModbusParam
 </UL>
@@ -1721,7 +1712,7 @@ Local Symbols
 <LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_channel_length_config
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_calibration_enable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempDrvInit
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempDrvInit
 </UL>
 
 <P><STRONG><a name="[7c]"></a>AdcToTemp10Mpl</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, ntc_drv.o(i.AdcToTemp10Mpl))
@@ -1729,13 +1720,13 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DescBinarySearch
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempSensorProc
+<BR>[Called By]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempSensorProc
 </UL>
 
-<P><STRONG><a name="[cc]"></a>ArithAvgFltr</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, ntc_drv.o(i.ArithAvgFltr))
+<P><STRONG><a name="[cb]"></a>ArithAvgFltr</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, ntc_drv.o(i.ArithAvgFltr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = ArithAvgFltr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MedianAvgFltr
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MedianAvgFltr
 </UL>
 
 <P><STRONG><a name="[54]"></a>CmpCb</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, ntc_drv.o(i.CmpCb))
@@ -1755,7 +1746,7 @@ Local Symbols
 <BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_regular_data_read
 <LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_flag_get
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempSensorProc
+<BR>[Called By]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempSensorProc
 </UL>
 
 <P><STRONG><a name="[a8]"></a>GpioInit</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, ntc_drv.o(i.GpioInit))
@@ -1764,16 +1755,16 @@ Local Symbols
 <BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempDrvInit
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempDrvInit
 </UL>
 
-<P><STRONG><a name="[cb]"></a>MedianAvgFltr</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ntc_drv.o(i.MedianAvgFltr))
+<P><STRONG><a name="[ca]"></a>MedianAvgFltr</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, ntc_drv.o(i.MedianAvgFltr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = MedianAvgFltr &rArr; qsort &rArr;  qsort (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ArithAvgFltr
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ArithAvgFltr
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;qsort
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempSensorProc
+<BR>[Called By]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TempSensorProc
 </UL>
 
 <P><STRONG><a name="[66]"></a>AcPowerProc</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, rh_drv.o(i.AcPowerProc))
@@ -1850,17 +1841,17 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = TimerInit &rArr; nvic_irq_enable
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
-<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_struct_para_init
-<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_enable
-<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_init
-<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_enable
-<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_deinit
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_irq_enable
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_struct_para_init
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_interrupt_enable
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_init
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_enable
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;timer_deinit
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_irq_enable
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HumiDrvInit
 </UL>
 
-<P><STRONG><a name="[fd]"></a>Usb2ComGpioInit</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, usb2com_drv.o(i.Usb2ComGpioInit))
+<P><STRONG><a name="[fc]"></a>Usb2ComGpioInit</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, usb2com_drv.o(i.Usb2ComGpioInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = Usb2ComGpioInit &rArr; gpio_init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
@@ -1869,17 +1860,17 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComDrvInit
 </UL>
 
-<P><STRONG><a name="[fe]"></a>Usb2ComUartInit</STRONG> (Thumb, 84 bytes, Stack size 8 bytes, usb2com_drv.o(i.Usb2ComUartInit))
+<P><STRONG><a name="[fd]"></a>Usb2ComUartInit</STRONG> (Thumb, 84 bytes, Stack size 8 bytes, usb2com_drv.o(i.Usb2ComUartInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = Usb2ComUartInit &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
-<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_transmit_config
-<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_receive_config
-<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_enable
-<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_enable
-<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_deinit
-<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_baudrate_set
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_irq_enable
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_transmit_config
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_receive_config
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_interrupt_enable
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_enable
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_deinit
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_baudrate_set
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_irq_enable
 </UL>
 <BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Usb2ComDrvInit
 </UL>
@@ -1901,7 +1892,7 @@ Local Symbols
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
 </UL>
 
 <P><STRONG><a name="[b7]"></a>I2CSendAck</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, eeprom_drv.o(i.I2CSendAck))
@@ -1911,7 +1902,7 @@ Local Symbols
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
 </UL>
 
 <P><STRONG><a name="[b9]"></a>I2CSendByte</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, eeprom_drv.o(i.I2CSendByte))
@@ -1921,8 +1912,8 @@ Local Symbols
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEepromData
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
+<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEepromData
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
 </UL>
 
 <P><STRONG><a name="[bb]"></a>I2CSendNack</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, eeprom_drv.o(i.I2CSendNack))
@@ -1932,7 +1923,7 @@ Local Symbols
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
 </UL>
 
 <P><STRONG><a name="[bd]"></a>I2CStart</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, eeprom_drv.o(i.I2CStart))
@@ -1942,8 +1933,8 @@ Local Symbols
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEepromData
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
+<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEepromData
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
 </UL>
 
 <P><STRONG><a name="[bf]"></a>I2CStop</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, eeprom_drv.o(i.I2CStop))
@@ -1953,8 +1944,8 @@ Local Symbols
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEepromData
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
+<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEepromData
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
 <LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CWaitAck
 </UL>
 
@@ -1967,8 +1958,8 @@ Local Symbols
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEepromData
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
+<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteEepromData
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadEepromData
 </UL>
 
 <P><STRONG><a name="[82]"></a>BacklightInit</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, lcd_drv.o(i.BacklightInit))
@@ -2011,8 +2002,7 @@ Local Symbols
 <P><STRONG><a name="[c8]"></a>LcdSetCursor</STRONG> (Thumb, 48 bytes, Stack size 12 bytes, lcd_drv.o(i.LcdSetCursor))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = LcdSetCursor
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LcdShowChinese
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LcdDrawPoint
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LcdDrawPoint
 <LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LcdFillPureColor
 </UL>
 
@@ -2044,7 +2034,7 @@ Local Symbols
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadTouchReg
+<BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadTouchReg
 </UL>
 
 <P><STRONG><a name="[b8]"></a>I2CSendAck</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, touch_drv.o(i.I2CSendAck))
@@ -2054,7 +2044,7 @@ Local Symbols
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadTouchReg
+<BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadTouchReg
 </UL>
 
 <P><STRONG><a name="[ba]"></a>I2CSendByte</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, touch_drv.o(i.I2CSendByte))
@@ -2064,8 +2054,8 @@ Local Symbols
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteTouchReg
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadTouchReg
+<BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteTouchReg
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadTouchReg
 </UL>
 
 <P><STRONG><a name="[bc]"></a>I2CSendNack</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, touch_drv.o(i.I2CSendNack))
@@ -2075,7 +2065,7 @@ Local Symbols
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadTouchReg
+<BR>[Called By]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadTouchReg
 </UL>
 
 <P><STRONG><a name="[be]"></a>I2CStart</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, touch_drv.o(i.I2CStart))
@@ -2085,8 +2075,8 @@ Local Symbols
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteTouchReg
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadTouchReg
+<BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteTouchReg
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadTouchReg
 </UL>
 
 <P><STRONG><a name="[c0]"></a>I2CStop</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, touch_drv.o(i.I2CStop))
@@ -2096,8 +2086,8 @@ Local Symbols
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteTouchReg
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadTouchReg
+<BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteTouchReg
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadTouchReg
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CWaitAck
 </UL>
 
@@ -2110,11 +2100,11 @@ Local Symbols
 <LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_set
 <LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_bit_reset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteTouchReg
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadTouchReg
+<BR>[Called By]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteTouchReg
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadTouchReg
 </UL>
 
-<P><STRONG><a name="[d4]"></a>ReadTouchReg</STRONG> (Thumb, 126 bytes, Stack size 16 bytes, touch_drv.o(i.ReadTouchReg))
+<P><STRONG><a name="[d3]"></a>ReadTouchReg</STRONG> (Thumb, 126 bytes, Stack size 16 bytes, touch_drv.o(i.ReadTouchReg))
 <BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = ReadTouchReg &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus &rArr; rcu_clock_freq_get
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CWaitAck
@@ -2129,7 +2119,7 @@ Local Symbols
 <LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TouchScan
 </UL>
 
-<P><STRONG><a name="[f1]"></a>WriteTouchReg</STRONG> (Thumb, 100 bytes, Stack size 24 bytes, touch_drv.o(i.WriteTouchReg))
+<P><STRONG><a name="[f0]"></a>WriteTouchReg</STRONG> (Thumb, 100 bytes, Stack size 24 bytes, touch_drv.o(i.WriteTouchReg))
 <BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = WriteTouchReg &rArr; I2CWaitAck &rArr; I2CStop &rArr; DelayNus &rArr; rcu_clock_freq_get
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2CWaitAck
@@ -2146,76 +2136,76 @@ Local Symbols
 <BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialInit
+<BR>[Called By]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialInit
 </UL>
 
-<P><STRONG><a name="[e4]"></a>SwitchInit</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, portserial.o(i.SwitchInit))
+<P><STRONG><a name="[e3]"></a>SwitchInit</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, portserial.o(i.SwitchInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = SwitchInit &rArr; gpio_init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gpio_init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialInit
+<BR>[Called By]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialInit
 </UL>
 
-<P><STRONG><a name="[f7]"></a>UartInit</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, portserial.o(i.UartInit))
+<P><STRONG><a name="[f6]"></a>UartInit</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, portserial.o(i.UartInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = UartInit &rArr; usart_baudrate_set &rArr; rcu_clock_freq_get
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rcu_periph_clock_enable
-<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_transmit_config
-<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_receive_config
-<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_enable
-<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_deinit
-<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_baudrate_set
-<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_irq_enable
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_transmit_config
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_receive_config
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_enable
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_deinit
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usart_baudrate_set
+<LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nvic_irq_enable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialInit
+<BR>[Called By]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;xMBPortSerialInit
 </UL>
 
-<P><STRONG><a name="[f5]"></a>prvvUARTRxISR</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, portserial.o(i.prvvUARTRxISR))
+<P><STRONG><a name="[f4]"></a>prvvUARTRxISR</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, portserial.o(i.prvvUARTRxISR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = prvvUARTRxISR
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
 </UL>
 
-<P><STRONG><a name="[f6]"></a>prvvUARTTxReadyISR</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, portserial.o(i.prvvUARTTxReadyISR))
+<P><STRONG><a name="[f5]"></a>prvvUARTTxReadyISR</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, portserial.o(i.prvvUARTTxReadyISR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = prvvUARTTxReadyISR
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
 </UL>
 
-<P><STRONG><a name="[e9]"></a>prvvTIMERExpiredISR</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, porttimer.o(i.prvvTIMERExpiredISR))
+<P><STRONG><a name="[e8]"></a>prvvTIMERExpiredISR</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, porttimer.o(i.prvvTIMERExpiredISR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = prvvTIMERExpiredISR
 </UL>
 <BR>[Called By]<UL><LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER3_IRQHandler
 </UL>
 
-<P><STRONG><a name="[11f]"></a>system_clock_120m_hxtal</STRONG> (Thumb, 258 bytes, Stack size 0 bytes, system_gd32f30x.o(i.system_clock_120m_hxtal))
-<BR><BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_clock_config
+<P><STRONG><a name="[11e]"></a>system_clock_120m_hxtal</STRONG> (Thumb, 258 bytes, Stack size 0 bytes, system_gd32f30x.o(i.system_clock_120m_hxtal))
+<BR><BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_clock_config
 </UL>
 
-<P><STRONG><a name="[e5]"></a>system_clock_config</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, system_gd32f30x.o(i.system_clock_config))
+<P><STRONG><a name="[e4]"></a>system_clock_config</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, system_gd32f30x.o(i.system_clock_config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = system_clock_config
 </UL>
-<BR>[Calls]<UL><LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_clock_120m_hxtal
+<BR>[Calls]<UL><LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_clock_120m_hxtal
 </UL>
 <BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>
 
-<P><STRONG><a name="[103]"></a>_printf_core</STRONG> (Thumb, 984 bytes, Stack size 104 bytes, printf8.o(i._printf_core), UNUSED)
+<P><STRONG><a name="[102]"></a>_printf_core</STRONG> (Thumb, 984 bytes, Stack size 104 bytes, printf8.o(i._printf_core), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
-<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
-<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
 </UL>
-<BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0printf$8
-</UL>
-
-<P><STRONG><a name="[108]"></a>_printf_post_padding</STRONG> (Thumb, 36 bytes, Stack size 24 bytes, printf8.o(i._printf_post_padding), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<BR>[Called By]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0printf$8
 </UL>
 
-<P><STRONG><a name="[107]"></a>_printf_pre_padding</STRONG> (Thumb, 46 bytes, Stack size 24 bytes, printf8.o(i._printf_pre_padding), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<P><STRONG><a name="[107]"></a>_printf_post_padding</STRONG> (Thumb, 36 bytes, Stack size 24 bytes, printf8.o(i._printf_post_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[106]"></a>_printf_pre_padding</STRONG> (Thumb, 46 bytes, Stack size 24 bytes, printf8.o(i._printf_pre_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 </UL>
 <P>
 <H3>
