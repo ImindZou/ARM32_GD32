@@ -10,9 +10,9 @@ I (.\Drv_Common\led_drv.h)(0x64B8C2AA)
 I (.\Drv_Common\key_drv.h)(0x64BF4B4E)
 I (.\Drv_Common\touch_drv.h)(0x6563078D)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
-I (.\Drv_Common\lcd_drv.h)(0x65C33438)
+I (.\Drv_Common\lcd_drv.h)(0x65C33800)
 I (App_Common\store_app.h)(0x6513C671)
-F (.\App_Common\main.c)(0x65C334F0)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\App_Common\main.c)(0x65C337FF)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (.\Drv_Common\led_drv.h)(0x64B8C2AA)
@@ -24,7 +24,7 @@ I (.\Drv_Common\delay.h)(0x64B35649)
 I (.\Drv_Common\sensor_drv.h)(0x64F15877)
 I (.\Drv_Common\eeprom_drv.h)(0x651394C9)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
-I (.\Drv_Common\lcd_drv.h)(0x65C33438)
+I (.\Drv_Common\lcd_drv.h)(0x65C33800)
 I (.\Drv_Common\touch_drv.h)(0x6563078D)
 I (App_Common\hmi_app.h)(0x64D5D842)
 I (App_Common\sensor_app.h)(0x64F15971)
@@ -479,7 +479,7 @@ I (.\Gd32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
 I (.\Gd32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
 I (.\Gd32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
 I (Drv_Common\delay.h)(0x64B35649)
-F (.\Drv_Common\lcd_drv.c)(0x65C333A9)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\lcd_drv.o --omf_browse .\objects\lcd_drv.crf --depend .\objects\lcd_drv.d)
+F (.\Drv_Common\lcd_drv.c)(0x65C34DAA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\lcd_drv.o --omf_browse .\objects\lcd_drv.crf --depend .\objects\lcd_drv.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (.\Arm_Kernel\gd32f30x.h)(0x61CC215C)
@@ -514,7 +514,7 @@ I (.\Gd32_Hal\Include\gd32f30x_misc.h)(0x61CC215B)
 I (.\Gd32_Hal\Include\gd32f30x_enet.h)(0x62A6E3C7)
 I (.\Gd32_Hal\Include\gd32f30x_exmc.h)(0x61CC215C)
 I (Drv_Common\delay.h)(0x64B35649)
-I (Drv_Common\lcd_drv.h)(0x65C33438)
+I (Drv_Common\lcd_drv.h)(0x65C33800)
 I (Drv_Common\fonts.h)(0x65683833)
 F (.\Drv_Common\touch_drv.c)(0x656307B6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\touch_drv.o --omf_browse .\objects\touch_drv.crf --depend .\objects\touch_drv.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
