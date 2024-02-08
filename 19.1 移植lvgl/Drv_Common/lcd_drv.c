@@ -59,6 +59,8 @@ static void GpioInit(void)
 
 static void ExmcLcdInit(void)
 {
+	exmc_norsram_parameter_struct lcdInitStruct;
+	exmc_norsram_struct_para_init(&lcdInitStruct);
 	/* 使能EXMC时钟 */
 	rcu_periph_clock_enable(RCU_EXMC);
 
@@ -84,8 +86,7 @@ static void ExmcLcdInit(void)
 
 	
 	/* Region1配置 */
-	exmc_norsram_parameter_struct lcdInitStruct;
-	exmc_norsram_struct_para_init(&lcdInitStruct);
+
 	lcdInitStruct.norsram_region    = EXMC_BANK0_NORSRAM_REGION1; //Region1
 	lcdInitStruct.address_data_mux  = DISABLE;                    //禁用地址、数据总线多路复用
 	lcdInitStruct.memory_type       = EXMC_MEMORY_TYPE_SRAM;      //储存器类型为SRAM

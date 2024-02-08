@@ -12,7 +12,7 @@ I (.\Drv_Common\touch_drv.h)(0x6563078D)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdbool.h)(0x5E8E2EB2)
 I (.\Drv_Common\lcd_drv.h)(0x65C34383)
 I (App_Common\store_app.h)(0x6513C671)
-F (.\App_Common\main.c)(0x65C34377)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\App_Common\main.c)(0x65C4CB18)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\App_Common -I .\App_Modbus -I .\Arm_Kernel -I .\Drv_Common -I .\Drv_Modbus -I .\Gd32_Hal -I .\Gd32_Hal\Include -I .\Mid_Modbus -I .\Mid_Modbus\rtu -I .\Mid_Modbus\include-I.\RTE\_ARM32-ID:\Study\keil\UV4\GigaDevice\GD32F30x_DFP\2.2.3\Device\Include-ID:\Study\keil\UV4\ARM\CMSIS\Include-D__UVISION_VERSION="533" -D_RTE_ -DGD32F30X_HD -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdint.h)(0x5E8E2EB2)
 I (D:\Study\keil\UV4\ARM\ARMCC\include\stdio.h)(0x5E8E2EB2)
 I (.\Drv_Common\led_drv.h)(0x64B8C2AA)

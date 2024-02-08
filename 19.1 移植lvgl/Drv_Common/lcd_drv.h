@@ -69,9 +69,9 @@ void LcdFillMultiColor(uint16_t sx, uint16_t sy, uint16_t ex, uint16_t ey, uint1
 void LcdDrawPoint(uint16_t xPos, uint16_t yPos, uint16_t color);
 
 typedef struct {
-	uint16_t fontsSize;
+	uint16_t fontSize;
 	uint16_t charColor;
-	uint16_t byColor;
+	uint16_t bgColor;
 } CharShowInfo_t;
 
 /**

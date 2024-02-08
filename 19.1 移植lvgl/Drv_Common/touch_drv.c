@@ -22,33 +22,6 @@ static void GpioInit(void)
 	gpio_init(GPIOB, GPIO_MODE_OUT_PP, GPIO_OSPEED_10MHZ, GPIO_PIN_12); // INT
 }
 
-static void ConfigDevAddr(void)
-{
-	//RST拉低，复位GT911
-	gpio_bit_reset(GPIOB, GPIO_PIN_9);
-
-	//INT设为输出
-	gpio_init(GPIOB, GPIO_MODE_OUT_PP, GPIO_OSPEED_50MHZ, GPIO_PIN_12); 
-	gpio_bit_reset(GPIOB, GPIO_PIN_12);
-
-	//延时10毫秒
-	DelayNus(10000);
-
-	//拉高INT
-	gpio_bit_set(GPIOB, GPIO_PIN_12);
-
-	//延时1毫秒
-	DelayNus(1000);
-
-	//RST拉高，释放复位状态
-	gpio_bit_set(GPIOB, GPIO_PIN_9);
-
-	//延时10毫秒
-	DelayNus(10000);
-
-	//INT设为输入
-	gpio_init(GPIOB, GPIO_MODE_IN_FLOATING, GPIO_OSPEED_50MHZ, GPIO_PIN_12);
-}
 
 /**
 *******************************************************************
@@ -273,6 +246,32 @@ static void I2CSendNack(void)
 
 #define DETECT_INTERVAL_TIME        20          // GT911检测间隔时间要求10ms以上
 
+/**
+*******************************************************************
+* @function 配置触摸芯片的设备地址 0x28/0x29
+* @param    
+* @return                                                        
+*******************************************************************
+*/
+static void ConfigDevAddr(void)            
+{
+	gpio_bit_reset(GPIOB, GPIO_PIN_9);    	// RST拉低，复位GT911
+ 
+	gpio_init(GPIOB, GPIO_MODE_OUT_PP, GPIO_OSPEED_50MHZ, GPIO_PIN_12);  	// INT设为输出
+	gpio_bit_reset(GPIOB, GPIO_PIN_12);
+
+	DelayNms(1);  	// 延时1毫秒
+
+	gpio_bit_set(GPIOB, GPIO_PIN_12);  	// 拉高INT
+
+	DelayNms(1);  	// 延时1毫秒
+
+	gpio_bit_set(GPIOB, GPIO_PIN_9);   // RST拉高，释放复位状态
+
+	DelayNms(10);  	// 延时10毫秒
+
+	gpio_init(GPIOB, GPIO_MODE_IN_FLOATING, GPIO_OSPEED_50MHZ, GPIO_PIN_12);  	// INT设为输入
+}
 
 /**
 *******************************************************************
