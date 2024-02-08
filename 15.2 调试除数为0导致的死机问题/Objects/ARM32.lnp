@@ -1,0 +1,9 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\main.o"
+".\objects\gd32f30x_it.o"
+".\objects\startup_gd32f30x_hd.o"
+".\objects\system_gd32f30x.o"
+--library_type=microlib --strict --scatter ".\Objects\ARM32.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\ARM32.map" -o .\Objects\ARM32.axf
