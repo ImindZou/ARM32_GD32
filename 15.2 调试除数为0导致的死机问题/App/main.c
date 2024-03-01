@@ -4,6 +4,7 @@
 
 int32_t Caculate(int32_t val1, int32_t val2)
 {
+	while(1);
 	return val1 / val2;
 }
 
