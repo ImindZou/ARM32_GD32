@@ -33,6 +33,7 @@
 /* This file refers the CMSIS standard, some adjustments are made according to GigaDevice chips */
 
 #include "gd32f30x.h"
+#include "exsram_drv.h"
 
 /* system frequency define */
 #define __IRC8M           (IRC8M_VALUE)            /* internal 8 MHz RC oscillator frequency */
@@ -149,6 +150,7 @@ void SystemInit (void)
 
     /* configure the system clock source, PLL Multiplier, AHB/APBx prescalers and Flash settings */
     system_clock_config();
+	ExSramDrvInit();
 }
 /*!
     \brief      configure the system clock

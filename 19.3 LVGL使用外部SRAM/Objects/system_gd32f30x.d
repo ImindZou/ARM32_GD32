@@ -32,3 +32,5 @@
 .\objects\system_gd32f30x.o: .\Gd32_Hal\Include\gd32f30x_misc.h
 .\objects\system_gd32f30x.o: .\Gd32_Hal\Include\gd32f30x_enet.h
 .\objects\system_gd32f30x.o: .\Gd32_Hal\Include\gd32f30x_exmc.h
+.\objects\system_gd32f30x.o: .\Drv_Common\exsram_drv.h
+.\objects\system_gd32f30x.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdlib.h

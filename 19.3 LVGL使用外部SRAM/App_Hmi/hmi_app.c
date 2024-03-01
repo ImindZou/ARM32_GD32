@@ -15,6 +15,8 @@
 #include "lv_port_indev.h"
 #include "lv_port_disp.h"
 
+#include "lv_demo_widgets.h"
+
 void lv_example_flex_1(void)
 {
     /*Create a container with ROW flex direction*/
@@ -57,8 +59,8 @@ void HmiInit(void)
 	lv_init();					//lvgl系统初始化
 	lv_port_disp_init();		//lvgl显示接口出啊实话，放在lv_init()后面
 	lv_port_indev_init();		//lvgl输入接口初始化，放在lv_init()的后面
-	//lv_demo_widgets();
-	lv_example_flex_1();
+	//lv_example_flex_1();
+	lv_demo_widgets();
 }
 
 /**

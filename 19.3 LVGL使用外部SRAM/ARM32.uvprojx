@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>.\App_Common;.\App_Modbus;.\Arm_Kernel;.\Drv_Common;.\Drv_Modbus;.\Gd32_Hal;.\Gd32_Hal\Include;.\Mid_Modbus;.\Mid_Modbus\rtu;.\Mid_Modbus\include;\Mid_Lvgl;.\Mid_Lvgl\driver\porting;.\Mid_Lvgl\src;.\Mid_Lvgl\src\core;.\Mid_Lvgl\src\draw;.\Mid_Lvgl\src\extra;.\Mid_Lvgl\src\extra\layouts;.\Mid_Lvgl\src\extra\layouts\flex;.\Mid_Lvgl\src\extra\layouts\grid;.\Mid_Lvgl\src\extra\themes;.\Mid_Lvgl\src\extra\themes\basic;.\Mid_Lvgl\src\extra\themes\default;.\Mid_Lvgl\src\extra\themes\mono;.\Mid_Lvgl\src\extra\widgets;.\Mid_Lvgl\src\extra\widgets\animimg;.\Mid_Lvgl\src\extra\widgets\calendar;.\Mid_Lvgl\src\extra\widgets\chart;.\Mid_Lvgl\src\extra\widgets\colorwheel;.\Mid_Lvgl\src\extra\widgets\imgbtn;.\Mid_Lvgl\src\extra\widgets\keyboard;.\Mid_Lvgl\src\extra\widgets\led;.\Mid_Lvgl\src\extra\widgets\list;.\Mid_Lvgl\src\extra\widgets\menu;.\Mid_Lvgl\src\extra\widgets\meter;.\Mid_Lvgl\src\extra\widgets\msgbox;.\Mid_Lvgl\src\extra\widgets\span;.\Mid_Lvgl\src\extra\widgets\spinbox;.\Mid_Lvgl\src\extra\widgets\spinner;.\Mid_Lvgl\src\extra\widgets\tabview;.\Mid_Lvgl\src\extra\widgets\tileview;.\Mid_Lvgl\src\extra\widgets\win;.\Mid_Lvgl\src\font;.\Mid_Lvgl\src\hal;.\Mid_Lvgl\src\misc;.\Mid_Lvgl\src\widgets;.\App_Hmi\widgets;.\App_Hm.\App_Common;.\App_Modbus;.\Arm_Kernel;.\Drv_Common;.\Drv_Modbus;.\Gd32_Hal;.\Gd32_Hal\Include;.\Mid_Modbus;.\Mid_Modbus\rtu;.\Mid_Modbus\include;.\Mid_Lvgl;.\Mid_Lvgl\driver\porting;.\Mid_Lvgl\src;.\Mid_Lvgl\src\core;.\Mid_Lvgl\src\draw;.\Mid_Lvgl\src\extra;.\Mid_Lvgl\src\extra\layouts;.\Mid_Lvgl\src\extra\layouts\flex;.\Mid_Lvgl\src\extra\layouts\grid;.\Mid_Lvgl\src\extra\themes;.\Mid_Lvgl\src\extra\themes\basic;.\Mid_Lvgl\src\extra\themes\default;.\Mid_Lvgl\src\extra\themes\mono;.\Mid_Lvgl\src\extra\widgets;.\Mid_Lvgl\src\extra\widgets\animimg;.\Mid_Lvgl\src\extra\widgets\calendar;.\Mid_Lvgl\src\extra\widgets\chart;.\Mid_Lvgl\src\extra\widgets\colorwheel;.\Mid_Lvgl\src\extra\widgets\imgbtn;.\Mid_Lvgl\src\extra\widgets\keyboard;.\Mid_Lvgl\src\extra\widgets\led;.\Mid_Lvgl\src\extra\widgets\list;.\Mid_Lvgl\src\extra\widgets\menu;.\Mid_Lvgl\src\extra\widgets\meter;.\Mid_Lvgl\src\extra\widgets\msgbox;.\Mid_Lvgl\src\extra\widgets\span;.\Mid_Lvgl\src\extra\widgets\spinbox;.\Mid_Lvgl\src\extra\widgets\spinner;.\Mid_Lvgl\src\extra\widgets\tabview;.\Mid_Lvgl\src\extra\widgets\tileview;.\Mid_Lvgl\src\extra\widgets\win;.\Mid_Lvgl\src\font;.\Mid_Lvgl\src\hal;.\Mid_Lvgl\src\misc;.\Mid_Lvgl\src\widgets;.\App_Hmi</IncludePath>
+              <IncludePath>.\App_Common;.\App_Modbus;.\Arm_Kernel;.\Drv_Common;.\Drv_Modbus;.\Gd32_Hal;.\Gd32_Hal\Include;.\Mid_Modbus;.\Mid_Modbus\rtu;.\Mid_Modbus\include;\Mid_Lvgl;.\Mid_Lvgl\driver\porting;.\Mid_Lvgl\src;.\Mid_Lvgl\src\core;.\Mid_Lvgl\src\draw;.\Mid_Lvgl\src\extra;.\Mid_Lvgl\src\extra\layouts;.\Mid_Lvgl\src\extra\layouts\flex;.\Mid_Lvgl\src\extra\layouts\grid;.\Mid_Lvgl\src\extra\themes;.\Mid_Lvgl\src\extra\themes\basic;.\Mid_Lvgl\src\extra\themes\default;.\Mid_Lvgl\src\extra\themes\mono;.\Mid_Lvgl\src\extra\widgets;.\Mid_Lvgl\src\extra\widgets\animimg;.\Mid_Lvgl\src\extra\widgets\calendar;.\Mid_Lvgl\src\extra\widgets\chart;.\Mid_Lvgl\src\extra\widgets\colorwheel;.\Mid_Lvgl\src\extra\widgets\imgbtn;.\Mid_Lvgl\src\extra\widgets\keyboard;.\Mid_Lvgl\src\extra\widgets\led;.\Mid_Lvgl\src\extra\widgets\list;.\Mid_Lvgl\src\extra\widgets\menu;.\Mid_Lvgl\src\extra\widgets\meter;.\Mid_Lvgl\src\extra\widgets\msgbox;.\Mid_Lvgl\src\extra\widgets\span;.\Mid_Lvgl\src\extra\widgets\spinbox;.\Mid_Lvgl\src\extra\widgets\spinner;.\Mid_Lvgl\src\extra\widgets\tabview;.\Mid_Lvgl\src\extra\widgets\tileview;.\Mid_Lvgl\src\extra\widgets\win;.\Mid_Lvgl\src\font;.\Mid_Lvgl\src\hal;.\Mid_Lvgl\src\misc;.\Mid_Lvgl\src\widgets;.\App_Hmi\widgets;.\App_Hm.\App_Common;.\App_Modbus;.\Arm_Kernel;.\Drv_Common;.\Drv_Modbus;.\Gd32_Hal;.\Gd32_Hal\Include;.\Mid_Modbus;.\Mid_Modbus\rtu;.\Mid_Modbus\include;.\Mid_Lvgl;.\Mid_Lvgl\driver\porting;.\Mid_Lvgl\src;.\Mid_Lvgl\src\core;.\Mid_Lvgl\src\draw;.\Mid_Lvgl\src\extra;.\Mid_Lvgl\src\extra\layouts;.\Mid_Lvgl\src\extra\layouts\flex;.\Mid_Lvgl\src\extra\layouts\grid;.\Mid_Lvgl\src\extra\themes;.\Mid_Lvgl\src\extra\themes\basic;.\Mid_Lvgl\src\extra\themes\default;.\Mid_Lvgl\src\extra\themes\mono;.\Mid_Lvgl\src\extra\widgets;.\Mid_Lvgl\src\extra\widgets\animimg;.\Mid_Lvgl\src\extra\widgets\calendar;.\Mid_Lvgl\src\extra\widgets\chart;.\Mid_Lvgl\src\extra\widgets\colorwheel;.\Mid_Lvgl\src\extra\widgets\imgbtn;.\Mid_Lvgl\src\extra\widgets\keyboard;.\Mid_Lvgl\src\extra\widgets\led;.\Mid_Lvgl\src\extra\widgets\list;.\Mid_Lvgl\src\extra\widgets\menu;.\Mid_Lvgl\src\extra\widgets\meter;.\Mid_Lvgl\src\extra\widgets\msgbox;.\Mid_Lvgl\src\extra\widgets\span;.\Mid_Lvgl\src\extra\widgets\spinbox;.\Mid_Lvgl\src\extra\widgets\spinner;.\Mid_Lvgl\src\extra\widgets\tabview;.\Mid_Lvgl\src\extra\widgets\tileview;.\Mid_Lvgl\src\extra\widgets\win;.\Mid_Lvgl\src\font;.\Mid_Lvgl\src\hal;.\Mid_Lvgl\src\misc;.\Mid_Lvgl\src\widgets;.\App_Hmi;.\App_Hmi\widgets;.\App_Hmi\widgets\assets</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -417,6 +417,26 @@
               <FileName>hmi_app.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\App_Hmi\hmi_app.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_demo_widgets.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\App_Hmi\widgets\lv_demo_widgets.c</FilePath>
+            </File>
+            <File>
+              <FileName>img_clothes.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\App_Hmi\widgets\assets\img_clothes.c</FilePath>
+            </File>
+            <File>
+              <FileName>img_demo_widgets_avatar.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\App_Hmi\widgets\assets\img_demo_widgets_avatar.c</FilePath>
+            </File>
+            <File>
+              <FileName>img_lvgl_logo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\App_Hmi\widgets\assets\img_lvgl_logo.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -527,6 +547,11 @@
               <FileName>touch_drv.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Drv_Common\touch_drv.c</FilePath>
+            </File>
+            <File>
+              <FileName>exsram_drv.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Drv_Common\exsram_drv.c</FilePath>
             </File>
           </Files>
         </Group>

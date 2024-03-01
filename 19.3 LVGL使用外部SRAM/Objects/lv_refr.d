@@ -61,3 +61,4 @@
 .\objects\lv_refr.o: Mid_lvgl\src\core\../misc/lv_gc.h
 .\objects\lv_refr.o: Mid_lvgl\src\core\../font/lv_font_fmt_txt.h
 .\objects\lv_refr.o: Mid_lvgl\src\core\../extra/others/snapshot/lv_snapshot.h
+.\objects\lv_refr.o: Mid_lvgl\src\core\../widgets/lv_label.h
