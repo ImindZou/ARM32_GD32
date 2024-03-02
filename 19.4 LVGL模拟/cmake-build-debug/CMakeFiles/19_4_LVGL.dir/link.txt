@@ -1,0 +1,3 @@
+"D:\studytoll\Clion\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\19_4_LVGL.dir/objects.a
+D:\PROGRA~1\CODEBL~1\MinGW\bin\ar.exe qc CMakeFiles\19_4_LVGL.dir/objects.a @CMakeFiles\19_4_LVGL.dir\objects1.rsp
+D:\PROGRA~1\CODEBL~1\MinGW\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\19_4_LVGL.dir/objects.a -Wl,--no-whole-archive -o 19_4_LVGL.exe -Wl,--out-implib,lib19_4_LVGL.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\19_4_LVGL.dir\linkLibs.rsp

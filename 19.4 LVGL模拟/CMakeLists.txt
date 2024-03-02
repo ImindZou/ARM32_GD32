@@ -1,0 +1,841 @@
+cmake_minimum_required(VERSION 3.27)
+project(19.4LVGL模拟 C)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(lv_port_win_codeblocks-release-v8.3)
+include_directories(lv_port_win_codeblocks-release-v8.3/lv_drivers)
+include_directories(lv_port_win_codeblocks-release-v8.3/lv_drivers/display)
+include_directories(lv_port_win_codeblocks-release-v8.3/lv_drivers/gtkdrv)
+include_directories(lv_port_win_codeblocks-release-v8.3/lv_drivers/indev)
+include_directories(lv_port_win_codeblocks-release-v8.3/lv_drivers/sdl)
+include_directories(lv_port_win_codeblocks-release-v8.3/lv_drivers/wayland)
+include_directories(lv_port_win_codeblocks-release-v8.3/lv_drivers/win32drv)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/demos)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/demos/keypad_encoder)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/demos/music)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/demos/stress)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/demos/widgets)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/env_support/cmsis-pack)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/env_support/rt-thread)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/env_support/rt-thread/squareline/ui)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/env_support/rt-thread/squareline/ui/lvgl)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/anim)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/arduino)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/arduino/LVGL_Arduino)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/event)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/get_started)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/flex)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/grid)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/bmp)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/ffmpeg)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/freetype)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/gif)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/png)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/qrcode)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/rlottie)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/sjpg)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/others)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/fragment)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/gridnav)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/ime)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/imgfont)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/monkey)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/msg)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/snapshot)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/porting)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/scroll)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/core)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/draw)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/arm2d)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/pxp)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/renesas)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/stm32_dma2d)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/swm341_dma2d)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/layouts)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/layouts/flex)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/layouts/grid)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/bmp)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/ffmpeg)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/freetype)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/fsdrv)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/gif)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/png)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/qrcode)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/rlottie)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/sjpg)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/fragment)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/gridnav)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/ime)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/imgfont)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/monkey)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/msg)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/snapshot)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes/basic)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes/default)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes/mono)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/animimg)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/calendar)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/chart)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/colorwheel)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/imgbtn)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/keyboard)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/led)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/list)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/menu)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/meter)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/msgbox)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/span)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/spinbox)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/spinner)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/tabview)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/tileview)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/win)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/font)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/hal)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/misc)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/tests/src)
+include_directories(lv_port_win_codeblocks-release-v8.3/lvgl/tests/unity)
+
+add_executable(19_4_LVGL
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/display/drm.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/display/drm.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/display/fbdev.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/display/fbdev.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/display/GC9A01.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/display/GC9A01.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/display/ILI9341.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/display/ILI9341.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/display/monitor.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/display/R61581.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/display/R61581.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/display/SHARP_MIP.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/display/SHARP_MIP.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/display/SSD1963.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/display/SSD1963.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/display/ST7565.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/display/ST7565.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/display/UC1610.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/display/UC1610.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/gtkdrv/gtkdrv.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/gtkdrv/gtkdrv.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/AD_touch.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/AD_touch.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/evdev.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/evdev.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/FT5406EE8.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/FT5406EE8.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/keyboard.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/libinput.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/libinput_drv.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/mouse.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/mousewheel.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/xkb.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/xkb.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/XPT2046.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/XPT2046.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/sdl/sdl.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/sdl/sdl.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/sdl/sdl_common.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/sdl/sdl_common.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/sdl/sdl_common_internal.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/sdl/sdl_gpu.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/sdl/sdl_gpu.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/wayland/wayland.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/wayland/wayland.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/win32drv/win32drv.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/win32drv/win32drv.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/lv_drv_conf_template.h
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/win_drv.c
+        lv_port_win_codeblocks-release-v8.3/lv_drivers/win_drv.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_alpha16.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_argb.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_indexed16.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_rgb.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/lv_demo_benchmark.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/lv_demo_benchmark.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/keypad_encoder/lv_demo_keypad_encoder.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/keypad_encoder/lv_demo_keypad_encoder.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_corner_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_list_pause.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_list_pause_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_list_play.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_list_play_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_loop.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_loop_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_next.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_next_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_pause.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_pause_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_play.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_play_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_prev.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_prev_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_rnd.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_rnd_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_corner_left.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_corner_left_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_corner_right.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_corner_right_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_cover_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_cover_1_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_cover_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_cover_2_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_cover_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_cover_3_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_icon_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_icon_1_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_icon_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_icon_2_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_icon_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_icon_3_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_icon_4.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_icon_4_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_list_border.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_list_border_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_logo.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_slider_knob.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_slider_knob_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_wave_bottom.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_wave_bottom_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_wave_top.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_wave_top_large.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/spectrum_1.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/spectrum_2.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/spectrum_3.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/lv_demo_music.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/lv_demo_music.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/lv_demo_music_list.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/lv_demo_music_list.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/lv_demo_music_main.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/lv_demo_music_main.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/stress/lv_demo_stress.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/stress/lv_demo_stress.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/widgets/assets/img_clothes.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/widgets/assets/img_demo_widgets_avatar.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/widgets/assets/img_lvgl_logo.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/widgets/lv_demo_widgets.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/widgets/lv_demo_widgets.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/demos/lv_demos.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/env_support/cmsis-pack/lv_conf_cmsis.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/env_support/rt-thread/squareline/ui/lvgl/lvgl.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/env_support/rt-thread/squareline/lv_ui_entry.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/env_support/rt-thread/lv_rt_thread_conf.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/env_support/rt-thread/lv_rt_thread_port.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/anim/lv_example_anim.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/anim/lv_example_anim_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/anim/lv_example_anim_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/anim/lv_example_anim_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/anim/lv_example_anim_timeline_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/arduino/LVGL_Arduino/LVGL_Arduino.ino
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/emoji/img_emoji_F617.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/animimg001.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/animimg002.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/animimg003.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/img_caret_down.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/img_cogwheel_alpha16.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/img_cogwheel_argb.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/img_cogwheel_chroma_keyed.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/img_cogwheel_indexed16.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/img_cogwheel_rgb.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/img_hand.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/img_skew_strip.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/img_star.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/imgbtn_left.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/imgbtn_mid.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/imgbtn_right.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/event/lv_example_event.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/event/lv_example_event_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/event/lv_example_event_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/event/lv_example_event_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/event/lv_example_event_4.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/get_started/lv_example_get_started.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/get_started/lv_example_get_started_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/get_started/lv_example_get_started_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/get_started/lv_example_get_started_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/flex/lv_example_flex.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/flex/lv_example_flex_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/flex/lv_example_flex_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/flex/lv_example_flex_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/flex/lv_example_flex_4.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/flex/lv_example_flex_5.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/flex/lv_example_flex_6.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/grid/lv_example_grid.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/grid/lv_example_grid_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/grid/lv_example_grid_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/grid/lv_example_grid_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/grid/lv_example_grid_4.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/grid/lv_example_grid_5.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/grid/lv_example_grid_6.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/lv_example_layout.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/bmp/lv_example_bmp.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/bmp/lv_example_bmp_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/ffmpeg/lv_example_ffmpeg.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/ffmpeg/lv_example_ffmpeg_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/ffmpeg/lv_example_ffmpeg_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/freetype/lv_example_freetype.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/freetype/lv_example_freetype_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/gif/img_bulb_gif.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/gif/lv_example_gif.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/gif/lv_example_gif_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/png/img_wink_png.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/png/lv_example_png.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/png/lv_example_png_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/qrcode/lv_example_qrcode.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/qrcode/lv_example_qrcode_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/rlottie/lv_example_rlottie.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/rlottie/lv_example_rlottie_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/rlottie/lv_example_rlottie_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/rlottie/lv_example_rlottie_approve.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/sjpg/lv_example_sjpg.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/sjpg/lv_example_sjpg_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/lv_example_libs.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/fragment/lv_example_fragment.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/fragment/lv_example_fragment_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/fragment/lv_example_fragment_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/gridnav/lv_example_gridnav.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/gridnav/lv_example_gridnav_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/gridnav/lv_example_gridnav_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/gridnav/lv_example_gridnav_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/gridnav/lv_example_gridnav_4.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/ime/lv_example_ime_pinyin.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/ime/lv_example_ime_pinyin_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/ime/lv_example_ime_pinyin_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/imgfont/lv_example_imgfont.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/imgfont/lv_example_imgfont_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/monkey/lv_example_monkey.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/monkey/lv_example_monkey_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/monkey/lv_example_monkey_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/monkey/lv_example_monkey_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/msg/lv_example_msg.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/msg/lv_example_msg_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/msg/lv_example_msg_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/msg/lv_example_msg_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/snapshot/lv_example_snapshot.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/snapshot/lv_example_snapshot_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/lv_example_others.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/porting/lv_port_disp_template.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/porting/lv_port_disp_template.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/porting/lv_port_fs_template.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/porting/lv_port_fs_template.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/porting/lv_port_indev_template.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/porting/lv_port_indev_template.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/scroll/lv_example_scroll.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/scroll/lv_example_scroll_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/scroll/lv_example_scroll_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/scroll/lv_example_scroll_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/scroll/lv_example_scroll_4.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/scroll/lv_example_scroll_5.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/scroll/lv_example_scroll_6.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_10.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_11.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_12.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_13.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_14.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_15.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_4.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_5.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_6.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_7.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_8.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_9.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/animimg/lv_example_animimg_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/arc/lv_example_arc_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/arc/lv_example_arc_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/bar/lv_example_bar_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/bar/lv_example_bar_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/bar/lv_example_bar_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/bar/lv_example_bar_4.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/bar/lv_example_bar_5.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/bar/lv_example_bar_6.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/btn/lv_example_btn_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/btn/lv_example_btn_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/btn/lv_example_btn_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/btnmatrix/lv_example_btnmatrix_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/btnmatrix/lv_example_btnmatrix_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/btnmatrix/lv_example_btnmatrix_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/calendar/lv_example_calendar_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/canvas/lv_example_canvas_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/canvas/lv_example_canvas_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/chart/lv_example_chart_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/chart/lv_example_chart_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/chart/lv_example_chart_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/chart/lv_example_chart_4.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/chart/lv_example_chart_5.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/chart/lv_example_chart_6.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/chart/lv_example_chart_7.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/chart/lv_example_chart_8.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/chart/lv_example_chart_9.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/checkbox/lv_example_checkbox_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/colorwheel/lv_example_colorwheel_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/dropdown/lv_example_dropdown_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/dropdown/lv_example_dropdown_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/dropdown/lv_example_dropdown_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/img/lv_example_img_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/img/lv_example_img_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/img/lv_example_img_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/img/lv_example_img_4.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/imgbtn/lv_example_imgbtn_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/keyboard/lv_example_keyboard_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/label/lv_example_label_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/label/lv_example_label_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/label/lv_example_label_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/label/lv_example_label_4.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/label/lv_example_label_5.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/led/lv_example_led_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/line/lv_example_line_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/list/lv_example_list_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/list/lv_example_list_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/menu/lv_example_menu_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/menu/lv_example_menu_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/menu/lv_example_menu_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/menu/lv_example_menu_4.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/menu/lv_example_menu_5.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/meter/lv_example_meter_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/meter/lv_example_meter_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/meter/lv_example_meter_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/meter/lv_example_meter_4.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/msgbox/lv_example_msgbox_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/obj/lv_example_obj_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/obj/lv_example_obj_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/roller/lv_example_roller_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/roller/lv_example_roller_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/roller/lv_example_roller_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/slider/lv_example_slider_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/slider/lv_example_slider_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/slider/lv_example_slider_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/span/lv_example_span_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/spinbox/lv_example_spinbox_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/spinner/lv_example_spinner_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/switch/lv_example_switch_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/table/lv_example_table_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/table/lv_example_table_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/tabview/lv_example_tabview_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/tabview/lv_example_tabview_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/textarea/lv_example_textarea_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/textarea/lv_example_textarea_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/textarea/lv_example_textarea_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/tileview/lv_example_tileview_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/win/lv_example_win_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/lv_example_widgets.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/examples/lv_examples.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_disp.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_disp.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_event.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_event.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_group.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_group.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_indev.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_indev.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_indev_scroll.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_indev_scroll.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_class.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_class.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_draw.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_draw.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_pos.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_pos.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_scroll.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_scroll.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_style.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_style.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_style_gen.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_style_gen.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_tree.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_tree.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_refr.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_refr.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_theme.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_theme.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/arm2d/lv_gpu_arm2d.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/arm2d/lv_gpu_arm2d.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/pxp/lv_draw_pxp.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/pxp/lv_draw_pxp.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/pxp/lv_draw_pxp_blend.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/pxp/lv_draw_pxp_blend.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_draw_vglite.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_draw_vglite.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_draw_vglite_arc.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_draw_vglite_arc.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_draw_vglite_line.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_draw_vglite_line.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_draw_vglite_rect.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_draw_vglite_rect.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_vglite_buf.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_vglite_buf.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_vglite_utils.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_vglite_utils.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/renesas/lv_gpu_d2_draw_label.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_arc.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_bg.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_composite.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_composite.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_img.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_img.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_label.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_layer.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_layer.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_line.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_mask.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_mask.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_polygon.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_priv.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_rect.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_rect.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_stack_blur.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_stack_blur.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_texture_cache.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_texture_cache.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_utils.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_utils.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_arc.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_blend.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_blend.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_dither.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_dither.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_gradient.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_gradient.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_img.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_layer.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_letter.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_line.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_polygon.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_rect.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_transform.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_arc.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_arc.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_img.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_img.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_label.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_label.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_layer.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_layer.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_line.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_line.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_mask.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_mask.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_rect.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_rect.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_transform.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_transform.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_triangle.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_triangle.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_img_buf.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_img_buf.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_img_cache.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_img_cache.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_img_decoder.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_img_decoder.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/layouts/flex/lv_flex.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/layouts/flex/lv_flex.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/layouts/grid/lv_grid.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/layouts/grid/lv_grid.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/layouts/lv_layouts.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/bmp/lv_bmp.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/bmp/lv_bmp.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/freetype/lv_freetype.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/freetype/lv_freetype.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/fsdrv/lv_fs_fatfs.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/fsdrv/lv_fs_posix.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/fsdrv/lv_fs_stdio.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/fsdrv/lv_fs_win32.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/fsdrv/lv_fsdrv.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/gif/gifdec.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/gif/gifdec.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/gif/lv_gif.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/gif/lv_gif.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/png/lodepng.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/png/lodepng.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/png/lv_png.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/png/lv_png.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/qrcode/lv_qrcode.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/qrcode/lv_qrcode.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/qrcode/qrcodegen.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/qrcode/qrcodegen.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/rlottie/lv_rlottie.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/rlottie/lv_rlottie.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/sjpg/lv_sjpg.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/sjpg/lv_sjpg.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/sjpg/tjpgd.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/sjpg/tjpgd.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/sjpg/tjpgdcnf.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/lv_libs.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/fragment/lv_fragment.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/fragment/lv_fragment.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/fragment/lv_fragment_manager.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/gridnav/lv_gridnav.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/gridnav/lv_gridnav.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/ime/lv_ime_pinyin.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/ime/lv_ime_pinyin.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/imgfont/lv_imgfont.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/imgfont/lv_imgfont.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/monkey/lv_monkey.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/monkey/lv_monkey.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/msg/lv_msg.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/msg/lv_msg.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/snapshot/lv_snapshot.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/snapshot/lv_snapshot.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/lv_others.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes/basic/lv_theme_basic.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes/basic/lv_theme_basic.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes/default/lv_theme_default.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes/default/lv_theme_default.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes/mono/lv_theme_mono.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes/mono/lv_theme_mono.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes/lv_themes.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/animimg/lv_animimg.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/animimg/lv_animimg.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/calendar/lv_calendar.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/calendar/lv_calendar.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/chart/lv_chart.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/chart/lv_chart.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/keyboard/lv_keyboard.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/keyboard/lv_keyboard.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/led/lv_led.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/led/lv_led.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/list/lv_list.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/list/lv_list.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/menu/lv_menu.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/menu/lv_menu.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/meter/lv_meter.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/meter/lv_meter.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/msgbox/lv_msgbox.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/msgbox/lv_msgbox.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/span/lv_span.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/span/lv_span.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/spinbox/lv_spinbox.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/spinbox/lv_spinbox.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/spinner/lv_spinner.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/spinner/lv_spinner.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/tabview/lv_tabview.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/tabview/lv_tabview.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/tileview/lv_tileview.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/tileview/lv_tileview.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/win/lv_win.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/win/lv_win.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/lv_widgets.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/lv_extra.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/lv_extra.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_dejavu_16_persian_hebrew.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_fmt_txt.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_fmt_txt.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_loader.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_loader.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_10.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_12.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_12_subpx.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_14.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_16.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_18.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_20.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_22.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_24.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_26.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_28.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_28_compressed.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_30.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_32.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_34.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_36.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_38.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_40.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_42.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_44.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_46.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_48.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_8.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_simsun_16_cjk.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_unscii_16.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_unscii_8.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_symbol_def.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/hal/lv_hal.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/hal/lv_hal_disp.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/hal/lv_hal_disp.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/hal/lv_hal_indev.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/hal/lv_hal_indev.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/hal/lv_hal_tick.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/hal/lv_hal_tick.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_anim.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_anim.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_anim_timeline.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_anim_timeline.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_area.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_area.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_assert.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_async.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_async.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_bidi.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_bidi.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_color.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_color.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_fs.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_fs.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_gc.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_gc.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_ll.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_ll.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_log.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_log.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_lru.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_lru.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_math.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_math.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_mem.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_mem.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_printf.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_printf.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_style.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_style.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_style_gen.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_style_gen.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_templ.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_templ.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_timer.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_timer.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_tlsf.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_tlsf.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_txt.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_txt.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_txt_ap.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_txt_ap.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_types.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_utils.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_utils.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_arc.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_arc.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_bar.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_bar.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_btn.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_btn.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_btnmatrix.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_btnmatrix.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_canvas.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_canvas.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_checkbox.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_checkbox.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_dropdown.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_dropdown.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_img.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_img.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_label.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_label.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_line.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_line.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_objx_templ.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_objx_templ.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_roller.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_roller.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_slider.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_slider.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_switch.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_switch.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_table.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_table.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_textarea.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_textarea.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/lv_api_map.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/lv_conf_internal.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/lv_conf_kconfig.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/src/lvgl.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/makefile/test.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/_test_template.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_arc.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_bar.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_checkbox.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_config.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_demo_stress.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_demo_widgets.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_dropdown.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_event.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_font_loader.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_fs.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_line.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_mem.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_obj_tree.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_slider.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_snapshot.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_style.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_switch.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_table.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_textarea.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_txt.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_fonts/font_1.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_fonts/font_2.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_fonts/font_3.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/lv_test_conf.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/lv_test_helpers.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/lv_test_indev.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/lv_test_indev.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/lv_test_init.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/lv_test_init.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/unity/unity.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/unity/unity.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/unity/unity_internals.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/unity/unity_support.c
+        lv_port_win_codeblocks-release-v8.3/lvgl/tests/unity/unity_support.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/lv_conf_template.h
+        lv_port_win_codeblocks-release-v8.3/lvgl/lvgl.h
+        lv_port_win_codeblocks-release-v8.3/lv_conf.h
+        lv_port_win_codeblocks-release-v8.3/lv_demo_conf.h
+        lv_port_win_codeblocks-release-v8.3/lv_drv_conf.h
+        lv_port_win_codeblocks-release-v8.3/main.c)

@@ -1,0 +1,6510 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "19_4_LVGL.exe"
+		},
+		{
+			"path" : "19_4_LVGL.pdb"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 118,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 20,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 21,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 23,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 29,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 31,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 32,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 33,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 35,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 36,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 37,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 39,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 40,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 41,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 42,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 43,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 44,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 45,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 46,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 47,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 48,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 49,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 50,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 51,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 52,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 53,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 54,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 55,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 56,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 57,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 58,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 59,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 60,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 61,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 62,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 65,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 66,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 67,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 68,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 69,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 70,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 71,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 72,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 73,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 74,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 75,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 76,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 77,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 78,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 80,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 81,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 82,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 83,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 84,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 85,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 86,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 87,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 88,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 89,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 90,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 91,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 92,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 93,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 94,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 95,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 96,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 97,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 98,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 99,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 100,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 101,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 102,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 103,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 104,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 105,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 106,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 107,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 108,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 109,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 110,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 111,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 112,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 113,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 114,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 115,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 116,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lv_drivers"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lv_drivers/display"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lv_drivers/gtkdrv"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lv_drivers/indev"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lv_drivers/sdl"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lv_drivers/wayland"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lv_drivers/win32drv"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/demos"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/demos/keypad_encoder"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/demos/music"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/demos/stress"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/demos/widgets"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/env_support/cmsis-pack"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/env_support/rt-thread"
+				},
+				{
+					"backtrace" : 20,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/env_support/rt-thread/squareline/ui"
+				},
+				{
+					"backtrace" : 21,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/env_support/rt-thread/squareline/ui/lvgl"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples"
+				},
+				{
+					"backtrace" : 23,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/anim"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/arduino"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/arduino/LVGL_Arduino"
+				},
+				{
+					"backtrace" : 26,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/event"
+				},
+				{
+					"backtrace" : 27,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/get_started"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts"
+				},
+				{
+					"backtrace" : 29,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/flex"
+				},
+				{
+					"backtrace" : 30,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/grid"
+				},
+				{
+					"backtrace" : 31,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs"
+				},
+				{
+					"backtrace" : 32,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/bmp"
+				},
+				{
+					"backtrace" : 33,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/ffmpeg"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/freetype"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/gif"
+				},
+				{
+					"backtrace" : 36,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/png"
+				},
+				{
+					"backtrace" : 37,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/qrcode"
+				},
+				{
+					"backtrace" : 38,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/rlottie"
+				},
+				{
+					"backtrace" : 39,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/sjpg"
+				},
+				{
+					"backtrace" : 40,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/others"
+				},
+				{
+					"backtrace" : 41,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/fragment"
+				},
+				{
+					"backtrace" : 42,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/gridnav"
+				},
+				{
+					"backtrace" : 43,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/ime"
+				},
+				{
+					"backtrace" : 44,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/imgfont"
+				},
+				{
+					"backtrace" : 45,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/monkey"
+				},
+				{
+					"backtrace" : 46,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/msg"
+				},
+				{
+					"backtrace" : 47,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/snapshot"
+				},
+				{
+					"backtrace" : 48,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/porting"
+				},
+				{
+					"backtrace" : 49,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/scroll"
+				},
+				{
+					"backtrace" : 50,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles"
+				},
+				{
+					"backtrace" : 51,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets"
+				},
+				{
+					"backtrace" : 52,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src"
+				},
+				{
+					"backtrace" : 53,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/core"
+				},
+				{
+					"backtrace" : 54,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/draw"
+				},
+				{
+					"backtrace" : 55,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/arm2d"
+				},
+				{
+					"backtrace" : 56,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/pxp"
+				},
+				{
+					"backtrace" : 57,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite"
+				},
+				{
+					"backtrace" : 58,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/renesas"
+				},
+				{
+					"backtrace" : 59,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl"
+				},
+				{
+					"backtrace" : 60,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/stm32_dma2d"
+				},
+				{
+					"backtrace" : 61,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw"
+				},
+				{
+					"backtrace" : 62,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/swm341_dma2d"
+				},
+				{
+					"backtrace" : 63,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra"
+				},
+				{
+					"backtrace" : 64,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/layouts"
+				},
+				{
+					"backtrace" : 65,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/layouts/flex"
+				},
+				{
+					"backtrace" : 66,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/layouts/grid"
+				},
+				{
+					"backtrace" : 67,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs"
+				},
+				{
+					"backtrace" : 68,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/bmp"
+				},
+				{
+					"backtrace" : 69,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/ffmpeg"
+				},
+				{
+					"backtrace" : 70,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/freetype"
+				},
+				{
+					"backtrace" : 71,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/fsdrv"
+				},
+				{
+					"backtrace" : 72,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/gif"
+				},
+				{
+					"backtrace" : 73,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/png"
+				},
+				{
+					"backtrace" : 74,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/qrcode"
+				},
+				{
+					"backtrace" : 75,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/rlottie"
+				},
+				{
+					"backtrace" : 76,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/sjpg"
+				},
+				{
+					"backtrace" : 77,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others"
+				},
+				{
+					"backtrace" : 78,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/fragment"
+				},
+				{
+					"backtrace" : 79,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/gridnav"
+				},
+				{
+					"backtrace" : 80,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/ime"
+				},
+				{
+					"backtrace" : 81,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/imgfont"
+				},
+				{
+					"backtrace" : 82,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/monkey"
+				},
+				{
+					"backtrace" : 83,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/msg"
+				},
+				{
+					"backtrace" : 84,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/snapshot"
+				},
+				{
+					"backtrace" : 85,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes"
+				},
+				{
+					"backtrace" : 86,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes/basic"
+				},
+				{
+					"backtrace" : 87,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes/default"
+				},
+				{
+					"backtrace" : 88,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes/mono"
+				},
+				{
+					"backtrace" : 89,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets"
+				},
+				{
+					"backtrace" : 90,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/animimg"
+				},
+				{
+					"backtrace" : 91,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/calendar"
+				},
+				{
+					"backtrace" : 92,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/chart"
+				},
+				{
+					"backtrace" : 93,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/colorwheel"
+				},
+				{
+					"backtrace" : 94,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/imgbtn"
+				},
+				{
+					"backtrace" : 95,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/keyboard"
+				},
+				{
+					"backtrace" : 96,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/led"
+				},
+				{
+					"backtrace" : 97,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/list"
+				},
+				{
+					"backtrace" : 98,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/menu"
+				},
+				{
+					"backtrace" : 99,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/meter"
+				},
+				{
+					"backtrace" : 100,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/msgbox"
+				},
+				{
+					"backtrace" : 101,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/span"
+				},
+				{
+					"backtrace" : 102,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/spinbox"
+				},
+				{
+					"backtrace" : 103,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/spinner"
+				},
+				{
+					"backtrace" : 104,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/tabview"
+				},
+				{
+					"backtrace" : 105,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/tileview"
+				},
+				{
+					"backtrace" : 106,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/win"
+				},
+				{
+					"backtrace" : 107,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/font"
+				},
+				{
+					"backtrace" : 108,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/hal"
+				},
+				{
+					"backtrace" : 109,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/misc"
+				},
+				{
+					"backtrace" : 110,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets"
+				},
+				{
+					"backtrace" : 111,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/tests/src"
+				},
+				{
+					"backtrace" : 112,
+					"path" : "D:/Study/ARM32\u5355\u7247\u673a\u5b9e\u6218\u8bfe\u7a0b/06\u81ea\u5df1\u52a8\u624b/19.4 LVGL\u6a21\u62df/lv_port_win_codeblocks-release-v8.3/lvgl/tests/unity"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				4,
+				6,
+				9,
+				11,
+				13,
+				15,
+				17,
+				19,
+				21,
+				23,
+				25,
+				28,
+				32,
+				34,
+				36,
+				38,
+				41,
+				43,
+				45,
+				48,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				61,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				110,
+				112,
+				114,
+				116,
+				118,
+				119,
+				120,
+				121,
+				126,
+				128,
+				130,
+				131,
+				132,
+				133,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				152,
+				153,
+				154,
+				155,
+				157,
+				158,
+				159,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				176,
+				178,
+				179,
+				181,
+				182,
+				184,
+				185,
+				187,
+				189,
+				191,
+				192,
+				193,
+				195,
+				198,
+				199,
+				201,
+				202,
+				203,
+				204,
+				206,
+				207,
+				209,
+				211,
+				212,
+				213,
+				215,
+				216,
+				217,
+				219,
+				221,
+				223,
+				225,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				247,
+				248,
+				249,
+				250,
+				251,
+				252,
+				253,
+				254,
+				255,
+				256,
+				257,
+				258,
+				259,
+				260,
+				261,
+				262,
+				263,
+				264,
+				265,
+				266,
+				267,
+				268,
+				269,
+				270,
+				271,
+				272,
+				273,
+				274,
+				275,
+				276,
+				277,
+				278,
+				279,
+				280,
+				281,
+				282,
+				283,
+				284,
+				285,
+				286,
+				287,
+				288,
+				289,
+				290,
+				291,
+				292,
+				293,
+				294,
+				295,
+				296,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314,
+				315,
+				316,
+				317,
+				318,
+				319,
+				320,
+				321,
+				322,
+				323,
+				324,
+				325,
+				326,
+				327,
+				328,
+				331,
+				333,
+				335,
+				337,
+				339,
+				341,
+				343,
+				345,
+				347,
+				349,
+				351,
+				353,
+				355,
+				357,
+				359,
+				361,
+				363,
+				365,
+				367,
+				369,
+				371,
+				373,
+				375,
+				377,
+				379,
+				381,
+				383,
+				385,
+				386,
+				388,
+				390,
+				391,
+				392,
+				394,
+				396,
+				397,
+				399,
+				400,
+				402,
+				404,
+				406,
+				408,
+				410,
+				412,
+				414,
+				416,
+				417,
+				419,
+				421,
+				423,
+				424,
+				425,
+				426,
+				427,
+				428,
+				429,
+				430,
+				432,
+				434,
+				436,
+				438,
+				440,
+				442,
+				444,
+				446,
+				448,
+				450,
+				452,
+				454,
+				456,
+				458,
+				460,
+				463,
+				465,
+				467,
+				469,
+				470,
+				471,
+				472,
+				474,
+				476,
+				478,
+				480,
+				482,
+				484,
+				486,
+				488,
+				490,
+				494,
+				496,
+				497,
+				499,
+				501,
+				503,
+				505,
+				507,
+				510,
+				512,
+				514,
+				517,
+				519,
+				521,
+				523,
+				525,
+				527,
+				529,
+				531,
+				533,
+				535,
+				537,
+				539,
+				541,
+				543,
+				545,
+				547,
+				549,
+				551,
+				553,
+				556,
+				558,
+				560,
+				561,
+				563,
+				565,
+				566,
+				567,
+				568,
+				569,
+				570,
+				571,
+				572,
+				573,
+				574,
+				575,
+				576,
+				577,
+				578,
+				579,
+				580,
+				581,
+				582,
+				583,
+				584,
+				585,
+				586,
+				587,
+				588,
+				589,
+				590,
+				593,
+				595,
+				597,
+				599,
+				601,
+				603,
+				606,
+				608,
+				610,
+				612,
+				614,
+				616,
+				618,
+				620,
+				622,
+				624,
+				626,
+				628,
+				630,
+				632,
+				634,
+				636,
+				638,
+				640,
+				643,
+				645,
+				647,
+				649,
+				651,
+				653,
+				655,
+				657,
+				659,
+				661,
+				663,
+				665,
+				667,
+				669,
+				671,
+				673,
+				675,
+				681,
+				682,
+				683,
+				684,
+				685,
+				686,
+				687,
+				688,
+				689,
+				690,
+				691,
+				692,
+				693,
+				694,
+				695,
+				696,
+				697,
+				698,
+				699,
+				700,
+				701,
+				702,
+				703,
+				704,
+				705,
+				708,
+				710,
+				712,
+				715,
+				722
+			]
+		}
+	],
+	"id" : "19_4_LVGL::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "19_4_LVGL",
+	"nameOnDisk" : "19_4_LVGL.exe",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				4,
+				6,
+				9,
+				11,
+				13,
+				15,
+				17,
+				19,
+				21,
+				23,
+				25,
+				28,
+				32,
+				34,
+				36,
+				38,
+				41,
+				43,
+				45,
+				48,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				61,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				110,
+				112,
+				114,
+				116,
+				118,
+				119,
+				120,
+				121,
+				126,
+				128,
+				130,
+				131,
+				132,
+				133,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				152,
+				153,
+				154,
+				155,
+				157,
+				158,
+				159,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				176,
+				178,
+				179,
+				181,
+				182,
+				184,
+				185,
+				187,
+				189,
+				191,
+				192,
+				193,
+				195,
+				198,
+				199,
+				201,
+				202,
+				203,
+				204,
+				206,
+				207,
+				209,
+				211,
+				212,
+				213,
+				215,
+				216,
+				217,
+				219,
+				221,
+				223,
+				225,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				247,
+				248,
+				249,
+				250,
+				251,
+				252,
+				253,
+				254,
+				255,
+				256,
+				257,
+				258,
+				259,
+				260,
+				261,
+				262,
+				263,
+				264,
+				265,
+				266,
+				267,
+				268,
+				269,
+				270,
+				271,
+				272,
+				273,
+				274,
+				275,
+				276,
+				277,
+				278,
+				279,
+				280,
+				281,
+				282,
+				283,
+				284,
+				285,
+				286,
+				287,
+				288,
+				289,
+				290,
+				291,
+				292,
+				293,
+				294,
+				295,
+				296,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314,
+				315,
+				316,
+				317,
+				318,
+				319,
+				320,
+				321,
+				322,
+				323,
+				324,
+				325,
+				326,
+				327,
+				328,
+				331,
+				333,
+				335,
+				337,
+				339,
+				341,
+				343,
+				345,
+				347,
+				349,
+				351,
+				353,
+				355,
+				357,
+				359,
+				361,
+				363,
+				365,
+				367,
+				369,
+				371,
+				373,
+				375,
+				377,
+				379,
+				381,
+				383,
+				385,
+				386,
+				388,
+				390,
+				391,
+				392,
+				394,
+				396,
+				397,
+				399,
+				400,
+				402,
+				404,
+				406,
+				408,
+				410,
+				412,
+				414,
+				416,
+				417,
+				419,
+				421,
+				423,
+				424,
+				425,
+				426,
+				427,
+				428,
+				429,
+				430,
+				432,
+				434,
+				436,
+				438,
+				440,
+				442,
+				444,
+				446,
+				448,
+				450,
+				452,
+				454,
+				456,
+				458,
+				460,
+				463,
+				465,
+				467,
+				469,
+				470,
+				471,
+				472,
+				474,
+				476,
+				478,
+				480,
+				482,
+				484,
+				486,
+				488,
+				490,
+				494,
+				496,
+				497,
+				499,
+				501,
+				503,
+				505,
+				507,
+				510,
+				512,
+				514,
+				517,
+				519,
+				521,
+				523,
+				525,
+				527,
+				529,
+				531,
+				533,
+				535,
+				537,
+				539,
+				541,
+				543,
+				545,
+				547,
+				549,
+				551,
+				553,
+				556,
+				558,
+				560,
+				561,
+				563,
+				565,
+				566,
+				567,
+				568,
+				569,
+				570,
+				571,
+				572,
+				573,
+				574,
+				575,
+				576,
+				577,
+				578,
+				579,
+				580,
+				581,
+				582,
+				583,
+				584,
+				585,
+				586,
+				587,
+				588,
+				589,
+				590,
+				593,
+				595,
+				597,
+				599,
+				601,
+				603,
+				606,
+				608,
+				610,
+				612,
+				614,
+				616,
+				618,
+				620,
+				622,
+				624,
+				626,
+				628,
+				630,
+				632,
+				634,
+				636,
+				638,
+				640,
+				643,
+				645,
+				647,
+				649,
+				651,
+				653,
+				655,
+				657,
+				659,
+				661,
+				663,
+				665,
+				667,
+				669,
+				671,
+				673,
+				675,
+				681,
+				682,
+				683,
+				684,
+				685,
+				686,
+				687,
+				688,
+				689,
+				690,
+				691,
+				692,
+				693,
+				694,
+				695,
+				696,
+				697,
+				698,
+				699,
+				700,
+				701,
+				702,
+				703,
+				704,
+				705,
+				708,
+				710,
+				712,
+				715,
+				722
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1,
+				3,
+				5,
+				7,
+				8,
+				10,
+				12,
+				14,
+				16,
+				18,
+				20,
+				22,
+				24,
+				26,
+				27,
+				29,
+				30,
+				31,
+				33,
+				35,
+				37,
+				39,
+				40,
+				42,
+				44,
+				46,
+				47,
+				49,
+				60,
+				62,
+				107,
+				108,
+				109,
+				111,
+				113,
+				115,
+				117,
+				122,
+				123,
+				124,
+				125,
+				127,
+				129,
+				151,
+				156,
+				160,
+				167,
+				174,
+				175,
+				177,
+				180,
+				183,
+				186,
+				188,
+				190,
+				194,
+				196,
+				197,
+				200,
+				205,
+				208,
+				210,
+				214,
+				218,
+				220,
+				222,
+				224,
+				226,
+				227,
+				234,
+				329,
+				330,
+				332,
+				334,
+				336,
+				338,
+				340,
+				342,
+				344,
+				346,
+				348,
+				350,
+				352,
+				354,
+				356,
+				358,
+				360,
+				362,
+				364,
+				366,
+				368,
+				370,
+				372,
+				374,
+				376,
+				378,
+				380,
+				382,
+				384,
+				387,
+				389,
+				393,
+				395,
+				398,
+				401,
+				403,
+				405,
+				407,
+				409,
+				411,
+				413,
+				415,
+				418,
+				420,
+				422,
+				431,
+				433,
+				435,
+				437,
+				439,
+				441,
+				443,
+				445,
+				447,
+				449,
+				451,
+				453,
+				455,
+				457,
+				459,
+				461,
+				462,
+				464,
+				466,
+				468,
+				473,
+				475,
+				477,
+				479,
+				481,
+				483,
+				485,
+				487,
+				489,
+				491,
+				492,
+				493,
+				495,
+				498,
+				500,
+				502,
+				504,
+				506,
+				508,
+				509,
+				511,
+				513,
+				515,
+				516,
+				518,
+				520,
+				522,
+				524,
+				526,
+				528,
+				530,
+				532,
+				534,
+				536,
+				538,
+				540,
+				542,
+				544,
+				546,
+				548,
+				550,
+				552,
+				554,
+				555,
+				557,
+				559,
+				562,
+				564,
+				591,
+				592,
+				594,
+				596,
+				598,
+				600,
+				602,
+				604,
+				605,
+				607,
+				609,
+				611,
+				613,
+				615,
+				617,
+				619,
+				621,
+				623,
+				625,
+				627,
+				629,
+				631,
+				633,
+				635,
+				637,
+				639,
+				641,
+				642,
+				644,
+				646,
+				648,
+				650,
+				652,
+				654,
+				656,
+				658,
+				660,
+				662,
+				664,
+				666,
+				668,
+				670,
+				672,
+				674,
+				676,
+				677,
+				678,
+				679,
+				680,
+				706,
+				707,
+				709,
+				711,
+				713,
+				714,
+				716,
+				717,
+				718,
+				719,
+				720,
+				721
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				134
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/display/drm.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/display/drm.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/display/fbdev.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/display/fbdev.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/display/GC9A01.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/display/GC9A01.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/display/ILI9341.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/display/ILI9341.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/display/monitor.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/display/R61581.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/display/R61581.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/display/SHARP_MIP.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/display/SHARP_MIP.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/display/SSD1963.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/display/SSD1963.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/display/ST7565.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/display/ST7565.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/display/UC1610.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/display/UC1610.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/gtkdrv/gtkdrv.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/gtkdrv/gtkdrv.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/AD_touch.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/AD_touch.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/evdev.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/evdev.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/FT5406EE8.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/FT5406EE8.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/keyboard.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/libinput.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/libinput_drv.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/mouse.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/mousewheel.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/xkb.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/xkb.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/XPT2046.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/indev/XPT2046.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/sdl/sdl.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/sdl/sdl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/sdl/sdl_common.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/sdl/sdl_common.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/sdl/sdl_common_internal.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/sdl/sdl_gpu.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/sdl/sdl_gpu.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/wayland/wayland.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/wayland/wayland.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/win32drv/win32drv.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/win32drv/win32drv.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/lv_drv_conf_template.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/win_drv.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drivers/win_drv.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_alpha16.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_argb.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_indexed16.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_rgb.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/lv_demo_benchmark.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/benchmark/lv_demo_benchmark.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/keypad_encoder/lv_demo_keypad_encoder.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/keypad_encoder/lv_demo_keypad_encoder.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_corner_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_list_pause.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_list_pause_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_list_play.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_list_play_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_loop.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_loop_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_next.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_next_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_pause.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_pause_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_play.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_play_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_prev.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_prev_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_rnd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_btn_rnd_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_corner_left.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_corner_left_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_corner_right.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_corner_right_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_cover_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_cover_1_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_cover_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_cover_2_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_cover_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_cover_3_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_icon_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_icon_1_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_icon_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_icon_2_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_icon_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_icon_3_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_icon_4.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_icon_4_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_list_border.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_list_border_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_logo.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_slider_knob.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_slider_knob_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_wave_bottom.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_wave_bottom_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_wave_top.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/img_lv_demo_music_wave_top_large.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/spectrum_1.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/spectrum_2.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/assets/spectrum_3.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/lv_demo_music.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/lv_demo_music.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/lv_demo_music_list.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/lv_demo_music_list.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/lv_demo_music_main.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/music/lv_demo_music_main.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/stress/lv_demo_stress.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/stress/lv_demo_stress.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/widgets/assets/img_clothes.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/widgets/assets/img_demo_widgets_avatar.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/widgets/assets/img_lvgl_logo.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/widgets/lv_demo_widgets.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/widgets/lv_demo_widgets.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/demos/lv_demos.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/env_support/cmsis-pack/lv_conf_cmsis.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/env_support/rt-thread/squareline/ui/lvgl/lvgl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/env_support/rt-thread/squareline/lv_ui_entry.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/env_support/rt-thread/lv_rt_thread_conf.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/env_support/rt-thread/lv_rt_thread_port.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/anim/lv_example_anim.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/anim/lv_example_anim_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/anim/lv_example_anim_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/anim/lv_example_anim_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/anim/lv_example_anim_timeline_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/arduino/LVGL_Arduino/LVGL_Arduino.ino",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/emoji/img_emoji_F617.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/animimg001.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/animimg002.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/animimg003.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/img_caret_down.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/img_cogwheel_alpha16.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/img_cogwheel_argb.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/img_cogwheel_chroma_keyed.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/img_cogwheel_indexed16.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/img_cogwheel_rgb.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/img_hand.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/img_skew_strip.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/img_star.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/imgbtn_left.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/imgbtn_mid.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/assets/imgbtn_right.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/event/lv_example_event.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/event/lv_example_event_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/event/lv_example_event_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/event/lv_example_event_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/event/lv_example_event_4.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/get_started/lv_example_get_started.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/get_started/lv_example_get_started_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/get_started/lv_example_get_started_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/get_started/lv_example_get_started_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/flex/lv_example_flex.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/flex/lv_example_flex_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/flex/lv_example_flex_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/flex/lv_example_flex_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/flex/lv_example_flex_4.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/flex/lv_example_flex_5.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/flex/lv_example_flex_6.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/grid/lv_example_grid.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/grid/lv_example_grid_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/grid/lv_example_grid_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/grid/lv_example_grid_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/grid/lv_example_grid_4.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/grid/lv_example_grid_5.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/grid/lv_example_grid_6.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/layouts/lv_example_layout.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/bmp/lv_example_bmp.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/bmp/lv_example_bmp_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/ffmpeg/lv_example_ffmpeg.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/ffmpeg/lv_example_ffmpeg_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/ffmpeg/lv_example_ffmpeg_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/freetype/lv_example_freetype.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/freetype/lv_example_freetype_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/gif/img_bulb_gif.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/gif/lv_example_gif.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/gif/lv_example_gif_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/png/img_wink_png.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/png/lv_example_png.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/png/lv_example_png_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/qrcode/lv_example_qrcode.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/qrcode/lv_example_qrcode_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/rlottie/lv_example_rlottie.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/rlottie/lv_example_rlottie_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/rlottie/lv_example_rlottie_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/rlottie/lv_example_rlottie_approve.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/sjpg/lv_example_sjpg.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/sjpg/lv_example_sjpg_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/libs/lv_example_libs.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/fragment/lv_example_fragment.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/fragment/lv_example_fragment_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/fragment/lv_example_fragment_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/gridnav/lv_example_gridnav.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/gridnav/lv_example_gridnav_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/gridnav/lv_example_gridnav_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/gridnav/lv_example_gridnav_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/gridnav/lv_example_gridnav_4.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/ime/lv_example_ime_pinyin.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/ime/lv_example_ime_pinyin_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/ime/lv_example_ime_pinyin_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/imgfont/lv_example_imgfont.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/imgfont/lv_example_imgfont_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/monkey/lv_example_monkey.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/monkey/lv_example_monkey_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/monkey/lv_example_monkey_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/monkey/lv_example_monkey_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/msg/lv_example_msg.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/msg/lv_example_msg_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/msg/lv_example_msg_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/msg/lv_example_msg_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/snapshot/lv_example_snapshot.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/snapshot/lv_example_snapshot_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/others/lv_example_others.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/porting/lv_port_disp_template.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/porting/lv_port_disp_template.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/porting/lv_port_fs_template.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/porting/lv_port_fs_template.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/porting/lv_port_indev_template.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/porting/lv_port_indev_template.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/scroll/lv_example_scroll.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/scroll/lv_example_scroll_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/scroll/lv_example_scroll_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/scroll/lv_example_scroll_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/scroll/lv_example_scroll_4.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/scroll/lv_example_scroll_5.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/scroll/lv_example_scroll_6.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_10.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_11.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_12.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_13.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_14.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_15.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_4.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_5.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_6.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_7.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_8.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/styles/lv_example_style_9.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/animimg/lv_example_animimg_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/arc/lv_example_arc_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/arc/lv_example_arc_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/bar/lv_example_bar_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/bar/lv_example_bar_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/bar/lv_example_bar_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/bar/lv_example_bar_4.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/bar/lv_example_bar_5.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/bar/lv_example_bar_6.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/btn/lv_example_btn_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/btn/lv_example_btn_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/btn/lv_example_btn_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/btnmatrix/lv_example_btnmatrix_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/btnmatrix/lv_example_btnmatrix_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/btnmatrix/lv_example_btnmatrix_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/calendar/lv_example_calendar_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/canvas/lv_example_canvas_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/canvas/lv_example_canvas_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/chart/lv_example_chart_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/chart/lv_example_chart_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/chart/lv_example_chart_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/chart/lv_example_chart_4.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/chart/lv_example_chart_5.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/chart/lv_example_chart_6.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/chart/lv_example_chart_7.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/chart/lv_example_chart_8.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/chart/lv_example_chart_9.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/checkbox/lv_example_checkbox_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/colorwheel/lv_example_colorwheel_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/dropdown/lv_example_dropdown_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/dropdown/lv_example_dropdown_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/dropdown/lv_example_dropdown_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/img/lv_example_img_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/img/lv_example_img_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/img/lv_example_img_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/img/lv_example_img_4.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/imgbtn/lv_example_imgbtn_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/keyboard/lv_example_keyboard_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/label/lv_example_label_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/label/lv_example_label_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/label/lv_example_label_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/label/lv_example_label_4.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/label/lv_example_label_5.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/led/lv_example_led_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/line/lv_example_line_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/list/lv_example_list_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/list/lv_example_list_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/menu/lv_example_menu_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/menu/lv_example_menu_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/menu/lv_example_menu_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/menu/lv_example_menu_4.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/menu/lv_example_menu_5.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/meter/lv_example_meter_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/meter/lv_example_meter_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/meter/lv_example_meter_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/meter/lv_example_meter_4.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/msgbox/lv_example_msgbox_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/obj/lv_example_obj_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/obj/lv_example_obj_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/roller/lv_example_roller_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/roller/lv_example_roller_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/roller/lv_example_roller_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/slider/lv_example_slider_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/slider/lv_example_slider_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/slider/lv_example_slider_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/span/lv_example_span_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/spinbox/lv_example_spinbox_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/spinner/lv_example_spinner_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/switch/lv_example_switch_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/table/lv_example_table_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/table/lv_example_table_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/tabview/lv_example_tabview_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/tabview/lv_example_tabview_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/textarea/lv_example_textarea_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/textarea/lv_example_textarea_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/textarea/lv_example_textarea_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/tileview/lv_example_tileview_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/win/lv_example_win_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/widgets/lv_example_widgets.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/examples/lv_examples.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_disp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_disp.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_event.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_event.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_group.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_group.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_indev.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_indev.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_indev_scroll.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_indev_scroll.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_class.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_class.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_draw.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_draw.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_pos.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_pos.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_scroll.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_scroll.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_style.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_style.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_style_gen.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_style_gen.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_tree.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_obj_tree.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_refr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_refr.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_theme.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/core/lv_theme.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/arm2d/lv_gpu_arm2d.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/arm2d/lv_gpu_arm2d.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/pxp/lv_draw_pxp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/pxp/lv_draw_pxp.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/pxp/lv_draw_pxp_blend.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/pxp/lv_draw_pxp_blend.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_draw_vglite.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_draw_vglite.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_draw_vglite_arc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_draw_vglite_arc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_draw_vglite_line.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_draw_vglite_line.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_draw_vglite_rect.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_draw_vglite_rect.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_vglite_buf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_vglite_buf.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_vglite_utils.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/nxp/vglite/lv_vglite_utils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/renesas/lv_gpu_d2_draw_label.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_arc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_bg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_composite.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_composite.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_img.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_img.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_label.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_layer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_layer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_line.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_mask.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_mask.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_polygon.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_priv.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_rect.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_rect.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_stack_blur.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_stack_blur.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_texture_cache.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_texture_cache.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_utils.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sdl/lv_draw_sdl_utils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_arc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_blend.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_blend.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_dither.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_dither.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_gradient.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_gradient.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_img.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_layer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_letter.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_line.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_polygon.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_rect.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/sw/lv_draw_sw_transform.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_arc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_arc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_img.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_img.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_label.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_label.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_layer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_layer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_line.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_line.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_mask.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_mask.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_rect.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_rect.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_transform.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_transform.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_triangle.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_draw_triangle.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_img_buf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_img_buf.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_img_cache.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_img_cache.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_img_decoder.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/draw/lv_img_decoder.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/layouts/flex/lv_flex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/layouts/flex/lv_flex.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/layouts/grid/lv_grid.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/layouts/grid/lv_grid.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/layouts/lv_layouts.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/bmp/lv_bmp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/bmp/lv_bmp.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/freetype/lv_freetype.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/freetype/lv_freetype.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/fsdrv/lv_fs_fatfs.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/fsdrv/lv_fs_posix.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/fsdrv/lv_fs_stdio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/fsdrv/lv_fs_win32.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/fsdrv/lv_fsdrv.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/gif/gifdec.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/gif/gifdec.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/gif/lv_gif.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/gif/lv_gif.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/png/lodepng.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/png/lodepng.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/png/lv_png.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/png/lv_png.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/qrcode/lv_qrcode.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/qrcode/lv_qrcode.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/qrcode/qrcodegen.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/qrcode/qrcodegen.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/rlottie/lv_rlottie.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/rlottie/lv_rlottie.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/sjpg/lv_sjpg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/sjpg/lv_sjpg.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/sjpg/tjpgd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/sjpg/tjpgd.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/sjpg/tjpgdcnf.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/libs/lv_libs.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/fragment/lv_fragment.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/fragment/lv_fragment.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/fragment/lv_fragment_manager.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/gridnav/lv_gridnav.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/gridnav/lv_gridnav.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/ime/lv_ime_pinyin.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/ime/lv_ime_pinyin.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/imgfont/lv_imgfont.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/imgfont/lv_imgfont.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/monkey/lv_monkey.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/monkey/lv_monkey.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/msg/lv_msg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/msg/lv_msg.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/snapshot/lv_snapshot.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/snapshot/lv_snapshot.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/others/lv_others.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes/basic/lv_theme_basic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes/basic/lv_theme_basic.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes/default/lv_theme_default.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes/default/lv_theme_default.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes/mono/lv_theme_mono.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes/mono/lv_theme_mono.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/themes/lv_themes.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/animimg/lv_animimg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/animimg/lv_animimg.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/calendar/lv_calendar.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/calendar/lv_calendar.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/chart/lv_chart.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/chart/lv_chart.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/keyboard/lv_keyboard.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/keyboard/lv_keyboard.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/led/lv_led.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/led/lv_led.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/list/lv_list.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/list/lv_list.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/menu/lv_menu.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/menu/lv_menu.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/meter/lv_meter.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/meter/lv_meter.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/msgbox/lv_msgbox.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/msgbox/lv_msgbox.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/span/lv_span.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/span/lv_span.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/spinbox/lv_spinbox.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/spinbox/lv_spinbox.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/spinner/lv_spinner.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/spinner/lv_spinner.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/tabview/lv_tabview.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/tabview/lv_tabview.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/tileview/lv_tileview.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/tileview/lv_tileview.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/win/lv_win.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/win/lv_win.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/widgets/lv_widgets.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/lv_extra.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/extra/lv_extra.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_dejavu_16_persian_hebrew.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_fmt_txt.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_fmt_txt.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_loader.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_loader.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_10.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_12.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_12_subpx.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_14.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_16.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_18.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_20.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_22.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_24.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_26.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_28.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_28_compressed.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_30.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_32.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_34.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_36.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_38.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_40.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_42.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_44.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_46.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_48.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_montserrat_8.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_simsun_16_cjk.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_unscii_16.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_font_unscii_8.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/font/lv_symbol_def.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/hal/lv_hal.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/hal/lv_hal_disp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/hal/lv_hal_disp.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/hal/lv_hal_indev.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/hal/lv_hal_indev.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/hal/lv_hal_tick.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/hal/lv_hal_tick.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_anim.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_anim.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_anim_timeline.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_anim_timeline.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_area.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_area.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_assert.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_async.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_async.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_bidi.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_bidi.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_color.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_color.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_fs.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_fs.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_gc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_gc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_ll.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_ll.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_log.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_log.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_lru.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_lru.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_math.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_math.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_mem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_mem.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_printf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_printf.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_style.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_style.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_style_gen.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_style_gen.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_templ.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_templ.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_timer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_timer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_tlsf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_tlsf.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_txt.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_txt.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_txt_ap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_txt_ap.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_types.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_utils.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/misc/lv_utils.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_arc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_arc.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_bar.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_bar.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_btn.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_btn.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_btnmatrix.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_btnmatrix.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_canvas.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_canvas.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_checkbox.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_checkbox.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_dropdown.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_dropdown.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_img.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_img.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_label.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_label.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_line.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_line.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_objx_templ.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_objx_templ.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_roller.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_roller.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_slider.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_slider.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_switch.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_switch.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_table.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_table.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_textarea.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/widgets/lv_textarea.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/lv_api_map.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/lv_conf_internal.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/lv_conf_kconfig.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/src/lvgl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/makefile/test.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/_test_template.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_arc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_bar.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_checkbox.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_config.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_demo_stress.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_demo_widgets.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_dropdown.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_event.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_font_loader.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_fs.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_line.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_mem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_obj_tree.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_slider.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_snapshot.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_style.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_switch.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_table.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_textarea.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_cases/test_txt.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_fonts/font_1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_fonts/font_2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/test_fonts/font_3.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/lv_test_conf.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/lv_test_helpers.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/lv_test_indev.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/lv_test_indev.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/lv_test_init.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/src/lv_test_init.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/unity/unity.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/unity/unity.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/unity/unity_internals.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/unity/unity_support.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/tests/unity/unity_support.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/lv_conf_template.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lvgl/lvgl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_conf.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_demo_conf.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lv_port_win_codeblocks-release-v8.3/lv_drv_conf.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lv_port_win_codeblocks-release-v8.3/main.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}
