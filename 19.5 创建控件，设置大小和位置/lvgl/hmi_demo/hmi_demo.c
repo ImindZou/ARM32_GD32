@@ -52,7 +52,7 @@ void HmiDemo(void)
 
 }
 #endif
-#if 1
+#if 0
 void HmiDemo(void)
 {
     lv_obj_t *btn1 = lv_btn_create(lv_scr_act());
@@ -74,7 +74,39 @@ void HmiDemo(void)
 
 #endif
 
+#if 1
 
+void HmiDemo()
+{
+    //lv_obj_t *slider = lv_slider_create(lv_scr_act());
+    //lv_obj_set_align(slider,LV_ALIGN_CENTER);
+    //lv_obj_set_style_bg_color(slider,lv_color_make(0xff,0,0),LV_PART_KNOB | LV_STATE_PRESSED);
+
+
+    lv_obj_t *btn1 = lv_btn_create(lv_scr_act());
+    lv_obj_set_size(btn1,100,50);
+    lv_obj_set_align(btn1,LV_ALIGN_CENTER);
+
+    lv_obj_t *btn2 = lv_btn_create(lv_scr_act());
+    lv_obj_set_size(btn2,40,20);
+    lv_obj_set_align(btn2,LV_ALIGN_BOTTOM_MID);
+
+/***************************************************
+*
+*   //通过共享方法设置控件的样式
+*
+***************************************************/
+    static lv_style_t style;
+    lv_style_init(&style);
+
+    lv_style_set_bg_color(&style,lv_color_make(0xff,0,0));
+    lv_style_set_bg_opa(&style,LV_OPA_50);
+
+    lv_obj_add_style(btn1,&style,0);
+    lv_obj_add_style(btn2,&style,0);
+}
+
+#endif // 1
 
 
 
