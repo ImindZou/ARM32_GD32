@@ -17,6 +17,7 @@ void HmiDemo(void)
     //lv_obj_set_pos(btn2,200,200);
 }
 #endif
+#if 0
 /***************************************************
 *
 *   //基于对齐设置控件位置
@@ -50,6 +51,28 @@ void HmiDemo(void)
     lv_obj_align_to(btn2,btn1,LV_ALIGN_OUT_RIGHT_MID,10,0);
 
 }
+#endif
+#if 1
+void HmiDemo(void)
+{
+    lv_obj_t *btn1 = lv_btn_create(lv_scr_act());
+    lv_obj_set_size(btn1,100,50);
+    lv_obj_set_align(btn1,LV_ALIGN_CENTER);
+    lv_obj_set_style_bg_color(btn1,lv_color_make(0xff,0,0),0);
+    lv_obj_set_style_bg_opa(btn1,LV_OPA_50,50);
+    lv_obj_set_style_border_color(btn1,lv_color_make(0,0xff,0),0);
+    lv_obj_set_style_border_width(btn1,1,0);
+    lv_obj_set_style_pad_all(btn1,0,0);
+    lv_obj_set_style_outline_color(btn1,lv_color_make(0,0,0xff),0);
+    lv_obj_set_style_outline_width(btn1,15,0);
+    lv_obj_set_style_radius(btn1,0,0);
+
+    lv_obj_remove_style_all(btn1);  //删除样式
+    //lv_obj_t *btn2 = lv_btn_create(btn1);
+    //lv_obj_set_align(btn2,LV_ALIGN_OUT_TOP_LEFT);
+}
+
+#endif
 
 
 
