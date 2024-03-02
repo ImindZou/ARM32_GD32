@@ -892,6 +892,10 @@
 		<Unit filename="lvgl/examples/widgets/win/lv_example_win_1.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="lvgl/hmi_demo/hmi_demo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lvgl/hmi_demo/hmi_demo.h" />
 		<Unit filename="lvgl/lv_conf_template.h" />
 		<Unit filename="lvgl/lvgl.h" />
 		<Unit filename="lvgl/porting/lv_port_disp_template.h" />
