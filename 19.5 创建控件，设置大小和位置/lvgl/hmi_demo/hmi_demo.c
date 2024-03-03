@@ -2,8 +2,8 @@
 
 #if 0
 /***************************************************
-*   //²ÎÕÕ¸¸¶ÔÏó½øĞĞ¶ÔÆë
-*   //»ùÓÚ¸¸¶ÔÏó´´½¨µÄ¿Ø¼ş£¬ÏÂ·½×¢ÊÍÆÁ±Î¾Í³ÉÁË·Ç¸¸Àà
+*   //å‚ç…§çˆ¶å¯¹è±¡è¿›è¡Œå¯¹é½
+*   //åŸºäºçˆ¶å¯¹è±¡åˆ›å»ºçš„æ§ä»¶ï¼Œä¸‹æ–¹æ³¨é‡Šå±è”½å°±æˆäº†éçˆ¶ç±»
 *
 ***************************************************/
 void HmiDemo(void)
@@ -20,18 +20,18 @@ void HmiDemo(void)
 #if 0
 /***************************************************
 *
-*   //»ùÓÚ¶ÔÆëÉèÖÃ¿Ø¼şÎ»ÖÃ
+*   //åŸºäºå¯¹é½è®¾ç½®æ§ä»¶ä½ç½®
 *
 ***************************************************/
 void HmiDemo(void)
 {
     lv_obj_t *btn1 = lv_btn_create(lv_scr_act());
     lv_obj_set_size(btn1,100,100);
-    //¿Ø¼ş¶ÔÆë£¬ÎŞÆ«ÒÆÖµ
-    //lv_obj_set_align(btn1,LV_ALIGN_TOP_MID);  //ÉÏ
-    //lv_obj_set_align(btn1,LV_ALIGN_CENTER);   //ÖĞ
-    //lv_obj_set_align(btn1,LV_ALIGN_BOTTOM_MID); //ÏÂ
-    //¿Ø¼ş¶ÔÆë£¬ÓĞÆ«ÒÆÖµ
+    //æ§ä»¶å¯¹é½ï¼Œæ— åç§»å€¼
+    //lv_obj_set_align(btn1,LV_ALIGN_TOP_MID);  //ä¸Š
+    //lv_obj_set_align(btn1,LV_ALIGN_CENTER);   //ä¸­
+    //lv_obj_set_align(btn1,LV_ALIGN_BOTTOM_MID); //ä¸‹
+    //æ§ä»¶å¯¹é½ï¼Œæœ‰åç§»å€¼
     lv_obj_align(btn1,LV_ALIGN_TOP_MID,0 ,20);
     lv_obj_set_style_bg_color(btn1,lv_color_make(0xff,0,0),0);
 
@@ -39,8 +39,8 @@ void HmiDemo(void)
     //lv_obj_set_align(btn2,LV_ALIGN_TOP_MID);
 
 /***************************************************
-*   //²ÎÕÕÆäËû¶ÔÏó½øĞĞ¶ÔÆë
-*   //»ùÓÚ¸¸¶ÔÏó´´½¨µÄ¿Ø¼ş£¬ÏÂ·½×¢ÊÍÆÁ±Î¾Í³ÉÁË·Ç¸¸Àà
+*   //å‚ç…§å…¶ä»–å¯¹è±¡è¿›è¡Œå¯¹é½
+*   //åŸºäºçˆ¶å¯¹è±¡åˆ›å»ºçš„æ§ä»¶ï¼Œä¸‹æ–¹æ³¨é‡Šå±è”½å°±æˆäº†éçˆ¶ç±»
 *
 ***************************************************/
     lv_obj_t *btn2 = lv_btn_create(lv_scr_act());
@@ -67,7 +67,7 @@ void HmiDemo(void)
     lv_obj_set_style_outline_width(btn1,15,0);
     lv_obj_set_style_radius(btn1,0,0);
 
-    lv_obj_remove_style_all(btn1);  //É¾³ıÑùÊ½
+    lv_obj_remove_style_all(btn1);  //åˆ é™¤æ ·å¼
     //lv_obj_t *btn2 = lv_btn_create(btn1);
     //lv_obj_set_align(btn2,LV_ALIGN_OUT_TOP_LEFT);
 }
@@ -93,7 +93,7 @@ void HmiDemo()
 
 /***************************************************
 *
-*   //Í¨¹ı¹²Ïí·½·¨ÉèÖÃ¿Ø¼şµÄÑùÊ½
+*   //é€šè¿‡å…±äº«æ–¹æ³•è®¾ç½®æ§ä»¶çš„æ ·å¼
 *
 ***************************************************/
     static lv_style_t style;
@@ -108,12 +108,12 @@ void HmiDemo()
 
 #endif
 
-#if 1
+#if 0
 /***************************************************
 *
-*   //19.10LED¿ØÖÆUI²¼¾ÖÊµÏÖ
-*   //19.12 FLEXµ¯ĞÔ²¼¾ÖµÄÊ¹ÓÃ·½·¨
-*   //Ê¹ÓÃcontÕâÖÖ·½·¨µÄÊ±ºòcont¿ÉÒÔÊÓÎªÈİÆ÷
+*   //19.10LEDæ§åˆ¶UIå¸ƒå±€å®ç°
+*   //19.12 FLEXå¼¹æ€§å¸ƒå±€çš„ä½¿ç”¨æ–¹æ³•
+*   //ä½¿ç”¨contè¿™ç§æ–¹æ³•çš„æ—¶å€™contå¯ä»¥è§†ä¸ºå®¹å™¨
 *
 ***************************************************/
 #define STATE_ON    1
@@ -151,7 +151,7 @@ void HmiDemo(void)
     lv_obj_set_flex_align(mainCont, LV_FLEX_ALIGN_SPACE_EVENLY, 0, LV_FLEX_ALIGN_CENTER);
 
 
-    //°´¼ü¹²Ïí·ç¸ñ
+    //æŒ‰é”®å…±äº«é£æ ¼
     static lv_style_t style;
     lv_style_init(&style);
     lv_style_set_bg_color(&style,lv_color_make(76, 151, 249));
@@ -162,20 +162,20 @@ void HmiDemo(void)
     lv_style_set_border_width(&style,0);
 
     #if 0
-    //°´¼ü1ÉèÖÃ
+    //æŒ‰é”®1è®¾ç½®
     lv_obj_t *ledCtrlBtn1  = lv_btn_create(lv_scr_act());
     lv_obj_set_align(ledCtrlBtn1,LV_ALIGN_TOP_MID);
     lv_obj_align(ledCtrlBtn1, LV_ALIGN_TOP_MID, 0, 60);
     lv_obj_add_style(ledCtrlBtn1,&style,0);
     lv_obj_add_event_cb(ledCtrlBtn1, LedClickedEventCb, LV_EVENT_CLICKED, &g_ledState[0]);
 
-    //°´¼ü2ÉèÖÃ
+    //æŒ‰é”®2è®¾ç½®
     lv_obj_t *ledCtrlBtn2  = lv_btn_create(lv_scr_act());
     lv_obj_set_align(ledCtrlBtn2,LV_ALIGN_CENTER);
     lv_obj_add_style(ledCtrlBtn2,&style,0);
     lv_obj_add_event_cb(ledCtrlBtn2, LedClickedEventCb, LV_EVENT_CLICKED, &g_ledState[1]);
 
-    //°´¼ü3ÉèÖÃ
+    //æŒ‰é”®3è®¾ç½®
     lv_obj_t *ledCtrlBtn3  = lv_btn_create(lv_scr_act());
     lv_obj_set_align(ledCtrlBtn3,LV_ALIGN_BOTTOM_MID);
     lv_obj_align(ledCtrlBtn3, LV_ALIGN_BOTTOM_MID,0, -60);
@@ -198,8 +198,8 @@ void HmiDemo(void)
 #if 0
 /***************************************************
 *
-*   //19.12 FLEXµ¯ĞÔ²¼¾ÖµÄÊ¹ÓÃ·½·¨
-*   //Ê¹ÓÃcontÕâÖÖ·½·¨µÄÊ±ºòcont¿ÉÒÔÊÓÎªÈİÆ÷
+*   //19.12 FLEXå¼¹æ€§å¸ƒå±€çš„ä½¿ç”¨æ–¹æ³•
+*   //ä½¿ç”¨contè¿™ç§æ–¹æ³•çš„æ—¶å€™contå¯ä»¥è§†ä¸ºå®¹å™¨
 *
 ***************************************************/
 void HmiDemo()
@@ -238,10 +238,140 @@ void HmiDemo()
 
 
 }
+#endif
+/***************************************************
+*
+*   //æ€æºå­—åº“å£°æ˜API
+*
+***************************************************/
+LV_FONT_DECLARE(lv_font_semibold_26);
+LV_FONT_DECLARE(lv_font_semibold_28);
+LV_FONT_DECLARE(lv_font_semibold_40);
+
+/***************************************************
+*
+*   //å›¾ç‰‡åº“å£°æ˜API
+*
+***************************************************/
+LV_IMG_DECLARE(g_tempimg);
+LV_IMG_DECLARE(g_humiimg);
+void CreateTitleArea(lv_obj_t *parent, const char *title)
+{
+    lv_obj_t *titleLabel = lv_label_create(parent);
+    lv_obj_set_style_text_font(titleLabel, &lv_font_semibold_28, 0);
+    lv_label_set_text(titleLabel, title);
+    lv_obj_set_style_text_color(titleLabel, lv_color_make(0xff,0xff,0xff),0);
+    lv_obj_align(titleLabel, LV_ALIGN_CENTER, 0, 0);
+}
+
+void CreateMainArea(lv_obj_t *parent)
+{
+
+
+    lv_obj_t *imgObj;
+    lv_obj_t *nameLabel;
+    lv_obj_t *tempValLabel;
+    lv_obj_t *humiValLabel;
+
+    imgObj = lv_img_create(parent);
+    lv_img_set_src (imgObj, &g_tempimg);
+    lv_obj_align(imgObj, LV_ALIGN_TOP_LEFT, 0, 0);
+
+    nameLabel = lv_label_create(parent);
+    lv_obj_set_style_text_font(nameLabel, &lv_font_semibold_26, 0);
+    lv_label_set_text(nameLabel, "æ¸©åº¦(â„ƒ)");
+    lv_obj_set_style_text_color(nameLabel, lv_color_make(0xff,0xff,0xff), 0);
+    lv_obj_align_to(nameLabel, imgObj, LV_ALIGN_OUT_RIGHT_MID, 10, 0);
+
+    tempValLabel = lv_label_create(parent);
+    lv_obj_set_style_text_font(tempValLabel, &lv_font_montserrat_40,0);
+    lv_label_set_text(tempValLabel, "25");
+    lv_obj_set_style_text_color(tempValLabel, lv_color_make(0xff, 0xff, 0xff),0);
+    lv_obj_align_to(tempValLabel, nameLabel, LV_ALIGN_OUT_RIGHT_MID, 50, 0);
+
+    imgObj = lv_img_create(parent);
+    lv_img_set_src(imgObj, &g_humiimg);
+    lv_obj_align(imgObj, LV_ALIGN_BOTTOM_LEFT, 0, 0);
+
+    nameLabel = lv_label_create(parent);
+    lv_obj_set_style_text_font(nameLabel, &lv_font_semibold_26, 0);
+    lv_label_set_text(nameLabel, "æ¹¿åº¦(%)");
+    lv_obj_set_style_text_color(nameLabel, lv_color_make(0xff, 0xff, 0xff),0);
+    lv_obj_align_to(nameLabel, imgObj, LV_ALIGN_OUT_RIGHT_MID, 10, 0);
+
+    humiValLabel = lv_label_create(parent);
+    lv_obj_set_style_text_font(humiValLabel, &lv_font_montserrat_40,0);
+    lv_label_set_text(humiValLabel, "15");
+    lv_obj_set_style_text_color(humiValLabel, lv_color_make(0xff, 0xff, 0xff),0);
+    lv_obj_align_to(humiValLabel, nameLabel, LV_ALIGN_OUT_RIGHT_MID, 50, 0);
+
+    imgObj = lv_img_create(parent);
+    lv_img_set_src(imgObj, &g_humiimg);
+    lv_obj_align(imgObj, LV_ALIGN_BOTTOM_LEFT, 0, 0);
+
+
+}
+
+#if 1
+
+void HmiDemo(void)
+{
+    lv_obj_t *tempHumiScr = lv_obj_create(lv_scr_act());
+    lv_obj_remove_style_all(tempHumiScr);
+    lv_obj_set_size(tempHumiScr, lv_pct(100), lv_pct(100));
+    lv_obj_set_style_bg_color(tempHumiScr, lv_color_make(0x00, 0x00, 0x00), 0);
+    lv_obj_set_style_bg_opa(tempHumiScr, LV_OPA_100, 0);
+    lv_obj_set_style_border_width(tempHumiScr, 0, 0);
+    lv_obj_set_style_radius(tempHumiScr, 0, 0);
+
+    lv_obj_t *titleCont = lv_obj_create(tempHumiScr);
+    lv_obj_set_size(titleCont, lv_pct(100), lv_pct(10));
+    lv_obj_set_style_bg_color(titleCont, lv_color_make(0x00, 0x00, 0x00), 0);
+    lv_obj_set_style_border_width(titleCont, 0, 0);
+    lv_obj_set_scroll_dir(titleCont, LV_DIR_NONE);
+
+    CreateTitleArea(titleCont, "æ¸©åº¦æ¹¿åº¦");
+
+    static lv_point_t linePoints[2];
+    linePoints[0].x = 10;
+    linePoints[0].y = LV_VER_RES / 10 + 10;
+    linePoints[1].x = LV_HOR_RES - 10;
+    linePoints[1].y = LV_VER_RES / 10 + 10;
+    lv_obj_t *line = lv_line_create(tempHumiScr);
+    lv_obj_set_style_line_width(line, 1, 0);
+    lv_obj_set_style_line_color(line, lv_color_make(0xff, 0xff, 0xff), 0);
+    lv_obj_set_style_line_opa(line, LV_OPA_20, 0);
+    lv_line_set_points(line, linePoints, 2);
+
+    lv_obj_t *mainCont = lv_obj_create(tempHumiScr);
+    lv_obj_set_size(mainCont, lv_pct(100), lv_pct(40));
+    lv_obj_set_style_bg_color(mainCont, lv_color_make(0x00, 0x00, 0x00),0);
+    lv_obj_set_style_bg_opa(mainCont, LV_OPA_100, 0);
+    lv_obj_set_style_border_width(mainCont, 0, 0);
+    lv_obj_set_scroll_dir(mainCont, LV_DIR_NONE);
+    lv_obj_center(mainCont);
+    CreateMainArea(mainCont);
+
+}
+
 
 
 
 #endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

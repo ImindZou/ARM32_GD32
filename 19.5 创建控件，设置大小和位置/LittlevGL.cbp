@@ -896,6 +896,12 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="lvgl/hmi_demo/hmi_demo.h" />
+		<Unit filename="lvgl/hmi_demo/humiimg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lvgl/hmi_demo/tempimg.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="lvgl/lv_conf_template.h" />
 		<Unit filename="lvgl/lvgl.h" />
 		<Unit filename="lvgl/porting/lv_port_disp_template.h" />
@@ -1449,6 +1455,15 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="lvgl/src/font/lv_font_montserrat_8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lvgl/src/font/lv_font_semibold_26.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lvgl/src/font/lv_font_semibold_28.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lvgl/src/font/lv_font_semibold_40.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="lvgl/src/font/lv_font_simsun_16_cjk.c">
