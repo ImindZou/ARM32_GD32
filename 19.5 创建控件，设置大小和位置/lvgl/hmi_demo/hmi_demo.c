@@ -115,22 +115,18 @@ void HmiDemo()
 static uint8_t g_ledState[LED_NUM] = {STATE_OFF,STATE_OFF,STATE_OFF};
 static void LedClickedEventCb(lv_event_t *event)
 {
-    static lv_style_t style;
-    lv_style_init(&style);
-
     lv_obj_t *ledCtrBtn = lv_event_get_target(event);
     uint8_t *ledState = (uint8_t *)lv_event_get_user_data(event);
     if (*ledState == STATE_OFF)
     {
-        lv_style_set_bg_color(&style,lv_color_make(0xff, 0, 0));
+        lv_obj_set_style_bg_color(ledCtrBtn, lv_color_make(0xff, 0, 0),0);
         *ledState = STATE_ON;
     }
     else
     {
-        lv_style_set_bg_color(&style,lv_color_make(76, 151, 249));
+         lv_obj_set_style_bg_color(ledCtrBtn, lv_color_make(76, 151, 249),0);
         *ledState = STATE_OFF;
     }
-    lv_obj_add_style(ledCtrBtn, &style, 0);
 }
 
 

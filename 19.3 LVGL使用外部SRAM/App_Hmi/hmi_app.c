@@ -17,6 +17,7 @@
 
 #include "lv_demo_widgets.h"
 
+#if 0
 void lv_example_flex_1(void)
 {
     /*Create a container with ROW flex direction*/
@@ -53,6 +54,58 @@ void lv_example_flex_1(void)
         lv_obj_center(label);
     }
 }
+#endif
+
+#define STATE_ON    1
+#define STATE_OFF   0
+#define LED_NUM     3
+static uint8_t g_ledState[LED_NUM] = {STATE_OFF,STATE_OFF,STATE_OFF};	//200 201 202 	theory / principle
+static void LedClickedEventCb(lv_event_t *event)						//201 - 200 = 1 ,gain the index
+{
+    lv_obj_t *ledCtrBtn = lv_event_get_target(event);
+    uint8_t *ledState = (uint8_t *)lv_event_get_user_data(event);
+	uint8_t ledIndex = ledState - &g_ledState[0];
+	
+    if (*ledState == STATE_OFF)
+    {
+        lv_obj_set_style_bg_color(ledCtrBtn, lv_color_make(0xff, 0, 0),0);
+        *ledState = STATE_ON;
+    }
+    else
+    {
+         lv_obj_set_style_bg_color(ledCtrBtn, lv_color_make(76, 151, 249),0);
+        *ledState = STATE_OFF;
+    }
+	ToggleLed(ledIndex);
+}
+
+void HmiLedCtrlInit(void)
+{
+    lv_obj_set_style_bg_color(lv_scr_act(),lv_color_make(0, 0, 0), 0);
+
+    static lv_style_t style;
+    lv_style_init(&style);
+
+    //按键共享风格
+    lv_style_set_bg_color(&style,lv_color_make(76, 151, 249));
+    lv_style_set_bg_opa(&style,LV_OPA_50);
+    lv_style_set_radius(&style, 8);
+    lv_style_set_width(&style,lv_pct(80));
+    lv_style_set_height(&style,lv_pct(20));
+    lv_style_set_border_width(&style,0);
+
+    lv_obj_t *ledCtrlBtn;
+    for (uint8_t i = 0; i < LED_NUM; i++)
+    {
+        ledCtrlBtn  = lv_btn_create(lv_scr_act());
+		lv_obj_remove_style_all(ledCtrlBtn);
+        lv_obj_set_align(ledCtrlBtn,LV_ALIGN_TOP_MID);
+        lv_obj_align(ledCtrlBtn, LV_ALIGN_TOP_MID, 0, 40 + i * 140);
+        lv_obj_add_style(ledCtrlBtn,&style,0);
+        lv_obj_add_event_cb(ledCtrlBtn, LedClickedEventCb, LV_EVENT_CLICKED, &g_ledState[i]);
+		TurnOffLed(i);
+	}
+}
 
 void HmiInit(void)
 {
@@ -60,7 +113,8 @@ void HmiInit(void)
 	lv_port_disp_init();		//lvgl显示接口出啊实话，放在lv_init()后面
 	lv_port_indev_init();		//lvgl输入接口初始化，放在lv_init()的后面
 	//lv_example_flex_1();
-	lv_demo_widgets();
+	//lv_demo_widgets();
+	HmiLedCtrlInit();
 }
 
 /**
