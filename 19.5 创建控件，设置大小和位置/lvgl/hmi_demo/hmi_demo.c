@@ -113,65 +113,26 @@ void HmiDemo()
 #define STATE_OFF   0
 #define LED_NUM     3
 static uint8_t g_ledState[LED_NUM] = {STATE_OFF,STATE_OFF,STATE_OFF};
-static void Led1ClickedEventCb(lv_event_t *event)
+static void LedClickedEventCb(lv_event_t *event)
 {
     static lv_style_t style;
     lv_style_init(&style);
 
     lv_obj_t *ledCtrBtn = lv_event_get_target(event);
-
-    if (g_ledState[0] == STATE_OFF)
+    uint8_t *ledState = (uint8_t *)lv_event_get_user_data(event);
+    if (*ledState == STATE_OFF)
     {
         lv_style_set_bg_color(&style,lv_color_make(0xff, 0, 0));
-        g_ledState[0] = STATE_ON;
+        *ledState = STATE_ON;
     }
     else
     {
         lv_style_set_bg_color(&style,lv_color_make(76, 151, 249));
-        g_ledState[0] = STATE_OFF;
+        *ledState = STATE_OFF;
     }
     lv_obj_add_style(ledCtrBtn, &style, 0);
 }
 
-static void Led2ClickedEventCb(lv_event_t *event)
-{
-    static lv_style_t style;
-    lv_style_init(&style);
-
-    lv_obj_t *ledCtrBtn = lv_event_get_target(event);
-
-    if (g_ledState[1] == STATE_OFF)
-    {
-        lv_style_set_bg_color(&style,lv_color_make(0xff, 0, 0));
-        g_ledState[1] = STATE_ON;
-    }
-    else
-    {
-        lv_style_set_bg_color(&style,lv_color_make(76, 151, 249));
-        g_ledState[1] = STATE_OFF;
-    }
-    lv_obj_add_style(ledCtrBtn, &style, 0);
-}
-
-static void Led3ClickedEventCb(lv_event_t *event)
-{
-    static lv_style_t style;
-    lv_style_init(&style);
-
-    lv_obj_t *ledCtrBtn = lv_event_get_target(event);
-
-    if (g_ledState[2] == STATE_OFF)
-    {
-        lv_style_set_bg_color(&style,lv_color_make(0xff, 0, 0));
-        g_ledState[2] = STATE_ON;
-    }
-    else
-    {
-        lv_style_set_bg_color(&style,lv_color_make(76, 151, 249));
-        g_ledState[2] = STATE_OFF;
-    }
-    lv_obj_add_style(ledCtrBtn, &style, 0);
-}
 
 void HmiDemo(void)
 {
@@ -189,25 +150,37 @@ void HmiDemo(void)
     lv_style_set_width(&style,lv_pct(80));
     lv_style_set_height(&style,lv_pct(20));
     lv_style_set_border_width(&style,0);
+
+    #if 0
     //按键1设置
     lv_obj_t *ledCtrlBtn1  = lv_btn_create(lv_scr_act());
     lv_obj_set_align(ledCtrlBtn1,LV_ALIGN_TOP_MID);
-    lv_obj_align(ledCtrlBtn1, LV_ALIGN_TOP_MID, 0, 10);
+    lv_obj_align(ledCtrlBtn1, LV_ALIGN_TOP_MID, 0, 60);
     lv_obj_add_style(ledCtrlBtn1,&style,0);
-    lv_obj_add_event_cb(ledCtrlBtn1, Led1ClickedEventCb, LV_EVENT_CLICKED, NULL);
+    lv_obj_add_event_cb(ledCtrlBtn1, LedClickedEventCb, LV_EVENT_CLICKED, &g_ledState[0]);
 
     //按键2设置
     lv_obj_t *ledCtrlBtn2  = lv_btn_create(lv_scr_act());
     lv_obj_set_align(ledCtrlBtn2,LV_ALIGN_CENTER);
     lv_obj_add_style(ledCtrlBtn2,&style,0);
-    lv_obj_add_event_cb(ledCtrlBtn2, Led2ClickedEventCb, LV_EVENT_CLICKED, NULL);
+    lv_obj_add_event_cb(ledCtrlBtn2, LedClickedEventCb, LV_EVENT_CLICKED, &g_ledState[1]);
 
     //按键3设置
     lv_obj_t *ledCtrlBtn3  = lv_btn_create(lv_scr_act());
     lv_obj_set_align(ledCtrlBtn3,LV_ALIGN_BOTTOM_MID);
-    lv_obj_align(ledCtrlBtn3, LV_ALIGN_BOTTOM_MID,0, -10);
+    lv_obj_align(ledCtrlBtn3, LV_ALIGN_BOTTOM_MID,0, -60);
     lv_obj_add_style(ledCtrlBtn3,&style,0);
-    lv_obj_add_event_cb(ledCtrlBtn3, Led3ClickedEventCb, LV_EVENT_CLICKED, NULL);
+    lv_obj_add_event_cb(ledCtrlBtn3, LedClickedEventCb, LV_EVENT_CLICKED, &g_ledState[2]);
+    #endif
+    lv_obj_t *ledCtrlBtn;
+    for (uint8_t i = 0; i < LED_NUM; i++)
+    {
+        ledCtrlBtn  = lv_btn_create(lv_scr_act());
+        lv_obj_set_align(ledCtrlBtn,LV_ALIGN_TOP_MID);
+        lv_obj_align(ledCtrlBtn, LV_ALIGN_TOP_MID, 0, 40 + i * 140);
+        lv_obj_add_style(ledCtrlBtn,&style,0);
+        lv_obj_add_event_cb(ledCtrlBtn, LedClickedEventCb, LV_EVENT_CLICKED, &g_ledState[i]);
+    }
 }
 
 
