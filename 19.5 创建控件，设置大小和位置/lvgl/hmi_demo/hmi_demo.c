@@ -109,6 +109,13 @@ void HmiDemo()
 #endif
 
 #if 1
+/***************************************************
+*
+*   //19.10LED控制UI布局实现
+*   //19.12 FLEX弹性布局的使用方法
+*   //使用cont这种方法的时候cont可以视为容器
+*
+***************************************************/
 #define STATE_ON    1
 #define STATE_OFF   0
 #define LED_NUM     3
@@ -132,14 +139,21 @@ static void LedClickedEventCb(lv_event_t *event)
 
 void HmiDemo(void)
 {
-    lv_obj_set_style_bg_color(lv_scr_act(),lv_color_make(0, 0, 0), 0);
+    //lv_obj_set_style_bg_color(lv_scr_act(),lv_color_make(0, 0, 0), 0);
 
-    static lv_style_t style;
-    lv_style_init(&style);
-
+    lv_obj_t *mainCont = lv_obj_create(lv_scr_act());
+    lv_obj_set_size(mainCont, lv_pct(100), lv_pct(100));
+    lv_obj_set_style_bg_color(mainCont, lv_color_make(0x00,0x00,0x00),0);
+    lv_obj_set_style_bg_opa(mainCont, LV_OPA_100,0);
+    lv_obj_set_style_border_width(mainCont, 0, 0);
+    lv_obj_set_style_radius(mainCont, 0, 0);
+    lv_obj_set_flex_flow(mainCont, LV_FLEX_FLOW_COLUMN);
+    lv_obj_set_flex_align(mainCont, LV_FLEX_ALIGN_SPACE_EVENLY, 0, LV_FLEX_ALIGN_CENTER);
 
 
     //按键共享风格
+    static lv_style_t style;
+    lv_style_init(&style);
     lv_style_set_bg_color(&style,lv_color_make(76, 151, 249));
     lv_style_set_bg_opa(&style,LV_OPA_50);
     lv_style_set_radius(&style, 8);
@@ -171,20 +185,63 @@ void HmiDemo(void)
     lv_obj_t *ledCtrlBtn;
     for (uint8_t i = 0; i < LED_NUM; i++)
     {
-        ledCtrlBtn  = lv_btn_create(lv_scr_act());
+        ledCtrlBtn  = lv_btn_create(mainCont);
         lv_obj_set_align(ledCtrlBtn,LV_ALIGN_TOP_MID);
-        lv_obj_align(ledCtrlBtn, LV_ALIGN_TOP_MID, 0, 40 + i * 140);
+        //lv_obj_align(ledCtrlBtn, LV_ALIGN_TOP_MID, 0, 40 + i * 140);
         lv_obj_add_style(ledCtrlBtn,&style,0);
         lv_obj_add_event_cb(ledCtrlBtn, LedClickedEventCb, LV_EVENT_CLICKED, &g_ledState[i]);
     }
 }
 
+#endif
+
+#if 0
+/***************************************************
+*
+*   //19.12 FLEX弹性布局的使用方法
+*   //使用cont这种方法的时候cont可以视为容器
+*
+***************************************************/
+void HmiDemo()
+{
+    lv_obj_t *cont = lv_obj_create(lv_scr_act());
+    lv_obj_set_size(cont, 180, 470);
+    lv_obj_set_style_pad_all(cont, 0, 0);
+    lv_obj_align(cont, LV_ALIGN_CENTER, 0, 0);
+    lv_obj_set_flex_flow(cont, LV_FLEX_FLOW_COLUMN);
+    lv_obj_set_flex_align(cont, LV_FLEX_ALIGN_SPACE_BETWEEN, LV_FLEX_ALIGN_START, LV_FLEX_ALIGN_START);
+
+    lv_obj_t * btn1 = lv_btn_create(cont);
+    lv_obj_set_size(btn1, 30,40);
+    lv_obj_t *label1 = lv_label_create(btn1);
+    lv_label_set_text(label1, "01");
+
+    lv_obj_t * btn2 = lv_btn_create(cont);
+    lv_obj_set_size(btn2, 40,80);
+    lv_obj_t *label2 = lv_label_create(btn2);
+    lv_label_set_text(label2, "02");
+
+    lv_obj_t * btn3 = lv_btn_create(cont);
+    lv_obj_set_size(btn3,80,80);
+    lv_obj_t *label3 = lv_label_create(btn3);
+    lv_label_set_text(label3, "03");
+
+    lv_obj_t * btn4 = lv_btn_create(cont);
+    lv_obj_set_size(btn4, 50,80);
+    lv_obj_t *label4 = lv_label_create(btn4);
+    lv_label_set_text(label4, "04");
+
+    lv_obj_t * btn5 = lv_btn_create(cont);
+    lv_obj_set_size(btn5, 80,80);
+    lv_obj_t *label5 = lv_label_create(btn5);
+    lv_label_set_text(label5, "05");
+
+
+}
 
 
 
 #endif
-
-
 
 
 
