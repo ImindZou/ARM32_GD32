@@ -1,0 +1,9 @@
+.\objects\lv_hal_tick.o: Mid_lvgl\src\hal\lv_hal_tick.c
+.\objects\lv_hal_tick.o: Mid_lvgl\src\hal\lv_hal_tick.h
+.\objects\lv_hal_tick.o: Mid_lvgl\src\hal\../lv_conf_internal.h
+.\objects\lv_hal_tick.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lv_hal_tick.o: Mid_lvgl\src\hal\../lv_conf_kconfig.h
+.\objects\lv_hal_tick.o: .\Mid_Lvgl\driver\porting\../../lv_conf.h
+.\objects\lv_hal_tick.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\lv_hal_tick.o: D:\Study\keil\UV4\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\lv_hal_tick.o: .\Drv_Common\systick.h
