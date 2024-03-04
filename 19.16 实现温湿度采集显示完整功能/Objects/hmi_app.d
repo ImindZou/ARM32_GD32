@@ -140,6 +140,7 @@
 .\objects\hmi_app.o: .\Mid_Lvgl\src\../src/extra/widgets/span/lv_span.h
 .\objects\hmi_app.o: .\Mid_Lvgl\driver\porting\lv_port_indev.h
 .\objects\hmi_app.o: .\Mid_Lvgl\driver\porting\lv_port_disp.h
+.\objects\hmi_app.o: App_Hmi\humi_temphumi.h
 .\objects\hmi_app.o: .\App_Hmi\widgets\lv_demo_widgets.h
 .\objects\hmi_app.o: .\App_Hmi\widgets\../lv_demos.h
 .\objects\hmi_app.o: .\App_Hmi\widgets\../widgets/lv_demo_widgets.h

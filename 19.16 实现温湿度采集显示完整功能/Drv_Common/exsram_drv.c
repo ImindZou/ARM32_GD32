@@ -118,7 +118,7 @@ static uint8_t g_buffer[BUFFER_SIZE] = {0, 1, 2, 3, 4, 5,};
 void ExSramDrvTest(void)
 {
 	printf("********************************\n");
-	printf("********外部SRAM测试开始********\n");
+	printf("********ex SRAM stst start********\n");
 	printf("********************************\n");
 
 //	printf("ex sram writing...\r\n");
@@ -138,7 +138,7 @@ void ExSramDrvTest(void)
         if (i != g_buffer[i])
 		{
             printf("0x%02X ", g_buffer[i]);
-            printf("\n\nex sram测试故障，请排查！\n\n");
+            printf("\n\nex sram error，please check！\n\n");
             return;
         }
         printf("0x%02X ", g_buffer[i]);
@@ -149,6 +149,6 @@ void ExSramDrvTest(void)
 	}
 
 	printf("********************************\n");
-	printf("********外部SRAM测试结束********\n");
+	printf("********ex SRAM test ending********\n");
 	printf("********************************\n");
 }

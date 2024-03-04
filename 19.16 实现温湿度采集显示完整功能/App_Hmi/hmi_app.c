@@ -14,7 +14,7 @@
 #include "lvgl.h"
 #include "lv_port_indev.h"
 #include "lv_port_disp.h"
-
+#include "humi_temphumi.h"
 #include "lv_demo_widgets.h"
 
 #if 0
@@ -114,7 +114,8 @@ void HmiInit(void)
 	lv_port_indev_init();		//lvgl输入接口初始化，放在lv_init()的后面
 	//lv_example_flex_1();
 	//lv_demo_widgets();
-	HmiLedCtrlInit();
+	//HmiLedCtrlInit();
+	HmiTempHumiInit();
 }
 
 /**

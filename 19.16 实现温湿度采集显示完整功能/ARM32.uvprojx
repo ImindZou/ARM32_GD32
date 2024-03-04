@@ -419,24 +419,19 @@
               <FilePath>.\App_Hmi\hmi_app.c</FilePath>
             </File>
             <File>
-              <FileName>lv_demo_widgets.c</FileName>
+              <FileName>humiimg.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\App_Hmi\widgets\lv_demo_widgets.c</FilePath>
+              <FilePath>.\App_Hmi\humiimg.c</FilePath>
             </File>
             <File>
-              <FileName>img_clothes.c</FileName>
+              <FileName>tempimg.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\App_Hmi\widgets\assets\img_clothes.c</FilePath>
+              <FilePath>.\App_Hmi\tempimg.c</FilePath>
             </File>
             <File>
-              <FileName>img_demo_widgets_avatar.c</FileName>
+              <FileName>humi_temphumi.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\App_Hmi\widgets\assets\img_demo_widgets_avatar.c</FilePath>
-            </File>
-            <File>
-              <FileName>img_lvgl_logo.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\App_Hmi\widgets\assets\img_lvgl_logo.c</FilePath>
+              <FilePath>.\App_Hmi\humi_temphumi.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1142,6 +1137,21 @@
               <FileName>lv_font_unscii_16.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Mid_lvgl\src\font\lv_font_unscii_16.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_semibold_26.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Mid_lvgl\src\font\lv_font_semibold_26.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_semibold_28.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Mid_lvgl\src\font\lv_font_semibold_28.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_semibold_40.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Mid_lvgl\src\font\lv_font_semibold_40.c</FilePath>
             </File>
           </Files>
         </Group>
